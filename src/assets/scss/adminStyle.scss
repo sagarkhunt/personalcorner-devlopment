@@ -1,0 +1,560 @@
+
+
+.customTabsParent {
+    .tabsSideButtons {
+        top: 0;
+        right: 20px;
+        .btnCloseTicket {
+            background-color: #00C864;
+            padding: 12px;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+        }
+        .btnInProgress {
+            background-color: #E91908;
+            padding: 12px;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+        }
+        label {
+            font-family: 'GT Walsheim Pro';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+    }
+    ul {
+        margin: 20px;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        overflow: hidden;
+        width: fit-content;
+        li {
+            border-right: 1px solid #707070;
+            &:last-child {
+                border: none;
+            }
+            button {
+                border-radius: 0 !important;
+                font-family: 'GT Walsheim Pro';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 17px;
+                color: #FFFFFF !important;
+                padding: 18px 22px;
+                &.active {
+                background-color: #2B01FE !important; 
+                }
+            }
+        }
+    }
+}
+
+.customTabListHr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 1;
+    color: #4E4E4E;
+}
+
+.generalInputGroup {
+    input[type=text] {
+        background-color: #0F0F0F;
+        border: 1px solid #2B2B2B;
+        border-radius: 0;
+        height: 50px;
+        font-family: 'GT Walsheim Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    input[type=checkbox] {
+        height: 20px;
+        width: 20px;
+    }
+    label {
+        font-family: 'GT Walsheim Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+}
+
+.adminPageMainCommon.supportPage {
+    .activeTicketTab {
+        padding: 20px;
+        .customNavTabsParent {
+            // height: 100vh;
+            max-height: 1000px;
+            overflow-y: auto;
+                &::-webkit-scrollbar-track {
+                    border: none;
+                    background-color: #313131;
+                }
+                &::-webkit-scrollbar {
+                    width: 22px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: #636363;
+                }
+            .nav {
+                margin-right: 10px;
+                flex-direction: column;
+                .nav-item {
+                    margin-bottom: 15px;
+                    &:last-child { margin-bottom: 0; }
+                    .nav-link {
+                        background-color: #FFFFFF;
+                        border-radius: 8px;
+                        padding: 0;
+                        .topContent {
+                            padding: 18px;
+                            .title {
+                                font-family: 'GT Walsheim Pro';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 27px;
+                                line-height: 31px;
+                                color: #000000;
+                            }
+                            .content {
+                                .date {
+                                    font-family: 'GT Walsheim Pro';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 17px;
+                                    line-height: 19px;
+                                    color: #848484;
+                                }
+                                .awb {
+                                    font-family: 'GT Walsheim Pro';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    line-height: 19px;
+                                    color: #848484;
+                                    span {
+                                        background-color: #E2E2E2;
+                                        border-radius: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .bottomContent {
+                            padding: 8px 18px 8px 18px;
+                            .number {
+                                font-family: 'GT Walsheim Pro';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 19px;
+                                line-height: 22px;
+                                color: #030303;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    .nav-link.active {
+                        background-color: #2B01FE;
+                        .topContent {
+                            .title {
+                                color: #FFFFFF;
+                            }
+                            .content {
+                                .date {
+                                    color: #FFFFFF;
+                                }
+                                .awb {
+                                    color: #FFFFFF;
+                                    span {
+                                        background-color: #978CCF;
+                                    }
+                                }
+                            }
+                        }
+                        .customTabListHr { color: #FFFFFF; }
+                        .bottomContent {
+                            .number {
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .customNavTabsDetailSection {
+            .headArea {
+                .title {
+                    font-family: 'GT Walsheim Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 27px;
+                    line-height: 31px;
+                    color: #FFFFFF;
+                }
+                .content p {
+                    font-family: 'GT Walsheim Pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+            .issueListArea {
+                .issue {
+                    background-color: #FFFFFF;
+                    margin-bottom: 15px;
+                    border-radius: 8px;
+                    .personDetail {
+                        padding: 20px;
+                        img {
+                            height: 60px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                        .name {
+                            font-family: 'GT Walsheim Pro';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #030303;
+                        }
+                        .date {
+                            font-family: 'GT Walsheim Pro';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 19px;
+                            color: #848484;
+                        }
+                    }
+                    .bottomDetail {
+                        padding: 20px;
+                        p {
+                            font-family: 'GT Walsheim Pro';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #030303;
+                        }
+                        .regards {
+                            font-family: 'GT Walsheim Pro';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #030303;
+                        }
+                    }
+                }
+            }
+            .attachFileArea {
+                .inpGroup {
+                    background-color: #FFFFFF;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    height: 75px;
+                    input.typeText {
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        padding: 15px 15px 15px 30px;
+                        &::placeholder {
+                            font-family: 'GT Walsheim Pro';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #030303;
+                        }
+                    }
+                    button, .btnAttactFile {
+                        width: 100px;
+                        height: 100%;
+                        font-family: 'GT Walsheim Pro';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;  
+                        color: #0F0F0F;
+                        border-left: 1px solid #707070;
+                        background: transparent;
+                    }
+                }
+                .btnBlue {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+._202020 {
+    background-color: #202020;
+}
+
+
+.adminPageMainCommon.allNotificationPage {
+    .emailList {
+        padding: 20px;
+        .customNavTabsParent {
+            .nav {
+                flex-direction: column;
+                .nav-item {
+                    margin-bottom: 15px;
+                    &:last-child { margin-bottom: 0; }
+                    .nav-link {
+                        background-color: #0F0F0F;
+                        border-radius: 8px;
+                        padding: 10px;
+                        .content {
+                            position: relative;
+                            .profile {
+                                img {
+                                    height: 80px;
+                                    width: 80px;
+                                    border-radius: 50%;
+                                    overflow: hidden;
+                                }
+                                .name {
+                                    font-family: 'GT Walsheim Pro';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 23px;
+                                    color: #FFFFFF;
+                                }
+                                .bio {
+                                    font-family: 'GT Walsheim Pro';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #FFFFFF;
+                                }
+                            }
+                            .rightPart {
+                                .emailCount {
+                                    background-color: #2B01FE;
+                                    font-family: 'GT Walsheim Pro';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 17px;
+                                    color: #FFFFFF;
+                                    padding: 5px 9px;
+                                    border-radius: 5px;
+                                }
+                                .time {
+                                    font-family: 'GT Walsheim Pro';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 17px;
+                                    color: #FFFFFF;
+                                }
+                            }
+                            .detailIcon {
+                                position: absolute;
+                                top: -6px;
+                                right: 0px;
+                            }
+                        }
+                        &.active {
+                            background-color: #FFFFFF;
+                            .content {
+                                .profile {
+                                    .name {
+                                        color: #0F0F0F;
+                                    }
+                                    .bio {
+                                        color: #0F0F0F;
+                                    }
+                                }
+                                .rightPart {
+                                    .time {
+                                        color: #0F0F0F;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .singleEmailOpen {
+        .topIcons {
+            padding: 15px;
+            border-bottom: 1px solid #313131;
+        }
+        .titleArea {
+            padding: 20px;
+            border-bottom: 1px solid #313131;
+            .date {
+                font-family: 'GT Walsheim Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+            .title {
+                font-family: 'GT Walsheim Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 34px;
+                color: #FFFFFF;
+            }
+        }
+        .composeEmailArea {
+            padding: 20px;
+            .profile {
+                img {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                .name {
+                    font-family: 'GT Walsheim Pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                }
+                .role {
+                    font-family: 'GT Walsheim Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                }
+                .dateTime {
+                    font-family: 'GT Walsheim Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .receivedEmail {
+            p {
+                font-family: 'GT Walsheim Pro';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 21px;
+                color: #FFFFFF;
+            }
+        }
+        .emailEditor {
+            img {
+                border-radius: 40px;
+                overflow: hidden;
+            }
+            .btnBlue {
+                padding: 15px 40px;
+            }
+        }
+    }
+    // =====
+    #emailListLeft {
+        width: 100%;
+    }
+    #emailListRight {
+        display: none;
+        background-color: #000000;
+    }
+    // =====
+}
+
+.adminPageMainCommon.adminSettingPage {
+    .tab-pane {
+        border-top: 1px solid #707070;
+        .generalTab {
+            .mainTitle {
+                border-bottom: 1px solid #707070;
+                padding: 20px;
+                h4 {
+                    font-family: 'GT Walsheim Pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                }
+            }
+            .area {
+                padding: 25px 20px 0 20px;
+            }
+        }
+        .currencyTab {
+            padding: 25px 20px 0 20px;
+        }
+        .emailTab {
+            table {
+                thead {
+                    border: transparent;
+                    background-color: #2B2B2B;
+                    th {
+                        padding: 20px 15px;
+                        &:first-child {
+                            padding-left: 25px;
+                        }
+                        &:last-child {
+                            padding-right: 25px;
+                        }
+                    }
+                }
+                tbody {
+                    border: transparent;
+                    margin-top: 20px;
+                    tr {
+                        &:first-child {
+                            td {
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                    td {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        &:first-child {
+                            padding-left: 25px;
+                        }
+                        &:last-child {
+                            padding-right: 25px;
+                        }
+                    }
+                }
+                thead th, tbody td {
+                    font-family: 'GT Walsheim Pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

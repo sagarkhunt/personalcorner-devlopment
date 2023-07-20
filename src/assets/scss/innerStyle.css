@@ -1,0 +1,1746 @@
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Thin"), local("GT-Walsheim-Pro-Thin"), url("../font/GTWalsheimPro-Thin.woff2") format("woff2"), url("../font/GTWalsheimPro-Thin.woff") format("woff"), url("../font/GTWalsheimPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Light"), local("GT-Walsheim-Pro-Light"), url("../font/GTWalsheimPro-Light.woff2") format("woff2"), url("../font/GTWalsheimPro-Light.woff") format("woff"), url("../font/GTWalsheimPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Regular"), local("GT-Walsheim-Pro-Regular"), url("../font/GTWalsheimPro-Regular.woff2") format("woff2"), url("../font/GTWalsheimPro-Regular.woff") format("woff"), url("../font/GTWalsheimPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Medium"), local("GT-Walsheim-Pro-Medium"), url("../font/GTWalsheimPro-Medium.woff2") format("woff2"), url("../font/GTWalsheimPro-Medium.woff") format("woff"), url("../font/GTWalsheimPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Bold"), local("GT-Walsheim-Pro-Bold"), url("../font/GTWalsheimPro-Bold.woff2") format("woff2"), url("../font/GTWalsheimPro-Bold.woff") format("woff"), url("../font/GTWalsheimPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro UltraBold"), local("GT-Walsheim-Pro-UltraBold"), url("../font/GTWalsheimPro-UltraBold.woff2") format("woff2"), url("../font/GTWalsheimPro-UltraBold.woff") format("woff"), url("../font/GTWalsheimPro-UltraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Black"), local("GT-Walsheim-Pro-Black"), url("../font/GTWalsheimPro-Black.woff2") format("woff2"), url("../font/GTWalsheimPro-Black.woff") format("woff"), url("../font/GTWalsheimPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Black"), local("Athletics-Black"), url("../font/Athletics-Black.woff2") format("woff2"), url("../font/Athletics-Black.woff") format("woff"), url("../font/Athletics-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Bold Italic"), local("Athletics-BoldItalic"), url("../font/Athletics-BoldItalic.woff2") format("woff2"), url("../font/Athletics-BoldItalic.woff") format("woff"), url("../font/Athletics-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Black Italic"), local("Athletics-BlackItalic"), url("../font/Athletics-BlackItalic.woff2") format("woff2"), url("../font/Athletics-BlackItalic.woff") format("woff"), url("../font/Athletics-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics ExtraBold Italic"), local("Athletics-ExtraBoldItalic"), url("../font/Athletics-ExtraBoldItalic.woff2") format("woff2"), url("../font/Athletics-ExtraBoldItalic.woff") format("woff"), url("../font/Athletics-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Medium Italic"), local("Athletics-MediumItalic"), url("../font/Athletics-MediumItalic.woff2") format("woff2"), url("../font/Athletics-MediumItalic.woff") format("woff"), url("../font/Athletics-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Bold"), local("Athletics-Bold"), url("../font/Athletics-Bold.woff2") format("woff2"), url("../font/Athletics-Bold.woff") format("woff"), url("../font/Athletics-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Italic"), local("Athletics-Italic"), url("../font/Athletics-Italic.woff2") format("woff2"), url("../font/Athletics-Italic.woff") format("woff"), url("../font/Athletics-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics ExtraBold"), local("Athletics-ExtraBold"), url("../font/Athletics-ExtraBold.woff2") format("woff2"), url("../font/Athletics-ExtraBold.woff") format("woff"), url("../font/Athletics-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Light Italic"), local("Athletics-LightItalic"), url("../font/Athletics-LightItalic.woff2") format("woff2"), url("../font/Athletics-LightItalic.woff") format("woff"), url("../font/Athletics-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Light"), local("Athletics-Light"), url("../font/Athletics-Light.woff2") format("woff2"), url("../font/Athletics-Light.woff") format("woff"), url("../font/Athletics-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Regular"), local("Athletics-Regular"), url("../font/Athletics-Regular.woff2") format("woff2"), url("../font/Athletics-Regular.woff") format("woff"), url("../font/Athletics-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Medium"), local("Athletics-Medium"), url("../font/Athletics-Medium.woff2") format("woff2"), url("../font/Athletics-Medium.woff") format("woff"), url("../font/Athletics-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../font/NeueMachina-Light.eot");
+  src: url("../font/NeueMachina-Light.eot") format("embedded-opentype"), url("../font/NeueMachina-Light.woff2") format("woff2"), url("../font/NeueMachina-Light.woff") format("woff"), url("../font/NeueMachina-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../font/NeueMachina-Ultrabold.eot");
+  src: url("../font/NeueMachina-Ultrabold.eot") format("embedded-opentype"), url("../font/NeueMachina-Ultrabold.woff2") format("woff2"), url("../font/NeueMachina-Ultrabold.woff") format("woff"), url("../font/NeueMachina-Ultrabold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../font/NeueMachina-Regular.eot");
+  src: url("../font/NeueMachina-Regular.eot?#iefix") format("embedded-opentype"), url("../font/NeueMachina-Regular.woff2") format("woff2"), url("../font/NeueMachina-Regular.woff") format("woff"), url("../font/NeueMachina-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.lightSkyBorderBtn {
+  background: #0B95DE;
+  border: 2px solid #C0E3FC;
+  border-radius: 0;
+}
+
+.lightSkyBorderBtn:hover {
+  background-color: #02E3F9;
+  border-color: #02E3F9;
+}
+
+.grayBtn {
+  background-color: #D4E6FE;
+  border-radius: 0;
+  border: 0;
+  padding: 8px 13px;
+}
+
+.plusYellowBtn {
+  background-color: #E4FEAD !important;
+  border: solid 3px #fff;
+  border-radius: 7px;
+  padding: 7px 10px;
+}
+
+.btnGlow {
+  background-color: #3FE3EF;
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.019em;
+  color: #0A1917;
+  padding: 10px 15px;
+}
+
+.btnLightBlue {
+  background-color: #9BDAFE;
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.019em;
+  color: #0A1917;
+  padding: 10px 15px;
+}
+
+.headerParent .avatarIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerParent .avatarIcon .imgOuter img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #D6C7EE;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  -o-object-position: -2px 7px;
+     object-position: -2px 7px;
+}
+
+.headerParent .headerTitleIcon {
+  height: 60px;
+}
+
+.headerParent .titleTextMini {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #C0E3FC;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  margin-top: 10px;
+}
+
+#react-joyride-portal .react-joyride__overlay {
+  background: #000000ad !important;
+}
+
+.react-joyride__tooltip {
+  background-color: #1D2529 !important;
+  border-radius: 11.3338px !important;
+  color: #FCFCFD !important;
+}
+
+.react-joyride__tooltip h4 {
+  text-align: left;
+  padding: 8px 10px;
+}
+
+.react-joyride__tooltip div[style="padding: 20px 10px;"] {
+  padding: 0 !important;
+}
+
+.react-joyride__tooltip .customTourTooltip {
+  font-family: 'Athletics';
+  font-style: normal;
+  text-align: start;
+  padding: 8px 10px;
+}
+
+.react-joyride__tooltip .customTourTooltip .customTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FCFCFD;
+}
+
+.react-joyride__tooltip .customTourTooltip .customDetail {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  color: #EAECF0;
+  margin-bottom: 0;
+}
+
+.react-joyride__tooltip button[title=Close] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF !important;
+  border: 0.56543px solid #F0F3FB !important;
+  border-radius: 50% !important;
+  padding: 8px 6px !important;
+  right: 12px !important;
+  top: 12px !important;
+}
+
+.react-joyride__tooltip button[title=Close] svg {
+  height: 10px !important;
+  stroke: #111111 !important;
+}
+
+.react-joyride__tooltip button[title=Skip] {
+  color: #fff !important;
+}
+
+.react-joyride__tooltip button[title=Next] {
+  background-color: #FCFCFD !important;
+  color: #111111 !important;
+}
+
+.__floater__arrow span svg polygon {
+  fill: #1D2529;
+}
+
+.tabSideBtnParent .tabSideBtns {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 50px;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter .collepsSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #D4E6FE;
+  height: 100%;
+  padding: 6px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter input {
+  background: none;
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 0 6px;
+  font-family: "Athletics";
+  font-size: 22px;
+  color: #4A5662;
+  font-weight: 500;
+  letter-spacing: .5px;
+  width: 100%;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter .btn1 {
+  height: 100%;
+  padding: 0 6px;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter .btn1 svg {
+  height: 25px;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter .grayBtn.open {
+  height: 100%;
+  padding: 0 5px;
+  width: 50px;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter .grayBtn.open svg {
+  height: 24px;
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter .grayBtn.close {
+  height: 100%;
+  padding: 0 5px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.626);
+}
+
+.tabSideBtnParent .tabSideBtns .collepsSearchOuter .grayBtn.close span {
+  font-size: 24px;
+  color: #fff;
+}
+
+.btnDisable:disabled {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+}
+
+.darkBlueBg {
+  background-color: #082254;
+  padding: 30px;
+}
+
+.customeToggleBtn input + label {
+  cursor: pointer;
+  background-color: #6A8095;
+  height: 38px;
+  width: 70px;
+  padding: 6px;
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.customeToggleBtn input + label::after {
+  content: "";
+  background-color: #fff;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  border-radius: 50%;
+}
+
+.customeToggleBtn input:checked + label {
+  background-color: #3FE3EF;
+  border: 1px solid #47BEC7;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.customeToggleBtn input:checked + label::after {
+  top: 5px;
+  left: unset;
+  right: 5px;
+  border: 1px solid #47BEC7;
+}
+
+.customInput {
+  background-color: #0E2C67;
+  padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.customInput .customFormGroup {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.customInput .customFormGroup .customLabel1 {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #C0E3FC;
+}
+
+.customInput .customFormGroup input, .customInput .customFormGroup .customLabel2 {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.customInput .customFormGroup input::-webkit-input-placeholder, .customInput .customFormGroup .customLabel2::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.328);
+}
+
+.customInput .customFormGroup input:-ms-input-placeholder, .customInput .customFormGroup .customLabel2:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.328);
+}
+
+.customInput .customFormGroup input::-ms-input-placeholder, .customInput .customFormGroup .customLabel2::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.328);
+}
+
+.customInput .customFormGroup input::placeholder, .customInput .customFormGroup .customLabel2::placeholder {
+  color: rgba(255, 255, 255, 0.328);
+}
+
+.customInput .customFormGroup small {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #C0E3FC;
+}
+
+.customInput .PswdViewIcon, .customInput .PswdHideIcon {
+  height: 30px;
+  color: #6A8095;
+}
+
+.walletPage .overviewTab .overviewCard {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #eafcc4;
+}
+
+.walletPage .overviewTab .overviewCard .card-img-top {
+  width: auto;
+  max-height: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.walletPage .overviewTab .overviewCard .body1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 0.64927px solid rgba(0, 7, 36, 0.07);
+  background-color: #E4FEAD;
+  -webkit-backdrop-filter: blur(3.8956px);
+          backdrop-filter: blur(3.8956px);
+}
+
+.walletPage .overviewTab .overviewCard .body1 .card-text {
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #172B4D;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.walletPage .overviewTab .overviewCard .body1 .card-title {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #172B4D;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.walletPage .overviewTab .overviewCard .body2 {
+  background-color: #000;
+}
+
+.walletPage .overviewTab .overviewCard .body2 .card-title {
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 40px;
+}
+
+.walletPage .transHistoryTab table thead {
+  background-color: #112E88;
+}
+
+.walletPage .transHistoryTab table thead th {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 10px 16px;
+}
+
+.walletPage .transHistoryTab table thead th.minWidth {
+  min-width: 250px;
+}
+
+.walletPage .transHistoryTab table tbody {
+  background-color: #132868;
+}
+
+.walletPage .transHistoryTab table tbody tr {
+  border-width: 1.01692px 0px;
+  border-style: solid;
+  border-color: rgba(17, 46, 136, 0.79);
+}
+
+.walletPage .transHistoryTab table tbody tr td {
+  padding: 15px 20px;
+  vertical-align: middle;
+}
+
+.walletPage .transHistoryTab table tbody tr td span.title {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.walletPage .transHistoryTab table tbody tr td a.link svg {
+  height: 20px;
+}
+
+.walletPage .transHistoryTab table tbody tr td .detailColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.walletPage .transHistoryTab table tbody tr td .detailColumn .icon {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C0E3FC;
+  border-radius: 50%;
+}
+
+.walletPage .transHistoryTab table tbody tr td .detailColumn .icon svg {
+  height: 22px;
+  padding: 2px;
+}
+
+.walletPage .transHistoryTab table tbody tr td .detailColumn .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #D6C7EE;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.walletPage .transHistoryTab table tbody tr td .detailColumn .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.walletPage .transHistoryTab table tbody tr td .detailColumn .content h4.title {
+  font-family: 'Athletics';
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 0px;
+}
+
+.walletPage .transHistoryTab table tbody tr td .detailColumn .content p {
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #C0E3FC;
+  font-weight: 400;
+}
+
+.walletPage .transHistoryTab table tbody tr td .status {
+  background: rgba(189, 250, 239, 0.03);
+  border-radius: 4.06768px;
+  padding: 8.13536px 16.2707px;
+}
+
+.walletPage .savedCardTab .savedCards {
+  border: none;
+  border-radius: 33.8845px;
+  overflow: hidden;
+  width: 450px;
+}
+
+.walletPage .savedCardTab .savedCards .cardHeader {
+  padding: 0;
+  border-radius: 0;
+  height: 150px;
+}
+
+.walletPage .savedCardTab .savedCards .cardHeader .cardLogos {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 60px;
+}
+
+.walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.CardLogoIcon1, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.CardLogoIcon2, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.VisaWhiteIcon, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.VisaBlackIcon, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.VisaIcon2 {
+  height: 40px;
+}
+
+.walletPage .savedCardTab .savedCards .bodyContent {
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 35px;
+  height: 150px;
+}
+
+.walletPage .savedCardTab .savedCards .bodyContent .card-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+}
+
+.walletPage .savedCardTab .savedCards .bodyContent .cardNumber {
+  width: 212px;
+}
+
+.walletPage .savedCardTab .savedCards .bodyContent .expDate .title {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+}
+
+.reviewRatingPage .pageContentTitleArea .StarIcon {
+  height: 37px;
+}
+
+.reviewRatingPage .reviewRatingTable table thead {
+  background-color: #112E88;
+}
+
+.reviewRatingPage .reviewRatingTable table thead th {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 10px 16px;
+}
+
+.reviewRatingPage .reviewRatingTable table thead th.minWidth {
+  min-width: 250px;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody {
+  background-color: #132868;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr {
+  border-width: 1.01692px 0px;
+  border-style: solid;
+  border-color: rgba(17, 46, 136, 0.79);
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td {
+  padding: 15px 20px;
+  vertical-align: middle;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td span.title {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .detailColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .detailColumn .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #D6C7EE;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .detailColumn .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .detailColumn .content h4.title {
+  font-family: 'Athletics';
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 0px;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .detailColumn .content p {
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #C0E3FC;
+  font-weight: 400;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .review {
+  font-family: 'Athletics';
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 138%;
+  letter-spacing: -0.019em;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .StarIcon, .reviewRatingPage .reviewRatingTable table tbody tr td .StartEmptyIcon {
+  height: 28px;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .statusDot {
+  width: 16.09px;
+  height: 16.09px;
+  border-radius: 50%;
+  display: block;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .statusDot.onHold {
+  background: #0ECCF3;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .statusDot.inProgress {
+  background: #F69A44;
+}
+
+.reviewRatingPage .reviewRatingTable table tbody tr td .statusDot.completed {
+  background: #0EF36A;
+}
+
+.nftCollectionPage .nftCards {
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.nftCollectionPage .nftCards .card-header {
+  padding: 0;
+  border-radius: 0;
+  border-bottom: none;
+  padding: 10px;
+}
+
+.nftCollectionPage .nftCards .card-body {
+  background-color: #fff;
+}
+
+.nftCollectionPage .nftCards .card-body .card-title {
+  font-family: 'Athletics';
+  font-size: 30px;
+  color: #172B4D;
+  font-weight: 900;
+  line-height: 115%;
+}
+
+.nftCollectionPage .nftCards .card-body .btnLink {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: none;
+}
+
+.nftCollectionPage .nftCards .card-body .btnLink .RightArrowIcon {
+  height: 18px;
+}
+
+.nftCollectionPage .rightSec .topAthlete {
+  background-color: #1D2529;
+}
+
+.nftCollectionPage .rightSec .topAthlete .heading {
+  background-color: #9BDAFE;
+  padding: 10px 30px 7px 30px;
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #094A6C;
+  font-weight: 700;
+}
+
+.nftCollectionPage .rightSec .topAthlete .details {
+  padding: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nftCollectionPage .rightSec .topAthlete .details .playerPic {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #D6C7EE;
+}
+
+.nftCollectionPage .rightSec .topAthlete .details .playerPic img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.nftCollectionPage .rightSec .topAthlete .details h2 {
+  font-family: 'Athletics';
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.nftCollectionPage .rightSec .topAthlete .details p {
+  font-family: 'Athletics';
+  font-size: 27px;
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.nftCollectionPage .rightSec .topAthlete .details p span {
+  color: #C0E3FC;
+}
+
+.nftCollectionPage .rightSec .topAthlete .details .playerLabel {
+  background-color: #0B95DE;
+  border: solid 4px #C0E3FC;
+  width: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Athletics";
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.nftCollectionPage .rightSec .topAthlete .details .playerLabel span {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.nftCollectionPage .rightSec .topAthlete .playerItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px 30px;
+}
+
+.nftCollectionPage .rightSec .topAthlete .playerItems svg {
+  height: 30px;
+}
+
+.nftCollectionPage .rightSec .topAthlete .playerItems .font34White {
+  font-family: 'Athletics';
+  font-size: 34px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table thead {
+  background-color: #912DA9;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table thead th {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 10px 30px 7px 30px;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table thead th .heading {
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody {
+  background-color: #1D2529;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr {
+  border-width: 1.01692px 0px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td {
+  padding: 15px 20px;
+  vertical-align: middle;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td span.title {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td span.profit {
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #59CC7F;
+  font-weight: 400;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #D6C7EE;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn .content h4.title {
+  font-family: 'Athletics';
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 0px;
+}
+
+.nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn .content p {
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.pccStorePage .pccStoreCard {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #F3EBFF;
+}
+
+.pccStorePage .pccStoreCard .card-body.body1 {
+  padding-right: 60px;
+}
+
+.pccStorePage .pccStoreCard .card-body.body1 .card-text {
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #172B4D;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pccStorePage .pccStoreCard .card-body.body1 .card-title {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #172B4D;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.pccStorePage .pccStoreCard .card-body.body1 .iconOuter {
+  background-color: #242625;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 0px 0px 23.0338px;
+}
+
+.pccStorePage .pccStoreCard .card-body.body1 .iconOuter .AddCartIcon {
+  height: 40px;
+  color: #fff;
+}
+
+.pccStorePage .pccStoreCard .card-body.body2 {
+  background: #F1EBF9;
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.pccStorePage .pccStoreCard .card-body.body2 p.title {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #172B4D;
+}
+
+.pccStorePage .pccStoreCard .card-body.body2 p.content {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #172B4D;
+}
+
+.pccStorePage .pccStoreCard .card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 205px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.pccStorePage .pccStoreCard button {
+  background-color: #D247EA;
+  padding: 10px 15px;
+}
+
+.pccStorePage .pccStoreCard button .GoldCLetterIcon {
+  height: 38px;
+}
+
+.pccStorePage .pccStoreCard button span {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.pccStorePage .pccStoreCard:hover {
+  background-color: #F7EFD5;
+}
+
+.pccStorePage .pccStoreCard:hover .card-body.body2 {
+  background-color: #F6EDCE;
+  border-top: 1.43961px solid rgba(0, 0, 0, 0.03);
+}
+
+.pccStorePage .pccStoreCard:hover button {
+  background-color: #F6E136;
+}
+
+.pccStorePage .pccStoreCard:hover button span {
+  color: #242625;
+}
+
+.settingPage .accountTab .mainHeading {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.settingPage .accountTab .darkBlueBg .bioArea .profile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #EEE3C7;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.settingPage .accountTab .darkBlueBg .bioArea .name {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.settingPage .accountTab .darkBlueBg .bioArea .bio {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #C0E3FC;
+}
+
+.settingPage .accountTab .darkBlueBg .btnChangePswd {
+  background-color: #3FE3EF;
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.019em;
+  color: #0A1917;
+  padding: 25px 15px;
+}
+
+.btnBack768Max {
+  font-family: "Athletics";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .lineUpPage .playerListPos {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btnBack768Max {
+    display: block;
+  }
+}
+
+@media (min-width: 250px) {
+  .walletPage .overviewTab .overviewCard .card-img-top {
+    height: calc(6.25rem + ((1vw - 2.5px) * 3.7037));
+    min-height: 0vw;
+  }
+  .walletPage .overviewTab .overviewCard .body1 {
+    padding-top: calc(0.4375rem + ((1vw - 2.5px) * 0.2222));
+    padding-bottom: calc(0.4375rem + ((1vw - 2.5px) * 0.2222));
+    min-height: 0vw;
+  }
+  .walletPage .overviewTab .overviewCard .body1 .card-text {
+    font-size: calc(0.625rem + ((1vw - 2.5px) * 0.2963));
+    line-height: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+    min-height: 0vw;
+  }
+  .walletPage .overviewTab .overviewCard .body1 .card-title {
+    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.7407));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .walletPage .overviewTab .overviewCard .body2 .card-title {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.7407));
+    line-height: calc(1.6875rem + ((1vw - 2.5px) * 0.963));
+    min-height: 0vw;
+  }
+  .walletPage .transHistoryTab table thead th {
+    font-size: calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+    padding: calc(0.4375rem + ((1vw - 2.5px) * 0.2222)) calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+  }
+  .walletPage .transHistoryTab table thead th.minWidth {
+    min-width: calc(12.5rem + ((1vw - 2.5px) * 3.7037));
+  }
+  .walletPage .transHistoryTab table tbody tr td {
+    padding: calc(0.6875rem + ((1vw - 2.5px) * 0.2963)) calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+  }
+  .walletPage .transHistoryTab table tbody tr td span.title {
+    font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+  }
+  .walletPage .transHistoryTab table tbody tr td a.link svg {
+    height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+  }
+  .walletPage .transHistoryTab table tbody tr td .detailColumn .icon {
+    padding: calc(0.5rem + ((1vw - 2.5px) * 0.1481));
+  }
+  .walletPage .transHistoryTab table tbody tr td .detailColumn .icon svg {
+    height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+    padding: calc(0.0625rem + ((1vw - 2.5px) * 0.0741));
+  }
+  .walletPage .transHistoryTab table tbody tr td .detailColumn .img img {
+    height: calc(2rem + ((1vw - 2.5px) * 0.963));
+    width: calc(2rem + ((1vw - 2.5px) * 0.963));
+    padding: calc(0.0625rem + ((1vw - 2.5px) * 0.0741));
+  }
+  .walletPage .transHistoryTab table tbody tr td .detailColumn .content h4.title {
+    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.5926));
+  }
+  .walletPage .transHistoryTab table tbody tr td .detailColumn .content p {
+    font-size: calc(0.625rem + ((1vw - 2.5px) * 0.2963));
+  }
+  .walletPage .transHistoryTab table tbody tr td .status {
+    padding: 8.13536px calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+  }
+  .walletPage .savedCardTab .savedCards {
+    border-radius: calc(1.5625rem + ((1vw - 2.5px) * 0.5926));
+    width: calc(15.625rem + ((1vw - 2.5px) * 14.8148));
+  }
+  .walletPage .savedCardTab .savedCards .cardHeader {
+    height: calc(5.625rem + ((1vw - 2.5px) * 4.4444));
+  }
+  .walletPage .savedCardTab .savedCards .cardHeader .cardLogos {
+    padding: 0 calc(2.5rem + ((1vw - 2.5px) * 1.4815));
+  }
+  .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.CardLogoIcon1, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.CardLogoIcon2, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.VisaWhiteIcon, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.VisaBlackIcon, .walletPage .savedCardTab .savedCards .cardHeader .cardLogos svg.VisaIcon2 {
+    height: calc(1.75rem + ((1vw - 2.5px) * 0.8889));
+  }
+  .walletPage .savedCardTab .savedCards .bodyContent {
+    padding: 0 calc(1.5625rem + ((1vw - 2.5px) * 0.7407));
+    height: calc(5.625rem + ((1vw - 2.5px) * 4.4444));
+  }
+  .walletPage .savedCardTab .savedCards .bodyContent .card-title {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.6667));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 1.1111));
+  }
+  .walletPage .savedCardTab .savedCards .bodyContent .cardNumber {
+    width: calc(8.125rem + ((1vw - 2.5px) * 6.0741));
+  }
+  .walletPage .savedCardTab .savedCards .bodyContent .expDate .title {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+    line-height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+  }
+  .pccStorePage .pccStoreCard .card-body.body1 {
+    padding-right: calc(2.5rem + ((1vw - 2.5px) * 1.4815));
+  }
+  .pccStorePage .pccStoreCard .card-body.body1 .card-text {
+    font-size: calc(0.6875rem + ((1vw - 2.5px) * 0.2222));
+    line-height: calc(0.8125rem + ((1vw - 2.5px) * 0.3704));
+  }
+  .pccStorePage .pccStoreCard .card-body.body1 .card-title {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.6667));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+  }
+  .pccStorePage .pccStoreCard .card-body.body1 .iconOuter {
+    padding: calc(0.375rem + ((1vw - 2.5px) * 0.1481));
+  }
+  .pccStorePage .pccStoreCard .card-body.body1 .iconOuter .AddCartIcon {
+    height: calc(1.5625rem + ((1vw - 2.5px) * 1.1111));
+  }
+  .pccStorePage .pccStoreCard .card-body.body2 p.title {
+    font-size: calc(0.75rem + ((1vw - 2.5px) * 0.2963));
+    line-height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+  }
+  .pccStorePage .pccStoreCard .card-body.body2 p.content {
+    font-size: calc(0.75rem + ((1vw - 2.5px) * 0.2963));
+    line-height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+  }
+  .pccStorePage .pccStoreCard .card-img {
+    width: calc(9.375rem + ((1vw - 2.5px) * 4.0741));
+    margin-top: calc(1.875rem + ((1vw - 2.5px) * 0.7407));
+  }
+  .pccStorePage .pccStoreCard button {
+    padding: calc(0.5rem + ((1vw - 2.5px) * 0.1481)) calc(0.75rem + ((1vw - 2.5px) * 0.2222));
+  }
+  .pccStorePage .pccStoreCard button .GoldCLetterIcon {
+    height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+  }
+  .pccStorePage .pccStoreCard button span {
+    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.3704));
+  }
+  .singleSelectedCollectionCard .body1 .card-text {
+    font-size: calc(0.5625rem + ((1vw - 2.5px) * 0.6667));
+    line-height: calc(0.6875rem + ((1vw - 2.5px) * 0.8148));
+    min-height: 0vw;
+  }
+  .singleSelectedCollectionCard .body1 .card-title {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 1.1111));
+    line-height: calc(0.9375rem + ((1vw - 2.5px) * 1.1111));
+    min-height: 0vw;
+  }
+  .singleSelectedCollectionCard .body2 .leftTitle .title, .singleSelectedCollectionCard .body2 .rightTitle .title {
+    font-size: calc(0.625rem + ((1vw - 2.5px) * 0.7407));
+    line-height: calc(0.6875rem + ((1vw - 2.5px) * 0.8148));
+    min-height: 0vw;
+  }
+  .singleSelectedCollectionCard .body2 .leftTitle .detail, .singleSelectedCollectionCard .body2 .rightTitle .detail {
+    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.963));
+    line-height: calc(0.9375rem + ((1vw - 2.5px) * 1.1111));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .nftCards .card-header {
+    min-height: 0vw;
+  }
+  .nftCollectionPage .nftCards .card-body .card-title {
+    font-size: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 1.2593));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .nftCards .card-body .btnLink {
+    font-family: 'Athletics';
+    font-size: calc(0.75rem + ((1vw - 2.5px) * 0.5926));
+    color: #000;
+    font-weight: 600;
+    line-height: calc(0.75rem + ((1vw - 2.5px) * 0.5926));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .nftCards .card-body .btnLink .RightArrowIcon {
+    height: calc(0.75rem + ((1vw - 2.5px) * 0.5926));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .heading {
+    padding: calc(0.4375rem + ((1vw - 2.5px) * 0.2222)) calc(1.25rem + ((1vw - 2.5px) * 0.7407)) calc(0.25rem + ((1vw - 2.5px) * 0.2222)) calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.8148));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .details {
+    padding: 15px calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .details .playerPic {
+    width: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+    height: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .details .playerPic img {
+    width: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+    height: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .details h2 {
+    font-size: calc(1.125rem + ((1vw - 2.5px) * 1.037));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .details p {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.8889));
+    line-height: calc(0.875rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .details .playerLabel {
+    width: calc(1.875rem + ((1vw - 2.5px) * 1.8519));
+    height: calc(1.875rem + ((1vw - 2.5px) * 1.8519));
+    font-size: calc(0.8125rem + ((1vw - 2.5px) * 0.6667));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .playerItems {
+    padding: calc(0.625rem + ((1vw - 2.5px) * 0.3704)) calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .playerItems svg {
+    height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .topAthlete .playerItems .font34White {
+    font-size: calc(1.1875rem + ((1vw - 2.5px) * 1.1111));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table thead th {
+    font-size: calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+    padding: calc(0.375rem + ((1vw - 2.5px) * 0.2963)) calc(1.25rem + ((1vw - 2.5px) * 0.7407)) calc(0.25rem + ((1vw - 2.5px) * 0.2222)) calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table thead th .heading {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td {
+    padding: calc(0.625rem + ((1vw - 2.5px) * 0.3704)) calc(0.75rem + ((1vw - 2.5px) * 0.5926));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td span.title {
+    font-size: calc(0.625rem + ((1vw - 2.5px) * 0.5926));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td span.profit {
+    font-size: calc(0.5625rem + ((1vw - 2.5px) * 0.3704));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn .img img {
+    height: calc(1.5625rem + ((1vw - 2.5px) * 1.4815));
+    width: calc(1.5625rem + ((1vw - 2.5px) * 1.4815));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn .content h4.title {
+    font-size: calc(0.8125rem + ((1vw - 2.5px) * 0.6667));
+    min-height: 0vw;
+  }
+  .nftCollectionPage .rightSec .trendingAthleteTable table tbody tr td .detailColumn .content p {
+    font-size: calc(0.5625rem + ((1vw - 2.5px) * 0.3704));
+    min-height: 0vw;
+  }
+  .settingPage .accountTab .mainHeading {
+    font-size: calc(1rem + ((1vw - 2.5px) * 0.6667));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .settingPage .accountTab .darkBlueBg .bioArea .profile img {
+    height: calc(4.0625rem + ((1vw - 2.5px) * 1.8519));
+    width: calc(4.0625rem + ((1vw - 2.5px) * 1.8519));
+    padding: calc(0.0625rem + ((1vw - 2.5px) * 0.0741));
+    min-height: 0vw;
+  }
+  .settingPage .accountTab .darkBlueBg .bioArea .name {
+    font-size: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .settingPage .accountTab .darkBlueBg .bioArea .bio {
+    font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+    line-height: calc(1rem + ((1vw - 2.5px) * 0.6667));
+    min-height: 0vw;
+  }
+  .settingPage .accountTab .darkBlueBg .btnChangePswd {
+    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+    line-height: calc(1rem + ((1vw - 2.5px) * 0.6667));
+    padding: calc(1rem + ((1vw - 2.5px) * 0.6667)) calc(0.625rem + ((1vw - 2.5px) * 0.3704));
+    min-height: 0vw;
+  }
+  .customInput {
+    padding: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+    min-height: 0vw;
+  }
+  .customInput .customFormGroup .customLabel1 {
+    font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+    line-height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+    min-height: 0vw;
+  }
+  .customInput .customFormGroup input, .customInput .customFormGroup .customLabel2 {
+    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.7407));
+    line-height: calc(1.0625rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .customInput .customFormGroup small {
+    font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+    line-height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+    min-height: 0vw;
+  }
+  .customInput .PswdViewIcon, .customInput .PswdHideIcon {
+    height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+    min-height: 0vw;
+  }
+  .customeToggleBtn input + label {
+    height: calc(1.425rem + ((1vw - 2.5px) * 1.1259));
+    width: calc(2.625rem + ((1vw - 2.5px) * 2.0741));
+    padding: calc(0.225rem + ((1vw - 2.5px) * 0.1778));
+    border-radius: 20px;
+    min-height: 0vw;
+  }
+  .customeToggleBtn input + label::after {
+    height: calc(0.975rem + ((1vw - 2.5px) * 0.7704));
+    width: calc(0.975rem + ((1vw - 2.5px) * 0.7704));
+    top: calc(0.225rem + ((1vw - 2.5px) * 0.1778));
+    left: calc(0.2625rem + ((1vw - 2.5px) * 0.2074));
+    min-height: 0vw;
+  }
+  .customeToggleBtn input:checked + label::after {
+    top: calc(0.1875rem + ((1vw - 2.5px) * 0.1481));
+    right: calc(0.1875rem + ((1vw - 2.5px) * 0.1481));
+    min-height: 0vw;
+  }
+  .darkBlueBg {
+    padding: calc(1.125rem + ((1vw - 2.5px) * 0.8889));
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .tabSideBtnParent .tabSideBtns {
+    position: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .defHideMax768 {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .defHideMin769 {
+    display: none;
+  }
+}
+
+.loader-model.modal {
+  z-index: 9999999;
+}
+
+.auth-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player-selection-option img {
+  width: 30px;
+}
+
+.player-selection-option .player-id {
+  font-size: 13px;
+}
+
+.cropper-image {
+  height: 500px;
+}
+
+.full-screen-loader {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=innerStyle.css.map */

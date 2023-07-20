@@ -1,0 +1,7265 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import "variable";
+@import "mixin";
+@import "fonts";
+
+body {
+  font-family: "GT Walsheim Pro", sans-serif;
+  // background-color: $black;
+}
+
+* {
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+}
+
+// .container {
+//   max-width: 1800px;
+// }
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  // -webkit-appearance:none;
+  box-shadow: none !important;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #367BCF;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.btnBlue {
+  @include font(16px, $white, 500);
+  background-color: $blue;
+  border-radius: 10px;
+  padding: 15px 25px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: rgba($blue, 0.8);
+    color: $white;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnYellow {
+  @include fontEthlete(30px, $black, 700);
+  background-color: $yellow;
+  border-radius: 0;
+  padding: 15px 25px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+  border: 8px solid #FEFD9B;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #02E3F9;
+    border-color: #02E3F9;
+    transition: background-color 0.1s;
+  }
+}
+
+
+.yellowBtn {
+  display: flex;
+  align-items: center;
+  background: #F6E136;
+  border: 8px solid #FEFD9B;
+  padding: 25px 32px;
+  @include fontEthlete(32px, #020100, 600);
+  text-transform: uppercase;
+  border-radius: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #02E3F9;
+    border-color: #02E3F9;
+  }
+}
+
+.skyLightBtn {
+  display: flex;
+  align-items: center;
+  background: #0B95DE;
+  border: 8px solid #9BDAFE;
+  padding: 25px 32px;
+  @include fontEthlete(32px, $white, 600);
+  border-radius: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #02E3F9;
+    border-color: #02E3F9;
+  }
+}
+
+.skyLightBorderedBtn {
+  display: flex;
+  align-items: center;
+  background: #0B95DE;
+  border: 4px solid #77C8F6;
+  padding: 25px 32px;
+  @include fontEthlete(32px, $white, 600);
+  border-radius: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #02E3F9;
+    border-color: #02E3F9;
+  }
+}
+
+.btnAccept {
+  display: flex;
+  align-items: center;
+  background: #0989D6;
+  border: 0;
+  padding: 8px 24px;
+  @include fontEthlete(18px, $white, 500);
+  border-radius: 4px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #0989D6;
+  }
+}
+
+.btnDecline {
+  display: flex;
+  align-items: center;
+  background: #F5F9FF;
+  border: 1px solid #F0F3FB;
+  padding: 8px 24px;
+  @include fontEthlete(18px, #45537C, 500);
+  border-radius: 4px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #F5F9FF;
+    color: #45537C;
+    border: 1px solid #F0F3FB;
+  }
+}
+
+.btnDelete {
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  background: #F1F9FE;
+  border: 0;
+  border-radius: 6px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #F84D68;
+    border: 0;
+
+    svg path {
+      fill: $white;
+    }
+  }
+}
+
+.btnLinkBlue {
+  background: transparent !important;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  @include fontEthlete(20px, #0989D6, 500);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: transparent !important;
+    color: #0989D6 !important;
+    border: 0;
+  }
+}
+
+.btnDarkBlue {
+  background: #132868 !important;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 24px;
+  display: flex;
+  @include fontEthlete(18px, $white, 500);
+  color: $white !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #132868;
+    color: $white;
+    border: 0;
+  }
+}
+
+
+.btnClose {
+  @include font(12px, $white, 300);
+  background-color: $red !important;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 20px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $red;
+    color: $white;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnBlue-sm {
+  min-width: 200px;
+  height: 46px;
+  @include font(16px, $white, 500);
+  background-color: $blue;
+  border-radius: 6px;
+  padding: 10px 15px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+  border: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: rgba($blue, 0.8);
+    color: $white;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnGreen-sm {
+  min-width: 200px;
+  height: 46px;
+  @include font(18px, $white, 500);
+  background-color: #1E7D4E;
+  border-radius: 6px;
+  padding: 10px 15px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+  border: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: rgba(#1E7D4E, 0.8);
+    color: $white;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnGray-sm {
+  min-width: 200px;
+  height: 46px;
+  @include font(18px, $white, 500);
+  background-color: #FFFFFF4A;
+  border-radius: 6px;
+  padding: 10px 15px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+  border: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: rgba(#FFFFFF4A, 0.8);
+    color: $white;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnWhite {
+  @include font(18px, $blue, 500);
+  background-color: $white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+    transition: background-color 0.1s;
+  }
+}
+
+.balanceBtn {
+  background-color: $white;
+  border: 1px solid #F9FAFB;
+  border-radius: 6px;
+  padding: 5px 15px;
+  height: fit-content;
+  width: fit-content;
+  transition: background-color 0.1s;
+  @include font(18px, #667085, 500);
+  display: flex;
+  align-items: center;
+  span {
+    @include font(20px, #344054, 700);
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $white;
+    border: 1px solid #F9FAFB;
+    transition: background-color 0.1s;
+    @include font(18px, #667085, 500);
+  }
+}
+
+.btnBlack {
+  @include font(12px, $white, 300);
+  background-color: $black;
+  border-radius: 10px;
+  padding: 12px 20px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $black;
+    color: $white;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnSocial {
+  @include fontEthlete(26px, $white, 500);
+  background-color: #0B95DE;
+  border: 4px solid #77C8F6;
+  border-radius: 0;
+  padding: 12px 20px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: rgba(11, 149, 222, .8);
+    color: $white;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnGrayBordered-sm {
+  min-width: 200px;
+  height: 46px;
+  @include font(16px, #777777, 500);
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 10px 15px;
+  height: fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+  border: solid 1px #777777;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+    color: #fff;
+    border: solid 1px #fff;
+    transition: background-color 0.1s;
+  }
+}
+
+.btnGrayBordered {
+  @include fontEthlete(24px, #4A5662, 500);
+  background-color: $white;
+  border-radius: 7px;
+  padding: 10px 15px;
+  letter-spacing: 0.18px;
+  transition: background-color 0.1s;
+  border: solid 1px #EBEDED;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $white;
+    @include fontEthlete(24px, #4A5662, 500);
+    border: solid 1px #dddddd;
+    transition: background-color 0.1s;
+  }
+}
+
+.fontBlue {
+  color: $blue;
+}
+
+.linkBlue {
+  @include fontEthlete(20px, $linkBlue, 500);
+}
+
+.fontBlue20 {
+  @include fontEthlete(20px, $themeBlue, 500);
+}
+
+._main {
+  position: relative;
+  min-height: 100vh;
+}
+
+// ====== AUTH ======
+.authPage {
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+
+  .logo {
+    img {
+      height: 70px;
+    }
+  }
+
+  .authFormSection {
+    background: $themeSky;
+    border: 4px solid #77C8F6;
+
+    // border-radius: 10px;
+    .headArea {
+      background-color: $themeBlue;
+      padding: 15px;
+
+      .title {
+        @include fontEthlete(30px, $white, 500);
+      }
+
+      .content {
+        @include fontEthlete(18px, $white, 300);
+      }
+    }
+
+    .authForm {
+      .form-label {
+        @include fontEthlete(22px, $themeBlue, 500);
+      }
+
+      .form-control {
+        background: rgba(136, 199, 243, 0.44) !important;
+        border: 0;
+        border-radius: 0;
+        height: 60px;
+        padding: 15px;
+        @include fontEthlete(26px, $themeBlue, 500);
+
+        &::placeholder {
+          @include fontEthlete(26px, $themeBlue, 500);
+        }
+      }
+
+      h1 {
+        @include fontEthlete(40px, $themeBlue, 800);
+      }
+
+
+
+      .customPswdOuter {
+        position: relative;
+
+        .form-control {
+          background: rgba(136, 199, 243, 0.44) !important;
+          border: 0;
+          border-radius: 0;
+          height: 60px;
+          padding: 15px;
+          @include fontEthlete(26px, $themeBlue, 500);
+
+          &::placeholder {
+            @include fontEthlete(26px, $themeBlue, 500);
+          }
+        }
+
+        .showHideBtn {
+          cursor: pointer;
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          color: $blue;
+        }
+      }
+
+      .form-check {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        .form-check-input {
+          border-radius: 4px;
+          border: solid 2px $themeBlue;
+          height: 30px;
+          width: 30px;
+          margin-top: 0;
+          background-color: transparent;
+
+          &:checked[type=checkbox] {
+            background-image: url(../images/icCheckmark.svg);
+          }
+        }
+
+        .form-check-label {
+          @include fontEthlete(20px, $themeBlue, 500);
+          margin-left: 3px;
+        }
+      }
+
+      .btnSubmit {
+        letter-spacing: 0.18px;
+      }
+    }
+
+    .partition {
+      .line {
+        background-color: #92D1F8;
+        height: 3px;
+        width: 35%;
+      }
+
+      .or {
+        @include font(18px, $black, 500);
+      }
+    }
+
+    .socialLoginBtns {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .btnSocial {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        img {
+          height: 26px;
+        }
+
+        svg {
+          font-size: 26px;
+        }
+
+        svg.iconFb {
+          color: $blue;
+        }
+
+        svg.iconTwitter {
+          color: #00acee;
+        }
+      }
+    }
+
+    // .signupLink {
+    //   p {
+    //     @include font(17px, $black, 300);
+
+    //     .link {
+    //       color: $blue;
+    //       text-decoration: underline;
+    //     }
+    //   }
+    // }
+  }
+
+  .logoBottom {
+    img {
+      height: 60px;
+    }
+  }
+
+  hr {
+    opacity: 0.1;
+    color: $white;
+  }
+
+  .menuBottomAuth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .link {
+      @include font(18px, $white, 200);
+    }
+
+    .part {
+      background-color: $white;
+      height: 18px;
+      width: 1px;
+    }
+  }
+}
+
+// ====== HEADER ====
+.customHeader {
+  position: absolute;
+  width: 100%;
+  // border-bottom: 2px solid rgba(17, 46, 136, 0.79);
+  border-bottom: 1px solid rgba(161, 220, 254, 0.15);
+  z-index: 999;
+
+  .navTop {
+    background-color: $blue;
+
+    .basicConnectBtns {
+      .same {
+        border-left: 1px solid rgba(255, 255, 255, 0.273);
+        &:hover {
+          border: 0 !important;
+        }
+        svg {
+          @include font(15px, $white, 500);
+        }
+
+        button, a {
+          @include font(13px, $white, 300);
+          &:hover {
+            border: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .navMain {
+    // background-color: $black !important;
+    // background-image: url(../images/bg.png);
+    width: '-webkit-fill-available';
+    background-color: transparent !important;
+    padding: 30px 0;
+
+    .logo {
+      img {
+        height: 42px;
+        filter: invert(80%) sepia(60%) saturate(3041%) hue-rotate(270deg) brightness(176%) contrast(277%);
+      }
+
+      .logoName {
+        @include font(18px, $white, 300);
+      }
+    }
+
+    .navbar-collapse {
+
+      // justify-content: flex-end;
+      .navbar-nav {
+        gap: 40px;
+
+        .nav-link {
+          @include fontEthlete(20px, $white, 400);
+          padding: 0;
+          border-bottom: solid 2px transparent;
+          &:hover,
+          &.active {
+            border-bottom: solid 2px #fff;
+            font-weight: 500;
+          }
+        }
+        .navLinkDropdown {
+          border: 0;
+          &::after {
+            display: none;
+          }
+          &:hover {
+            border: 0;
+          }
+        }
+        button.navLinkDropdown {
+          &:hover {
+            border-bottom: solid 2px #fff;
+            border-radius: 0;
+          }
+        }
+      }
+
+      .same {
+        justify-content: flex-end;
+      }
+    }
+
+    .basicConnectBtns {
+      justify-content: flex-end;
+      padding-left: 30px;
+
+      .same {
+        background: #FFFFFF;
+        // border: 2px solid #142868;
+        margin-right: 20px !important;
+        height: 45px;
+        .btn,
+        .btn:hover {
+          border-radius: 0;
+          border: 0;
+          height: 45px;
+        }
+
+        svg {
+          @include font(18px, white, 300);
+          background-color: #142868;
+          border-radius: 4rem;
+          padding: 0px 3px 0px 3px;
+          font-size: 20px
+        }
+
+        button, a {
+          @include font(18px, #142868, 500);
+        }
+        .dropdown-toggle::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// ===== FOOTER =====
+.customFooter {
+  background-image: url('../images/Halftone.svg');
+  background-color: #1A2D59;
+
+  // position: absolute;
+  // bottom: 0;
+  // width: 100%;
+  .top {
+    .logo {
+      img {}
+
+      .logoName {
+        @include font(15px, $white, 300);
+      }
+    }
+
+    .links {
+      a {
+        @include font(16px, $white, 200);
+      }
+    }
+  }
+
+  .bottom {
+    .copyRightLine {
+      @include font(14px, $white, 300);
+    }
+
+    .socialIcons {
+      svg {
+        color: $white;
+      }
+    }
+  }
+}
+
+// ===== PAGE COMMON SECTIONS =====
+.pageMainCommon {
+  padding-top: 120px;
+
+  // --------
+  .aboutSection {
+    background-image: url('../images/Halftone.svg');
+    background-color: #B5E4FF;
+
+    .leftImg {
+      img {}
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .content {
+      margin: auto;
+      width: fit-content;
+      text-align: center;
+
+      .mainHeading {
+        @include fontEthlete(50px, #001146, 900);
+        // line-height: 55px;
+        padding: 10px 20px;
+      }
+    }
+
+    .holder {
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      @include fontEthlete(20px, rgba(0, 17, 70, 0.82), 300);
+    }
+
+    .holder2 {
+      padding: 10px 0px;
+      margin: auto;
+      width: 30%;
+      text-align: center;
+
+      button {
+        @include fontEthlete(20px, $white, 300);
+      }
+
+      background-color: #0B95DE;
+      border: 4px solid #9BDAFE;
+
+    }
+
+    .curveSection {
+      background-color: #1A2D59;
+      border-radius: 50%;
+
+      img {
+        // height: 150px
+      }
+    }
+
+    .top {
+      height: 30px;
+      margin: auto -150px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      background-color: #ebebeb;
+      // border-radius: 0 0 90% 90% / 15em;
+    }
+
+    .outerDiv {
+      overflow: hidden;
+    }
+
+    body {
+      background-color: orange;
+    }
+
+    .rightContent {
+      .mainHeading {
+        @include font(50px, $white, 900);
+        text-transform: uppercase;
+      }
+
+      .content {
+        @include font(24px, $white, 300);
+        letter-spacing: 0px;
+      }
+
+      .btnConnectWallet {
+        letter-spacing: 0.18px;
+      }
+    }
+  }
+}
+
+// ==== HOME PAGE =====
+.homePage {
+  background-image: url(../images/bg.png);
+  // background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  // ------
+  .bannerSection {
+    position: relative;
+    z-index: 2;
+    // height: 40rem;
+    width: 100%;
+    background-image: url(../images/heroLine.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    h1,
+    p {
+      text-align: center;
+    }
+
+    .bannerSectionArea {
+
+      left: 0;
+
+      .headArea {
+        padding: 50px 0;
+        .mainHeading2 {
+          @include font(50px, $white, 900);
+          letter-spacing: 0.05em;
+          // text-transform: capitalize;
+          text-shadow: 2px 2px 0 rgba(0, 17, 70, 0.14), 2px -2px 0 rgba(0, 17, 70, 0.14), -2px 2px 0 rgba(0, 17, 70, 0.14), -2px -2px 0 rgba(0, 17, 70, 0.14), 2px 0px 0 rgba(0, 17, 70, 0.14), 0px 2px 0 rgba(0, 17, 70, 0.14), -2px 0px 0 rgba(0, 17, 70, 0.14), 0px -2px 0 rgba(0, 17, 70, 0.14), 0px 0px 4px rgba(206,89,55,0);
+        }
+
+        .holder {
+          margin: auto;
+          width: 50%;
+          text-align: center;
+          @include fontEthlete(20px, $white, 300);
+
+          .btnEarnWith {
+            background-color: #F6E136;
+            padding: 10px 20px;
+            color: #020100;
+            @include fontEthlete(20px, #020100, 600);
+            border: 5px solid #FEFD9B;
+            ;
+          }
+        }
+      }
+
+      .hero-image {
+        width: 67% !important;
+      }
+
+      .mt-10 {
+        margin-top: -9.5rem !important;
+      }
+
+      .image {
+        position: relative;
+        z-index: -999999;
+
+        img {
+          position: relative;
+          z-index: -999999;
+
+        }
+      }
+    }
+
+    #div2 {
+      position: relative;
+      height: 100px;
+      z-index: 1;
+    }
+
+    #image {
+      position: absolute;
+      // width: 100%;
+      z-index: 4;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .heroImage {
+        padding: 1rem 15rem 1rem 15rem;
+
+        img {
+          height: 23.8rem;
+        }
+      }
+    }
+  }
+
+  // -------
+  .marketplaceSection {
+    background-image: url('../images/Halftone.svg');
+    background-color: #9BDAFE;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border-radius: 0 0 90% 90% / 15em;
+    padding: 50px 0;
+
+    .content {
+      margin: auto;
+      width: fit-content;
+      text-align: center;
+
+      .mainHeading {
+        @include fontEthlete(33px, #001146, 900);
+        padding: 20px 50px;
+      }
+    }
+
+    .holder {
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      @include fontEthlete(20px, rgba(0, 17, 70, 0.82), 300);
+    }
+
+    .tierBox {
+      background-color: #000724;
+      background-repeat: repeat;
+
+      .tierImg {
+        img {
+          width: 100%;
+        }
+
+        h3 {
+          background-color: #000724;
+          text-align: center;
+          @include fontEthlete(20px, $white, 200);
+          padding: 10px 20px;
+        }
+      }
+
+      .tierDetails {
+        padding: 10px 20px 10px 10px;
+        background-color: #F9E74A;
+        justify-content: center;
+        text-align: center;
+
+        h3 {
+          @include fontEthlete(20px, $white, 600);
+        }
+
+        .font16White {
+          @include fontEthlete(16px, $white, 600);
+        }
+
+        .font16Gray {
+          @include fontEthlete(16px, $white, 600);
+          opacity: .56;
+        }
+
+        .btnEth {
+          @include fontEthlete(16px, #000000, 600);
+        }
+      }
+    }
+
+    .contentArea {
+      .left {
+        .btnConnectWallet {
+          border: 1px solid $white;
+          border-radius: 50%;
+          height: 80px;
+          width: 80px;
+
+          .rightArrow {
+            @include font(50px, $white, 100);
+          }
+        }
+
+        .walletTitle {
+          @include font(30px, $white, 500);
+          letter-spacing: 0px;
+        }
+      }
+
+      .right {
+        p {
+          @include font(24px, #ffffff, 200);
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
+
+  // --------
+  .featuredNftsSection {
+    background-color: #1d1d1dfd;
+    padding: 70px 0;
+
+    .headArea {
+      .mainHeading {
+        @include font(50px, $white, 900);
+        line-height: 55px;
+      }
+
+      .btnViewAll {}
+    }
+
+    .cardArea {
+      .nftCard {
+        background-color: $black;
+
+        .card-img {
+          height: 300px;
+          width: 280px;
+        }
+
+        .card-body {
+          .card-title {
+            @include font(26px, $white, 500);
+            letter-spacing: 0px;
+            text-transform: uppercase;
+          }
+
+          .cardContent1 {
+            @include font(20px, $white, 200);
+            letter-spacing: 0px;
+          }
+
+          .cardContent2 {
+            @include font(20px, $white, 400);
+            letter-spacing: 0px;
+          }
+
+          .btnExplore {
+            padding: 10px 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // --------
+  .ytVideoSection {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url('../images/Halftone.svg');
+    background-color: #D4E6FE;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 600px;
+    background-position: center center;
+
+    .sectionContent {
+      // position: absolute;
+      // width: 100%;
+      // left: 0;
+      // bottom: -30%;
+
+      .headArea {
+        .mainHeading2 {
+          @include fontEthlete(36px, rgba(0, 17, 70, 0.76), 900);
+          letter-spacing: 0px;
+        }
+
+        .mainHeading {
+          @include fontEthlete(50px, #001146, 900);
+        }
+      }
+
+      #content {
+        position: relative;
+      }
+
+      #content img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+
+      .ytVideoArea {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 900px;
+        border: 3px solid #132868;
+
+        .helmet {
+          position: absolute;
+          top: -7rem;
+          left: -14rem;
+          height: 50% !important;
+        }
+
+        .ball {
+          position: absolute;
+          bottom: -6rem;
+          right: -7rem;
+        }
+
+        .ytTitles {
+          z-index: 2;
+          background-color: #D4E6FE;
+          text-align: left;
+          max-width: 900px;
+          width: 100%;
+          margin: 0px auto;
+          margin-top: -7px;
+
+          .title1 {
+            @include fontEthlete(22px, rgba(0, 17, 70, 0.82), 500);
+            letter-spacing: 0px;
+          }
+
+          .title2 {
+            @include font(22px, $white, 300);
+            letter-spacing: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  // --------
+  .trendingNftsSection {
+    padding-top: 300px;
+    background-image: url('../images/Halftone.svg');
+    background-color: #D4E6FE;
+
+    .main {
+      .headArea {
+        cursor: pointer;
+        color: white;
+
+        .mainHeading {
+          text-align: center;
+
+          h1 {
+            @include fontEthlete(25px, #172B4D, 900);
+          }
+
+          span {
+            @include fontEthlete(25px, #2B58C4, 900);
+          }
+        }
+
+        .explor-icon {
+          background-color: #112E88;
+          color: white;
+          height: 10vh;
+          padding-top: 15px;
+        }
+
+        p {
+          @include fontEthlete(20px, $white, 300);
+          color: rgba(0, 17, 70, 0.82);
+          ;
+        }
+      }
+
+      .headAreaContent {
+        background-color: #112E88;
+
+        p {
+          @include fontEthlete(20px, $white, 300);
+          color: white;
+          padding: 0px 20px;
+        }
+      }
+
+      .col-sm-5cols {
+        position: relative;
+        min-height: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        .tierBox {
+          background-color: #212322;
+          background-image: url(../images/tierBoxPattern.png);
+          background-repeat: repeat;
+          border: 3px solid #9BDAFE;
+
+          .tierImg {
+            img {
+              width: 100%;
+              border-radius: 0 0 20px 0;
+            }
+
+            .tierIcon {
+              position: absolute;
+              width: 34px;
+              height: 32px;
+              left: 3px;
+              top: 3.25px;
+              background: #242625;
+              border-radius: 0px 0px 16px 0px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                width: auto;
+                border-radius: 0;
+              }
+            }
+          }
+
+          .tierDetails {
+            padding: 10px 20px;
+
+            h3 {
+              @include fontEthlete(20px, $white, 600);
+            }
+
+            .font16White {
+              @include fontEthlete(16px, $white, 600);
+            }
+
+            .font16Gray {
+              @include fontEthlete(16px, $white, 600);
+              opacity: .56;
+            }
+          }
+        }
+
+        .nftCard {
+          background-color: #191c1c;
+          position: relative;
+          margin-bottom: 68px;
+          border-radius: none;
+          margin-top: 7px;
+
+          .imgDiv {
+            position: absolute;
+            top: -68px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+
+            img {
+              height: 130px;
+              width: 130px;
+            }
+          }
+
+          .card-body {
+            // padding-top: 68px;
+            text-align: center;
+
+            .card-title {
+              @include font(24px, $white, 500);
+              letter-spacing: 0px;
+              text-transform: uppercase;
+            }
+
+            .cardContent1 {
+              @include font(20px, $white, 200);
+              letter-spacing: 0px;
+            }
+
+            .cardContent2 {
+              @include font(20px, $white, 400);
+              letter-spacing: 0px;
+            }
+          }
+
+          .btnName {
+            background-color: black;
+            @include fontEthlete(15px, $white, 400);
+          }
+
+          .btnExplore {
+            padding: 10px 25px;
+            background-color: yellow;
+            @include fontEthlete(20px, #000000, 400);
+            color: #000000;
+          }
+        }
+      }
+
+      @media (min-width: 992px) {
+        .col-sm-5cols {
+          width: 20%;
+          float: left;
+          margin-bottom: 15px;
+        }
+      }
+
+
+    }
+  }
+
+  // -------
+  .liveFeedSection {
+    padding: 60px 0;
+    background-image: url('../images/Halftone.svg');
+    background-color: #D4E6FE;
+
+    // background-image: linear-gradient(
+    //     rgba(0, 0, 0, 0.7),
+    //     rgba(0, 0, 0, 0.7)
+    //   ),
+    //   url('https://i.pinimg.com/originals/aa/96/94/aa9694d4a2e2db1a5dfbabac200cc349.png');
+    .headArea {
+      background-color: #3FE3EF;
+      padding: 10px 20px;
+      cursor: pointer;
+
+      .headerContent {
+        .mainHeading {
+          h1 {
+            @include fontEthlete(25px, $white, 900);
+            color: #001146;
+          }
+        }
+
+        .explor-icon {
+          background-color: #112E88;
+          color: white;
+          height: 10vh;
+          padding-top: 15px;
+        }
+      }
+
+      p {
+        @include fontEthlete(20px, $white, 300);
+        color: rgba(0, 17, 70, 0.82);
+        ;
+      }
+    }
+
+    .headAreaContent {
+      background-color: #3FE3EF;
+
+      p {
+        @include fontEthlete(20px, $white, 300);
+        color: rgba(0, 17, 70, 0.82);
+        padding: 0px 20px;
+      }
+    }
+
+    .contentArea {
+      table {
+        overflow: hidden;
+
+        thead {
+          border-bottom: none;
+          background-color: #112E88;
+
+          th {
+            padding: 10px 47px;
+            @include fontEthlete(20px, $white, 500);
+            letter-spacing: 0px;
+            text-align: center;
+            text-transform: uppercase;
+            vertical-align: middle;
+
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
+
+        tbody {
+          background-color: #132868;
+
+          tr {
+            border-color: rgba(17, 46, 136, 0.79);
+
+            td {
+              padding: 10px 13px;
+              @include fontEthlete(15px, $white, 500);
+              letter-spacing: 0px;
+              text-align: center;
+
+              .hero-image {
+                background-color: blueviolet;
+                border-radius: 4rem;
+                width: 3rem;
+              }
+
+              img {
+                width: 1.5rem;
+              }
+
+              .link {
+                @include fontEthlete(18px, $white, 400);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .btnLoadMore {
+      padding: 10px 60px;
+      @include font(20px, $white, 500);
+    }
+  }
+
+  // --------
+  .ourMissionSection {
+    background-image: url('../images/Halftone.svg');
+    background-color: #CFE3FD;
+    padding: 70px 0;
+    padding-top: 30;
+
+    .leftContent {
+      background-color: #D4E6FE;
+      // display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgba(0, 17, 70, 0.82);
+
+      .title {
+        @include fontEthlete(28px, $white, 500);
+        text-transform: uppercase;
+        color: rgba(0, 17, 70, 0.82);
+        letter-spacing: 0.02em;
+        padding: 10px 20px;
+        background-color: #5FE8F2;
+        border-bottom: 3px solid #132868;
+      }
+
+      .maindiv {
+        padding: 20px 20px;
+        border-bottom: 3px solid #132868;
+
+        .content {
+          @include font(20px, $white, 200);
+          letter-spacing: 0px;
+          color: rgba(0, 17, 70, 0.82);
+
+          a {
+            color: $white;
+            border-bottom: 1px solid;
+          }
+        }
+      }
+    }
+
+    .rightImg {
+      height: 1px;
+
+      img {
+        height: 431px;
+        background-color: #5FE8F2;
+        border: 9px solid #132868;
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+
+      a {
+        @include fontEthlete(25px, #001146, 500);
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+// ===== NFT LISTING PAGE ======
+.nftListPage {
+  .nftListSection {
+    background-color: #191919;
+    padding: 70px 0;
+
+    .headArea {
+      .mainHeading {
+        @include font(50px, $white, 900);
+        line-height: 55px;
+      }
+
+      .content {
+        @include font(24px, $white, 200);
+      }
+    }
+  }
+}
+
+// ====== NFT DETAIL PAGE ======
+.nftDetailPage {
+
+  // --------
+  .aboutNftSection {
+    background-color: #191919;
+
+    .leftImg {
+      background-color: $black;
+      width: fit-content;
+      padding: 80px 50px 0 50px;
+    }
+
+    .rightContent {
+      padding-top: 80px;
+      width: fit-content;
+
+      .mainHeading {
+        @include font(50px, $white, 900);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+      }
+
+      .content {
+        @include font(30px, $white, 300);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+      }
+
+      .btnConnectWallet {
+        padding: 10px 60px;
+        width: 100%;
+        @include font(20px, $white, 500);
+      }
+
+      .socialIcons {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+
+        a {
+          svg {
+            @include font(34px, $white, 300);
+          }
+        }
+
+        .line {
+          background-color: $white;
+          height: 2px;
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  // --------
+  .tiersSection {
+    background-color: $black;
+    padding: 60px 0;
+
+    .headArea {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .line {
+        width: 12%;
+        height: 2px;
+        background-color: $white;
+      }
+
+      .mainHeading {
+        @include font(50px, $blue, 900);
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+    }
+
+    .rightImg {
+      width: fit-content;
+    }
+
+    .leftContent {
+
+      // width: fit-content;
+      .mainHeading {
+        @include font(50px, $white, 900);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        // width: fit-content
+      }
+
+      .content {
+        @include font(20px, $white, 200);
+        width: 80%;
+      }
+
+      .content2 {
+        @include font(30px, $white, 300);
+        // width: fit-content
+      }
+
+      .content3 {
+        @include font(30px, $white, 300);
+        // width: fit-content
+      }
+
+      .btnConnectWallet {
+        padding: 10px 100px;
+        @include font(20px, $white, 500);
+      }
+    }
+  }
+
+  // ---------
+  .utilitySection {
+    padding: 80px 0 60px 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #191919;
+
+    .headArea {
+      .mainHeading {
+        @include font(50px, $white, 900);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+      }
+
+      .content {
+        @include font(25px, $white, 200);
+        letter-spacing: 0px;
+      }
+    }
+
+    .contentLisitngArea {
+      .listingArea {
+        .nftCard {
+          background-color: $black;
+          border-radius: 0;
+          width: fit-content;
+          position: relative;
+
+          .card-img {
+            padding: 8px;
+            width: 380px;
+          }
+
+          .card-body {
+            .card-title {
+              @include font(26px, $white, 700);
+              letter-spacing: 0px;
+              text-transform: uppercase;
+            }
+
+            .card-text {
+              @include font(18px, $white, 200);
+              letter-spacing: 0px;
+            }
+
+            .btnExplore {
+              padding: 8px 25px;
+              @include font(16px, $white, 500);
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // -------
+  .playerItmSection {
+    background-color: #191919;
+    padding: 60px 0;
+
+    .headArea {
+      .mainHeading {
+        @include font(50px, $white, 900);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+      }
+    }
+
+    .listingArea {
+      .nftCard {
+        background-color: #0c0c0c;
+        border-radius: 0;
+        width: fit-content;
+
+        .imgBody {
+          margin: 10px;
+          background-color: $black;
+          height: 370px;
+          width: 370px;
+
+          .card-img {
+            width: fit-content;
+          }
+        }
+
+        .card-body {
+          text-align: center;
+
+          .card-title {
+            @include font(26px, $white, 700);
+            letter-spacing: 0px;
+            text-transform: uppercase;
+          }
+
+          .card-text {
+            @include font(18px, $white, 200);
+            letter-spacing: 0px;
+          }
+
+          .btnExplore {
+            padding: 8px 25px;
+            @include font(16px, $white, 500);
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==== ABOUTUS PAGE =====
+.aboutPage {
+
+  // -------
+  .bannerSection {
+    background-image: url(../images/aboutBannerBG.png);
+    background-color: #101314;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center center;
+
+    .bannerImgRight {
+      position: absolute;
+      right: 5%;
+      bottom: 0;
+      max-width: 50%;
+    }
+  }
+
+  h4.mainHeading {
+    @include font(24px, $white, 500);
+  }
+
+  p.content {
+    @include font(36px, $white, 900);
+  }
+
+  // -------
+  .personalCornerSection {
+    background-color: $black;
+    padding: 70px 0;
+
+    h1.mainHeading {
+      @include font(50px, $white, 900);
+    }
+
+    p.content {
+      @include font(24px, $white, 300);
+    }
+  }
+
+  // -------
+  .aboutNFTSection {
+    background-color: #0f1314;
+    padding: 70px 0;
+
+    p.content {
+      @include font(24px, $white, 300);
+    }
+  }
+}
+
+// ==== EVENT PAGE =====
+.eventPageMain {
+  background-image: url(../images/eventBGRpt.png);
+  // background-size: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  .customHeader {
+    background: #A2DCFE;
+    .navMain .logo img {
+      filter: unset;
+    }
+    .navMain .navbar-collapse .navbar-nav .nav-link {
+      color: #001146;
+      &:hover,
+      &.active {
+        color: #001146;
+        border-color: #001146;
+      }
+    }
+    .navMain .basicConnectBtns .same,
+    .navMain .basicConnectBtns .same {
+      background: #142868;
+      border: 4px solid #001146;
+      height: 45px;
+      a, button {
+        color: $white;
+      }
+    }
+    .navMain .basicConnectBtns .same .btn,
+    .navMain .basicConnectBtns .same .btn:hover {
+      height: unset;
+    }
+    .walletDDMain .dropdown-menu {
+      .dropdown-item {
+        color: #001146 !important;
+      }
+    }
+  }
+
+  // -------
+  .bannerSection {
+    // background-image: url(../images/eventBannerBG.png);
+    // position: relative;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  p.font32Blue {
+    @include fontEthlete(32px, rgba(0, 17, 70, 0.82), 500);
+  }
+  .skyblueButton {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #0B95DE;
+    border: 4px solid #9BDAFE;
+    border-radius: 0;
+    @include fontEthlete(24px, $white, 700);
+  }
+
+  h4.mainHeading {
+    @include font(90px, #001146, 900);
+  }
+
+  .bannerSectionSecondPart {
+    padding: 50px 0;
+    .font54Blue {
+      @include font(46px, #001146, 900);
+      text-transform: uppercase;
+    }
+    p.font36Blue {
+      @include fontEthlete(30px, rgba(0, 17, 70, 0.82), 500);
+    }
+  }
+
+  .eventPackage {
+    padding: 50px 0;
+    .font54Blue {
+      @include font(46px, #001146, 900);
+      text-transform: uppercase;
+    }
+    p.font36Blue {
+      @include fontEthlete(30px, rgba(0, 17, 70, 0.82), 500);
+    }
+  }
+
+  // -------
+  .upcomingEventSection {
+    background-color: $black;
+    padding: 70px 0;
+
+    h1.mainHeading {
+      @include font(50px, $white, 700);
+    }
+
+    h3.smallHeading {
+      @include font(30px, $blue, 600);
+    }
+
+    .eventListPart {
+      background-color: #0f0f0f;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .date {
+        @include font(20px, $blue, 600);
+      }
+
+      .eventTitle {
+        @include font(24px, $white, 600);
+      }
+
+      .eventDetails {
+        @include font(18px, $white, 300);
+      }
+
+      .leftLight {
+        border-left: solid 1px #575757;
+      }
+    }
+  }
+}
+
+// ==== EVENT DETAILS PAGE =====
+.eventDetailsPage {
+
+  // -------
+  .bannerSection {
+    background-image: url(../images/eventBannerBG.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h4.mainHeading {
+    @include font(60px, $white, 900);
+  }
+
+  // -------
+  .upcomingEventSectionOne {
+    background-color: $black;
+    padding: 70px 0;
+
+    h3.smallHeading {
+      @include font(36px, $white, 900);
+    }
+
+    p.content {
+      @include font(18px, $white, 300);
+    }
+  }
+
+  // -------
+  .upcomingEventSectionTwo {
+    background-image: url(../images/eventDetailsBG.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 472px;
+    padding: 70px 0;
+
+    h3.smallHeading {
+      @include font(36px, $white, 900);
+    }
+
+    .eventDetailsBox {
+      background-color: #171717;
+      height: 100%;
+      align-items: stretch;
+
+      .Heading {
+        background-color: $blue;
+        min-height: 60px;
+        padding: 15px 25px;
+        @include font(24px, $white, 500);
+        text-transform: uppercase;
+      }
+
+      .details {
+        padding: 25px;
+
+        p {
+          @include font(18px, #707070, 300);
+        }
+      }
+    }
+  }
+
+  // -------
+  .upcomingEventSectionThree {
+    background-color: #000000;
+    padding: 70px 0;
+
+    h3.smallHeading {
+      @include font(36px, $white, 900);
+    }
+
+    p.content {
+      @include font(18px, $white, 300);
+    }
+
+    .packagePart {
+      margin-top: 80px;
+    }
+
+    .packageTable {
+      margin-top: 40px;
+
+      table {
+        th {
+          width: 33.33%;
+          padding: 15px;
+          vertical-align: middle;
+          text-align: center;
+          background-color: #e4e4e4;
+          @include font(30px, #36393f, 700);
+          border-right: solid 1px #c4c4c4;
+
+          &:last-child {
+            border-right: 0;
+          }
+
+          &:nth-child(2) {
+            background-color: $blue;
+            @include font(40px, $white, 700);
+
+            span {
+              @include font(20px, $white, 300);
+            }
+
+            p {
+              @include font(20px, $white, 700);
+            }
+          }
+
+          &:nth-child(3) {
+            background-color: #1f313f;
+            @include font(40px, $white, 900);
+
+            span {
+              @include font(20px, $white, 300);
+            }
+
+            p {
+              @include font(20px, $white, 700);
+            }
+          }
+        }
+
+        td {
+          @include font(16px, #36393f, 300);
+          background-color: $white;
+          padding: 15px;
+          vertical-align: middle;
+          border-right: solid 1px #c4c4c4;
+          border-bottom: solid 1px #c4c4c4;
+
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==== DETAILS PAGE =====
+.detailsPage {
+  background-color: #000000;
+  padding: 70px 0;
+
+  .detailsPageSectionOne {
+    .imgBorder {
+      border: solid 15px #191919;
+    }
+
+    .detailsRightPart {
+      h3.smallHeading {
+        @include font(36px, $white, 900);
+      }
+
+      .font16White {
+        @include font(16px, $white, 500);
+      }
+
+      .font8White {
+        @include font(8px, $white, 500);
+      }
+
+      .socialBtn {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+      }
+    }
+
+    .grayPart {
+      background-color: #191919;
+
+      .title {
+        @include font(18px, $white, 500);
+        padding: 15px 25px;
+        border-bottom: solid 1px #3b3b3b;
+      }
+
+      .details {
+        padding: 25px;
+
+        h4 {
+          @include font(26px, $white, 400);
+          margin-bottom: 0;
+        }
+
+        p {
+          @include font(18px, $white, 400);
+        }
+
+        .coinPrice {
+          @include font(26px, $white, 400);
+
+          span {
+            @include font(16px, $white, 300);
+          }
+        }
+      }
+    }
+  }
+
+  // -------
+  .detailsPageSectionTwo {
+    .heading {
+      background-color: $blue;
+      @include font(24px, $white, 500);
+      padding: 15px 25px;
+    }
+  }
+}
+
+// ==== MARKETPLACE PAGE =====
+.marketplacePage {
+  background-image: url('../images/Halftone.svg');
+  background-color: #1A2D59;
+
+  .marketplaceBanner {
+    // background-image: url(../images/marketplaceBannerNew.png);
+    // background-color: #000000;
+    // position: relative;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 350px;
+    // background-position: right top;
+    padding-top: 80px;
+
+    h4.mainHeading {
+      @include font(96px, $white, 900);
+      text-transform: uppercase;
+      z-index: 1;
+    position: relative;
+    }
+
+    p {
+      @include fontEthlete(18px, $white, 300);
+      z-index: 1;
+    position: relative;
+    }
+  }
+
+  .marketplaceListing {
+    // background-color: #000000;
+    padding: 70px 0;
+
+    .sidebarFilter {
+      .accordion {
+        .accordion-item {
+          border-radius: 0;
+          border: 0;
+          background-color: #0f1314 !important;
+          margin-bottom: 30px;
+
+          .accordion-header {
+            .accordion-button {
+              @include font(20px, $white, 500);
+
+              &:after {
+                filter: brightness(0) invert(1);
+              }
+            }
+          }
+
+          .accordion-body {
+            background-color: transparent;
+            @include font(18px, $white, 300);
+
+            ul.coinList {
+              padding: 0;
+              margin: 0;
+
+              li {
+                padding: 0;
+                margin: 0 0 20px 0;
+                list-style-type: none;
+
+                a {
+                  @include font(16px, $white, 300);
+                  display: flex;
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .start-game {
+    display: flex;
+    width: 100% !important;
+    background: #A1DCFE;
+    border-radius: 8px;
+    padding: 15px;
+
+    p {
+      @include font(24px, #1A2E5A, 500);
+    }
+
+    h3 {
+      @include font(40px, #1A2E5A, 900);
+      text-transform: uppercase;
+    }
+  }
+
+  .gameImage {
+    border-radius: 4px;
+    // margin-top: 10px;
+    // margin-left: 20px;
+  }
+}
+
+// ==== COMMAN =====
+.fontBlue {
+  color: $blue;
+}
+
+.fontBold {
+  font-weight: 600;
+}
+
+.btnBordered {
+  border: solid 1px $white;
+  background-color: $blue;
+  @include font(20px, $white, 300);
+  border-radius: 0;
+  padding: 7px 30px;
+}
+
+.linkWhite24 {
+  @include font(24px, $white, 500);
+
+  &:hover {
+    color: rgba($white, 0.8);
+  }
+}
+
+.accordion {
+  .accordion-item {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent !important;
+    margin-bottom: 30px;
+
+    .accordion-header {
+      .accordion-button {
+        @include font(24px, $white, 500);
+
+        &:after {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+
+    .accordion-body {
+      background-color: transparent;
+      @include font(18px, $white, 300);
+    }
+  }
+}
+
+.accordion-button {
+  border-radius: 0 !important;
+  background-color: $blue !important;
+}
+
+.propertyBox {
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+
+  h4 {
+    @include font(20px, $white, 500);
+  }
+
+  p {
+    @include font(20px, $white, 300);
+  }
+}
+
+.filterArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .search,
+  .sortBy {
+
+    input,
+    select {
+      background-color: $white;
+      border-radius: 8px;
+      min-width: 290px;
+      height: 70px;
+      // background: transparent;
+      @include font(24px, rgba(0, 17, 70, 0.82), 100);
+      padding-left: 16px;
+
+      &::placeholder {
+        @include font(24px, rgba(0, 17, 70, 0.82), 100);
+      }
+    }
+
+    .part {
+      right: 40px;
+      top: 5px;
+      @include font(20px, $white, 200);
+    }
+
+    svg {
+      // right: 14px;
+      top: 12px;
+      color: $white;
+      cursor: pointer;
+      left: 20px;
+    }
+  }
+}
+
+.listingArea {
+  .hrline {
+    width: 100%;
+    height: 5px;
+    background: #1C3A88;
+  }
+
+  .card-header-text {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Athletics';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    color: #ffffff;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      font-size: 24px;
+      float: left;
+    }
+  }
+
+  .crown-img {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-top: 14px !important;
+    z-index: 1;
+    min-width: 22%;
+  }
+
+  .interval {
+    background-color: #1A2D59 !important;
+    margin-left: 20px;
+    color: #ABDEFD;
+    border: none;
+
+    @media (max-width: 576px) {
+      margin-left: 0px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .pfcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Athletics';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .pftext {
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+
+  .bgNew {
+    background-color: #1A2D59 !important;
+  }
+
+  .nftCard {
+    background-color: #1A2D59;
+    border-radius: 0;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+
+    .card-text {
+      display: flex;
+      position: relative;
+    }
+
+    .card-body {
+      display: flex;
+      position: relative;
+
+      .card-title {
+        @include font(26px, $white, 700);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        display: flex;
+        position: relative;
+      }
+
+      .card-text {
+        @include font(18px, $white, 200);
+        letter-spacing: 0px;
+      }
+
+      .btnExplore {
+        padding: 8px 25px;
+        @include font(16px, $white, 500);
+        border-radius: 8px;
+      }
+
+      .card-textNew {
+        @include font(14px, $white, 200);
+        letter-spacing: 0px;
+      }
+
+      .hoverBtn {
+        display: none;
+      }
+    }
+
+    &:hover .hoverBtn {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width:575px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.btnLoadMore {
+  padding: 10px 60px;
+  @include font(20px, $white, 500);
+}
+
+.groupBtnBlue {
+  background-color: $blue;
+  border-color: #171717;
+
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+.font12White {
+  @include font(12px !important, $white, 200);
+}
+
+.selectField,
+.inputField {
+  background-color: transparent;
+  border: solid 1px #707070;
+  border-radius: 5px;
+  height: 48px;
+  @include font(16px, $white, 300);
+  filter: brightness(0) invert(1);
+
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.playnow-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttonBordered {
+  font-style: normal;
+  background-color: #192E5A !important;
+  border: solid 1px #192E5A;
+  border-radius: 5px;
+  padding: 15px;
+  height: 60px;
+  min-width: 30%;
+  @include font(18px, $white, 500);
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  @media (max-width:575px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.scrollAccordian {
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+.radioButton ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.radioButton ul li {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.radioButton ul li input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.radioButton ul li label {
+  display: block;
+  position: relative;
+  @include font(16px, $white, 300);
+  padding-left: 25px;
+  margin: 5px auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.radioButton ul li:hover label {
+  color: #ffffff;
+}
+
+.radioButton ul li .check {
+  display: block;
+  position: absolute;
+  border: 1px solid #707070;
+  border-radius: 100%;
+  height: 13px;
+  width: 13px;
+  top: 10px;
+  left: 0px;
+  z-index: 5;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+
+.radioButton ul li:hover .check {
+  border: 1px solid #ffffff;
+}
+
+.radioButton ul li .check::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 11px;
+  width: 11px;
+  top: 0;
+  left: 0;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+.radioButton input[type="radio"]:checked~.check {
+  border: 1px solid #707070;
+}
+
+.radioButton input[type="radio"]:checked~.check::before {
+  background: $blue;
+}
+
+.radioButton input[type="radio"]:checked~label {
+  color: $white;
+}
+
+.social-loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.678);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Admin css start
+.mainLayout {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #040404;
+  width: 320px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+
+  .pro-sidebar {
+    width: 100%;
+    height: calc(100vh - 82px);
+
+    .pro-sidebar-inner {
+      background-color: #101010;
+    }
+
+    .pro-menu .pro-menu-item.pro-sub-menu>.pro-inner-item>.pro-arrow-wrapper .pro-arrow {
+      border-color: $white !important;
+    }
+
+    .pro-menu {
+      padding: 0;
+
+      a {
+        color: $white;
+      }
+
+      .pro-menu-item {
+        // display: flex;
+        // align-items: center;
+        // width: 100%;
+        @include font(14px, $white, 400);
+        border-bottom: solid 3px $black;
+
+        &:hover,
+        &.active {
+          background-color: $blue;
+          color: $white;
+
+          svg {
+            path {
+              fill: $white;
+            }
+          }
+
+          .subMenu {
+            background-color: transparent;
+          }
+
+        }
+
+        .pro-inner-item {
+          padding: 20px 30px;
+        }
+
+        .pro-inner-list-item {
+          background-color: #010101 !important;
+        }
+
+        .subMenu.pro-menu-item {
+          @include font(12px, $white, 400);
+          border: 0;
+
+          .pro-menu-item {
+            @include font(12px, $white, 400);
+            border: 0;
+
+            // list-style-type: disc !important;
+            // list-style-position:inside;
+            &:hover {
+              background-color: transparent;
+              color: $blue !important;
+            }
+          }
+        }
+        .pro-menu-item {
+          &:hover {
+            color: #7198FF !important;
+            background-color: transparent !important;
+            a.nav-link {
+              color: #7198FF !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.adminContent {
+  // width: calc(100% - 320px);
+  width: 100%;
+  padding-left: 320px;
+  background-color: #1C1C1C;
+
+  .customHeader {
+    position: fixed;
+    width: calc(100% - 320px);
+    top: 0;
+    z-index: 99;
+
+    .navMain {
+      background-color: $white !important;
+      padding: 20px;
+      height: 82px;
+
+      .searchMain {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+
+        .search {
+          @include font(13px, #4D4F5C, 400);
+          min-width: 300px;
+        }
+      }
+
+      .navbar-collapse {
+        .navbar-nav {
+          gap: 10px;
+          align-items: center;
+
+          .divider {
+            border-left: solid 2px #EBEBF2;
+          }
+
+          .headerDropdown {
+            .dropdown-menu {
+              border-radius: 0;
+              padding: 0;
+
+              .dropdown-item {
+                @include font(13px, #4D565C, 300);
+                padding: 10px;
+                border-bottom: solid 1px #F1F1F3;
+                text-align: center;
+
+                &:last-child {
+                  border: 0;
+                }
+              }
+            }
+
+            .ddIcon {
+              -webkit-transition: all .5s ease-out;
+              transition: all .5s ease-out;
+              transform: rotateX(180deg);
+            }
+
+            &.show {
+              .ddIcon {
+                transform: rotateX(0deg);
+              }
+            }
+          }
+
+          .dropdown-toggle::after {
+            display: none;
+          }
+
+          .notification {
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            right: 5px;
+            top: 5px;
+            background-color: $blue;
+            border: solid 1px #4E4E4E;
+            border-radius: 100%;
+          }
+
+          .notificationDropdown {
+            .dropdown-menu {
+              width: 450px;
+              border-radius: 0;
+              padding: 0;
+
+              .heading {
+                padding: 10px 20px;
+                @include font(17px, #4D4F5C, 300);
+                border-bottom: solid 1px #F1F1F3;
+              }
+
+              .link {
+                @include font(12px, #3B86FF, 300);
+                padding: 10px 20px;
+              }
+
+              .dropdown-item {
+                @include font(13px, #4D565C, 300);
+                padding: 10px 20px;
+                border-bottom: solid 1px #F1F1F3;
+                text-align: left;
+
+                .pic {
+                  width: 40px;
+                  height: 40px;
+
+                  img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                  }
+                }
+
+                p {
+                  @include font(11px, #808495, 300);
+                }
+
+                &:last-child {
+                  border: 0;
+                }
+              }
+            }
+          }
+
+          .nav-link {
+            @include font(14px, #4D4F5C, 400);
+
+            &:hover {
+              color: $blue;
+
+              svg path {
+                fill: $blue;
+              }
+            }
+          }
+
+          .userPic {
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+
+            img {
+              width: 45px;
+              height: 45px;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.adminPageMainCommon {
+  padding: 30px;
+  margin-top: 82px;
+
+  h2 {
+    @include font(32px, $white, 500);
+    margin-bottom: 30px;
+
+    span {
+      @include font(18px, $white, 300);
+    }
+  }
+
+  .dashboardOverviewSection {
+    .threeBox {
+      padding: 25px;
+
+      .font17White {
+        @include font(17px, $white, 300);
+      }
+
+      h3 {
+        @include font(30px, $white, 500);
+        margin-bottom: 0;
+      }
+
+      .font11Blue {
+        @include font(12px, $blue, 500);
+      }
+
+      .font11Green {
+        @include font(12px, #3CC480, 500);
+      }
+
+      .font11Red {
+        @include font(12px, #FF4141, 500);
+      }
+    }
+
+    .viewBox {
+      background-color: $black;
+      border: solid 1px #4E4E4E;
+    }
+
+    .soldBox {
+      background-color: #272727;
+      border: solid 1px #4E4E4E;
+    }
+
+    .earningBox {
+      background-color: #171717;
+      border: solid 1px #4E4E4E;
+    }
+  }
+
+  .dashboardChartSection {
+    background-color: $black;
+    padding: 25px;
+
+    h4 {
+      @include font(19px, $white, 300);
+    }
+  }
+
+  .dashboardNFTSection {
+    .leftPart {
+      background-color: $black;
+      border: solid 1px #4E4E4E;
+
+      .borderBottom {
+        border-bottom: solid 1px #4E4E4E;
+      }
+
+      ul.topSellerNFTList {
+        padding: 0;
+
+        li {
+          border-bottom: solid 1px #4E4E4E;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+
+          .nftLeft {
+            display: flex;
+            align-items: center;
+
+            .nftPic {
+              width: 88px;
+              height: 88px;
+
+              img {
+                width: 88px;
+                height: 88px;
+                border-radius: 100%;
+              }
+            }
+
+            .nftDetails {
+              h4 {
+                @include font(18px, $white, 500);
+              }
+
+              p {
+                @include font(12px, #AEAEAE, 300);
+              }
+            }
+          }
+
+          .nftRight {
+            .btnUpArrow {
+              background-color: $blue;
+              width: 40px;
+              height: 40px;
+              border-radius: 100%;
+              border: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          &:last-child {
+            border: 0;
+          }
+        }
+      }
+    }
+
+    .rightPart {
+      background-color: #272727;
+      border: solid 1px #4E4E4E;
+
+      .borderBottom {
+        border-bottom: solid 1px #4E4E4E;
+      }
+
+      .tredingNFTPart {
+        h4 {
+          @include font(22px, $white, 500);
+        }
+
+        p {
+          @include font(14px, #AEAEAE, 300);
+        }
+      }
+    }
+
+    h2 {
+      @include font(32px, $white, 400);
+    }
+  }
+
+  .dashboardTicketSection {
+    .borderBottom {
+      border-bottom: solid 1px #4E4E4E;
+    }
+
+    .leftPart {
+      background-color: $black;
+      border: solid 1px #4E4E4E;
+
+      .ticketListTable {
+        .table {
+          border-color: #4E4E4E;
+          text-align: center;
+
+          tr {
+            th {
+              @include font(16px, $white, 400);
+              padding: 12px;
+              background: #202020;
+            }
+
+            td {
+              @include font(15px, $white, 300);
+              padding: 12px;
+              vertical-align: middle;
+            }
+
+            th:first-child {
+              border-left: 0;
+            }
+
+            th:last-child {
+              border-right: 0;
+            }
+
+            td:first-child {
+              border-left: 0;
+            }
+
+            td:last-child {
+              border-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .rightPart {
+      .goftCard {
+        padding: 25px;
+
+        h2.title {
+          @include font(32px, $white, 200);
+        }
+
+        h1.discount {
+          @include font(48px, $white, 900);
+          line-height: 38px;
+          margin-top: 30px;
+        }
+
+        .font24 {
+          @include font(22px, $white, 400);
+        }
+
+        .font14 {
+          @include font(14px, $white, 400);
+        }
+      }
+
+      .bgOne {
+        background: rgb(67, 0, 255);
+        background: linear-gradient(23deg, rgba(67, 0, 255, 0.76) 0%, rgba(216, 97, 195, 0.76) 100%);
+      }
+
+      .bgTwo {
+        background: rgb(10, 157, 212);
+        background: linear-gradient(23deg, rgba(10, 157, 212, 0.76) 0%, rgba(92, 208, 252, 0.76) 100%);
+      }
+    }
+
+
+  }
+
+  .offerPart {
+    .itemAvater {
+      width: 40px;
+      height: 40px;
+      background: #F4AAAA;
+    }
+
+    .title {
+      @include font(18px, $white, 500);
+      line-height: 20px;
+    }
+
+    p {
+      @include font(14px, $white, 400);
+    }
+  }
+
+  h2 {
+    @include font(32px, $white, 400);
+  }
+
+  .link14 {
+    @include font(14px, #AEAEAE, 300);
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .btnLike {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+  }
+
+  .mediaLiabrarySection {
+    background-color: $black;
+    border: solid 1px #4E4E4E;
+
+    .filterPart {
+      background-color: $blue;
+      padding: 12px;
+      display: flex;
+      justify-content: flex-end;
+
+      .filterBtn {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+      }
+
+      .searchPart {
+        background-color: $white;
+        width: 270px;
+        height: 45px;
+        padding: 10px 0 10px 10px;
+        display: flex;
+        align-items: center;
+
+        .searchField {
+          border: 0;
+          padding: 0;
+          height: 100%;
+        }
+
+        .searchBtn {
+          padding: 10px;
+        }
+      }
+    }
+
+    .mediaLiabraryContent {
+      .mediaLiabrary {
+        .actionBtnMain {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          display: none;
+
+          .actionBtn {
+            width: 26px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            float: left;
+
+            &:hover {
+              svg text {
+                fill: $blue;
+              }
+            }
+          }
+        }
+
+        &:hover .actionBtnMain {
+          display: block;
+        }
+      }
+
+    }
+
+  }
+
+  .contentManagementSection {
+    background-color: $black;
+    border: solid 1px #4E4E4E;
+
+    .nav-pills {
+      .nav-item {
+        margin-right: 2px;
+
+        .nav-link {
+          background-color: #202020;
+          min-width: 260px;
+          min-height: 68px;
+          @include font(24px, $white, 400);
+          border-radius: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover,
+          &.active {
+            background-color: $blue;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 30px;
+
+      .cmsLabel {
+        @include font(18px, $white, 300);
+      }
+
+      .cmsField {
+        background-color: $white;
+        border-radius: 0;
+        height: 60px;
+        padding: 15px 30px;
+        @include font(24px, #1C1C1C, 200);
+      }
+
+      .cmsFieldSM {
+        background-color: $white !important;
+        border-radius: 0;
+        height: 44px;
+        padding: 0 12px;
+        @include font(18px, #1C1C1C, 200);
+      }
+
+      .cmsLabel2 {
+        @include font(24px, $white, 200);
+      }
+
+      .optionPart {
+        .heading {
+          position: relative;
+          height: 60px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-bottom: solid 1px #5B5B5B;
+            width: 100%;
+            width: calc(100% + 60px);
+            margin-left: -30px;
+            margin-right: -30px;
+          }
+
+          h2 {
+            @include font(30px, $white, 300);
+          }
+        }
+
+        .form-check {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+
+          .form-check-input {
+            border-radius: 0;
+            border-color: #707070;
+            height: 36px;
+            width: 36px;
+            margin-top: 0;
+
+            &:checked {
+              background-color: $blue;
+            }
+          }
+
+          .form-check-label {
+            @include font(22px, $white, 200);
+            margin-left: 25px;
+          }
+        }
+
+        /* switch Button start */
+        .knobs {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 2;
+        }
+
+        .switch {
+          position: relative;
+          top: 50%;
+          width: 130px;
+          height: 44px;
+          margin: 0;
+          overflow: hidden;
+        }
+
+        .switch.b2 {
+          border-radius: 2px;
+        }
+
+        .checkbox {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          opacity: 0;
+          cursor: pointer;
+          z-index: 3;
+        }
+
+        .layer {
+          width: 100%;
+          background-color: #ebf7fc;
+          transition: 0.3s ease all;
+          z-index: 1;
+        }
+
+        #switchButton .knobs:before,
+        #switchButton .knobs:after,
+        #switchButton .knobs span {
+          position: absolute;
+          top: 0;
+          width: 65px;
+          height: 44px;
+          @include font(22px, $white, 200);
+          text-align: center;
+          border-radius: 0;
+          transition: 0.3s ease all;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #switchButton .knobs:before {
+          content: "";
+          left: 0;
+          background-color: $blue;
+        }
+
+        #switchButton .knobs:after {
+          content: "No";
+          right: 0;
+          color: $black;
+          background-color: $white;
+        }
+
+        // #switchButton .knobs span {
+        //     display: inline-block;
+        //     left: 0;
+        //     color: #fff;
+        //     z-index: 1;
+        // }
+
+        #switchButton .checkbox:checked+.knobs span {
+          color: #4e4e4e;
+        }
+
+        #switchButton .checkbox:checked+.knobs:before {
+          left: 0;
+          background-color: #fff;
+        }
+
+        #switchButton .checkbox:checked+.knobs:after {
+          color: #fff;
+          background-color: #f44336;
+        }
+
+        #switchButton .checkbox:checked~.layer {
+          background-color: #fcebeb;
+        }
+
+        /* switch Button end */
+
+        input[type="date"] {
+          position: relative;
+          background-color: $white !important;
+          border-radius: 0;
+          height: 44px;
+          padding: 12px;
+          @include font(18px, #1C1C1C, 200);
+
+          &:after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f073";
+            color: #A5A4BF;
+            padding: 0 5px;
+            font-size: 22px;
+          }
+
+          &:hover:after {
+            color: $blue;
+          }
+
+          &::-webkit-calendar-picker-indicator {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            height: auto;
+            color: transparent;
+            background: transparent;
+          }
+
+          &::-webkit-inner-spin-button {
+            z-index: 1;
+          }
+
+          &::-webkit-clear-button {
+            z-index: 1;
+          }
+        }
+
+        .dragDropBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+
+          &:hover {
+            background-color: $blue;
+          }
+        }
+
+        .borderedBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border: solid 1px #707070;
+
+          &:hover {
+            background-color: $blue;
+          }
+        }
+
+      }
+    }
+  }
+
+  .pagesSection {
+    background-color: $black;
+    border: solid 1px #4E4E4E;
+
+    .filterPart {
+      float: right;
+
+      .searchPart {
+        margin: 5px;
+        background-color: $white;
+        width: 270px;
+        height: 45px;
+        padding: 10px 0 10px 10px;
+        display: flex;
+        align-items: center;
+
+        .searchField {
+          border: 0;
+          padding: 0;
+          height: 100%;
+        }
+
+        .searchBtn {
+          padding: 10px;
+        }
+      }
+    }
+
+    .nav-pills {
+      .nav-item {
+
+        // margin-right: 2px;
+        .nav-link {
+          background-color: #202020;
+          border-radius: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include font(16px, $white, 400);
+          border-right: solid 1px #707070;
+          padding: 15px 20px;
+          min-width: 156px;
+          text-align: center;
+
+          &:hover,
+          &.active {
+            background-color: $blue;
+          }
+        }
+      }
+    }
+  }
+
+  .paginationCustom {
+    .pagination {
+      margin-bottom: 0;
+
+      .page-item:first-child .page-link,
+      .page-item:last-child .page-link {
+        border-radius: 0;
+        background-color: transparent;
+        border: solid 1px #707070;
+        @include font(16px, $white, 200);
+      }
+
+      .page-item {
+        padding: 0 3px;
+
+        &.active .page-link {
+          background-color: $blue;
+          color: $white;
+          border: solid 1px $blue;
+        }
+
+        .page-link {
+          width: 38px;
+          height: 38px;
+          text-align: center;
+          @include font(16px, #707070, 200);
+          border: solid 1px $white;
+
+          &:hover {
+            background-color: $blue;
+            color: $white;
+            border: solid 1px $blue;
+          }
+
+        }
+      }
+    }
+  }
+
+  .stripedTable {
+    .table {
+      border-color: #4E4E4E;
+      text-align: center;
+
+      tr {
+        th {
+          @include font(16px, $white, 400);
+          padding: 8px 12px;
+          background-color: $blue;
+          vertical-align: middle;
+
+          &.bgDark {
+            background-color: #202020;
+          }
+        }
+
+        td {
+          @include font(16px, $white, 200);
+          padding: 12px;
+          vertical-align: middle;
+        }
+
+        th:first-child {
+          border-left: 0;
+          text-align: left;
+          // display: flex;
+        }
+
+        th:last-child {
+          border-right: 0;
+        }
+
+        td:first-child {
+          border-left: 0;
+          text-align: left;
+          // display: flex;
+        }
+
+        td:last-child {
+          border-right: 0;
+        }
+      }
+    }
+
+    .table-striped>tbody>tr:nth-child(2n+1)>td,
+    .table-striped>tbody>tr:nth-child(2n+1)>th {
+      background-color: #232323;
+    }
+  }
+
+  .userDataMain {
+    border: solid 1px #707070;
+    border-radius: 8px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      li {
+        border-right: solid 1px #707070;
+        @include font(15px, $white, 200);
+        padding: 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          border: 0;
+        }
+
+        .fontMidium {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .usersScreenSection {
+    background-color: $black;
+    border: solid 1px #4E4E4E;
+
+    .filterPart {
+      background-color: $blue;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+
+      .leftPart {
+        .font18White {
+          @include font(18px, $white, 400);
+        }
+      }
+
+      .filterBtn {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+      }
+
+      .searchPart {
+        background-color: $white;
+        width: 270px;
+        height: 45px;
+        padding: 10px 0 10px 10px;
+        display: flex;
+        align-items: center;
+
+        .searchField {
+          border: 0;
+          padding: 0;
+          height: 100%;
+        }
+
+        .searchBtn {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .statusActive {
+    background-color: #D2EBD3;
+    @include font(16px, #2C9D30, 300);
+    min-width: 140px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .statusInactive {
+    background-color: #F5D0CD;
+    @include font(16px, #A52015, 300);
+    min-width: 140px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .statusCancelled {
+    background-color: #C2C2C2;
+    @include font(16px, #505050, 300);
+    min-width: 140px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .statusCompleted {
+    background-color: #B4D2F9;
+    @include font(16px, #2B01FE, 300);
+    min-width: 140px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paginationMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .pageEntries {
+      @include font(18px, $white, 400);
+    }
+  }
+
+  // Profile page
+  .profileSection {
+    background-color: $black;
+    border: solid 1px #4E4E4E;
+    padding: 30px;
+
+    .mainDetails {
+      h2 {
+        @include font(36px, $white, 500);
+      }
+
+      .font22White {
+        @include font(22px, $white, 200);
+      }
+
+      .font22Blue {
+        @include font(22px, $blue, 400);
+      }
+
+      .uploadImg {
+        border: dotted 2px #707070;
+        border-radius: 15px;
+        width: 470px;
+        height: 90px;
+        position: relative;
+        @include font(19px, #606060, 500);
+        text-align: center;
+        margin-top: 60px;
+
+        span {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 30px;
+        }
+
+        input {
+          opacity: 0;
+          width: 470px;
+          height: 90px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .otherDetails {
+      .heading {
+        background-color: $blue;
+        min-height: 52px;
+        padding: 10px 20px;
+        @include font(24px, $white, 500);
+      }
+
+      .perInfoLabel {
+        @include font(18px, $white, 400);
+      }
+
+      .perInfoField {
+        background-color: $white;
+        border: solid 1px #707070;
+        border-radius: 0;
+        padding: 10px 15px;
+        height: 46px;
+        @include font(18px, #7E7E7E, 400);
+      }
+
+      .text-muted {
+        @include font(14px, #8D8D8D, 300);
+        font-style: italic;
+      }
+
+      .showHideBtn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+        height: 46px;
+        border: solid 1px #707070;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+      }
+    }
+  }
+
+  // Menu Management
+  .menuManagementSection {
+    background-color: $black;
+    border: solid 1px #4E4E4E;
+
+    .headerPart {
+      .title {
+        background-color: $blue;
+        padding: 12px;
+
+        h3 {
+          @include font(24px, $white, 500);
+
+          span {
+            @include font(14px, $white, 300);
+          }
+        }
+
+        .chooseDropdown {
+          background-color: $white;
+          padding: 5px 10px;
+          border-radius: 0;
+          @include font(14px, #171717, 300);
+          height: 48px;
+          padding-right: 35px;
+        }
+      }
+
+      .details {
+        .menuHeading {
+          background-color: #202020;
+          border: solid 1px #707070;
+          padding: 15px 20px;
+          @include font(24px, $white, 500);
+        }
+
+        ul.selectMenu {
+          background-color: #202020;
+          border: solid 1px #707070;
+          padding: 0;
+          margin: 0;
+          max-height: 350px;
+          overflow-y: auto;
+
+          li {
+            display: block;
+
+            a {
+              display: block;
+              padding: 10px 20px;
+              @include font(18px, $white, 200);
+
+              &:hover {
+                background-color: $blue;
+              }
+            }
+          }
+        }
+
+        .dragAndDropMenuMain {
+          width: 70%;
+          margin-left: 10%;
+
+          .dragAndDropMenu {
+            width: 100%;
+            cursor: pointer;
+            background-color: $white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            h3 {
+              @include font(22px, #171717, 500);
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+// Admin Login start
+.adminAuthForm {
+  background-image: url(../images/adminLoginBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .whiteBG {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 50px;
+  }
+
+  h1 {
+    @include font(37px, $blue, 900);
+  }
+
+  .form-label {
+    @include font(14px, #343434, 500);
+  }
+
+  .aouthField {
+    border: solid 1px #E7E7E7;
+    border-radius: 30px;
+    background-color: $white;
+    height: 61px;
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    .form-check-input {
+      border-radius: 0;
+      border-color: #707070;
+      height: 13px;
+      width: 13px;
+      margin-top: 0;
+      background-color: $blue;
+
+      &:checked {
+        background-color: $blue;
+      }
+    }
+
+    .form-check-label {
+      @include font(12px, #343434, 300);
+      margin-left: 5px;
+    }
+  }
+
+  .link {
+    @include font(12px, $blue, 300);
+    text-decoration: underline;
+  }
+
+  p {
+    @include font(12px, #343434, 300);
+  }
+
+}
+
+// Admin Login end
+.sidebarButton {
+  display: none;
+}
+
+.dataOverlay {
+  background-color: rgba($black, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  overflow: hidden;
+}
+
+
+// Athlete css start
+.LayoutBG {
+  background-image: url(../images/bg.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 40px;
+}
+
+.bigNFT {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  // width: 45%;
+  width: 40%;
+  text-align: center;
+}
+
+.athleteHeader {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  z-index: 99;
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .navButton {
+    background-color: #FEECAD !important;
+    border: solid 5px $white;
+    border-radius: 7px;
+    background-image: url(../images/headBtnLine.png);
+    background-size: cover;
+  }
+
+  .cartButton {
+    background-color: #E4FEAD !important;
+    border: solid 5px $white;
+    border-radius: 7px;
+    background-image: url(../images/headBtnLine.png);
+    background-size: cover;
+  }
+
+  .notifyButton {
+    background-color: #ADF0FE !important;
+    border: solid 5px $white;
+    border-radius: 7px;
+    background-image: url(../images/headBtnLine.png);
+    background-size: cover;
+  }
+
+  .btnSize {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+
+  .btnBadge {
+    position: absolute;
+    background-color: #FA6B81;
+    width: 22px;
+    height: 22px;
+    right: 5px;
+    top: 10px;
+    border-radius: 4px;
+    @include fontEthlete(14px, $white, 300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .PCCBalanceButton {
+    background-color: #FFFBF0 !important;
+    border-radius: 7px;
+    @include fontEthlete(20px, #4A5662, 500);
+
+    .font24 {
+      @include fontEthlete(24px, #4A5662, 700);
+      line-height: 20px;
+    }
+  }
+
+  .EthBalanceButton {
+    background-color: $white !important;
+    border-radius: 7px;
+    @include fontEthlete(20px, #4A5662, 500);
+    height: 100%;
+
+    .font24 {
+      @include fontEthlete(24px, #4A5662, 700);
+      line-height: 20px;
+    }
+  }
+
+  .navMain {
+    background-color: transparent !important;
+    padding: 0;
+    width: auto;
+
+    // display: block;    
+    .navbar-nav {
+      // width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .nav-link {
+        @include fontEthlete(28px, #4A5662, 600);
+        font-style: normal;
+        // line-height: 35px;
+        letter-spacing: -0.019em;
+        padding: 5px 30px;
+
+        &:hover,
+        &.active {
+          background-color: #3FE3EF;
+          color: #0A1917;
+        }
+      }
+    }
+  }
+
+}
+
+.offcanvas {
+  background-image: url(../images/menubg.png) !important;
+  background-repeat: repeat;
+  padding: 50px;
+  width: 750px !important;
+  z-index: 1050 !important;
+
+  a {
+    @include fontEthlete(30px, #001146, 800);
+    padding: 8px 13px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    &:hover,
+    &.active {
+      color: #0763D0;
+
+      svg path {
+        fill: #0763D0;
+      }
+    }
+
+    svg {
+      margin-right: 15px;
+    }
+  }
+}
+
+.offcanvas-header {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+
+  .btn-close {
+    background-color: #001146 !important;
+    border: solid 5px #0D1D4FAB;
+    border-radius: 7px;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/menuClose.svg);
+    background-size: 50%;
+
+  }
+}
+
+.offcanvas-body {
+  padding: 0;
+
+  .PCCBalanceButton {
+    background-color: #FFFBF0 !important;
+    border-radius: 7px;
+    @include fontEthlete(20px, #4A5662, 500);
+
+    .font24 {
+      @include fontEthlete(24px, #4A5662, 700);
+      line-height: 20px;
+    }
+  }
+
+  .EthBalanceButton {
+    background-color: $white !important;
+    border-radius: 7px;
+    @include fontEthlete(20px, #4A5662, 500);
+
+    .font24 {
+      @include fontEthlete(24px, #4A5662, 700);
+      line-height: 20px;
+    }
+  }
+
+  .notifyButton {
+    background-color: #ADF0FE !important;
+    border: solid 5px $white;
+    border-radius: 7px;
+    background-image: url(../images/headBtnLine.png);
+    background-size: cover;
+  }
+
+  .btnBadge {
+    position: absolute;
+    background-color: #FA6B81;
+    width: 22px;
+    height: 22px;
+    right: 5px;
+    top: 10px;
+    border-radius: 4px;
+    @include fontEthlete(14px, $white, 300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.athleteSection {
+  .font32light {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 32px !important;
+    color: #C0E3FC;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .seriesDetails {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+  .font32teal {
+    @include fontEthlete(28px, #02E3F9, 600);
+    font-size: 32px !important;
+    color: #02E3F9;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 32px;
+    letter-spacing: -0.019em;
+    text-decoration: line-through;
+  }
+
+  .font32lightNew {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 32px !important;
+    color: #C0E3FC;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .font32tealNew {
+    @include fontEthlete(28px, #02E3F9, 600);
+    font-size: 32px !important;
+    color: #02E3F9;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.019em;
+  }
+
+  .font54White {
+    @include fontEthlete(54px, $white, 600);
+  }
+
+  .font32white {
+    font-size: 32px !important;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+
+  .font32whiteNew {
+    font-size: 32px !important;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .font32Yellow {
+    font-size: 32px !important;
+    color: #FEFD9B;
+    font-weight: 600;
+  }
+
+  .info-card {
+    cursor: pointer;
+    background-color: #D6C7EE;
+
+    &:hover {
+      background-color: #F6E136;
+
+      .info-img {
+        background-color: #F6E136;
+      }
+
+      .info-Number {
+        background-color: #F6E136;
+        color: #000;
+      }
+
+      .info-card-img {
+        background-color: #EEE5C7;
+      }
+
+      .gear-card-img {
+        background-color: #EEE5C7;
+      }
+
+      .utilities-card-img {
+        background-color: #EEE5C7;
+      }
+    }
+  }
+
+  .svgOuter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    width: 27px;
+    background-color: #172B4D;
+    border-radius: 50%;
+
+    .DiamondIcon {
+      height: 25px;
+    }
+  }
+
+  .listingAreaMobile {
+    .playerNotAvailable {
+      background: #113DA8;
+      border-radius: 4px;
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      .addBtn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #317BDA;
+        border-radius: 0 4px 0 0;
+        padding: 0;
+        height: 43px;
+        width: 43px;
+        border: 0;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: #317BDA;
+          border: 0;
+        }
+      }
+    }
+
+    .active {
+      background-color: #F6E136;
+
+      .info-img {
+        background-color: #F6E136;
+      }
+
+      .info-card-img {
+        background-color: #EEE5C7;
+      }
+
+      .gear-card-img {
+        background-color: #EEE5C7;
+      }
+
+      .utilities-card-img {
+        background-color: #EEE5C7;
+      }
+    }
+  }
+
+  .info-img {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px !important;
+    z-index: 1;
+    margin-left: 9px;
+    background: #E9E1FE;
+    border-radius: 29px;
+  }
+
+  .infoImg {
+    top: 0;
+  }
+
+  .info-Number {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px !important;
+    z-index: 1;
+    margin-left: 9px;
+    background: #6637B4;
+    border-radius: 29px;
+    right: 10px;
+    @include fontEthlete(14px, $white, 600);
+  }
+
+  .gear-img {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+  }
+
+  .info-card-img {
+    width: auto;
+    padding: 20px 20px 0;
+    // height: 210px;
+    img {
+      // height: 170px;
+    }
+
+    &:hover {
+      background-color: #EEE5C7;
+    }
+  }
+
+  .mainImg {
+    // object-fit: cover;
+    // max-height: 250px;
+    // width: auto;
+  }
+
+  .gear-card-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: #172B4D;
+  }
+
+  .info-card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #172B4D;
+
+    .title {
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+
+    }
+  }
+
+  .inner-text-info {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #172B4D;
+
+    .eth1 {
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 20px;
+      color: #172B4D;
+    }
+
+    .eth2 {
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 20px;
+      color: #172b4d81;
+    }
+  }
+
+  .playerLabel {
+    background-color: #6637B4;
+    border: solid 2px #C099FF;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include fontEthlete(16px, $white, 600);
+  }
+
+  .info-card-body-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .inner-text {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    color: #172B4D;
+  }
+
+  .gear-card-body-text {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .gear-card-img {
+    width: auto;
+    height: 250px;
+
+    &:hover {
+      background-color: #EEE5C7;
+    }
+  }
+
+  .utilities-card-img {
+    width: auto;
+    height: 280px;
+
+    &:hover {
+      background-color: #EEE5C7;
+    }
+  }
+
+  .utilitiesTextName {
+    padding: 20px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    color: #172B4D;
+  }
+
+  .utilitiesTextDetails {
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #172B4D;
+  }
+
+  .socialBtn {
+    width: 64px;
+    height: 64px;
+    background: #0B95DE;
+    border: 4px solid #9BDAFE;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #02E3F9;
+      border-color: #02E3F9;
+    }
+  }
+
+
+  hr {
+    border-top: solid 2px rgba(255, 255, 255, 0.16);
+    margin: 30px 0;
+    opacity: 1;
+  }
+
+  .tierMain {
+    .heading {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background: #112E88;
+      @include fontEthlete(28px, $white, 600);
+      text-transform: uppercase;
+    }
+
+    .tierBox {
+      background-color: #212322;
+      background-image: url(../images/tierBoxPattern.png);
+      background-repeat: repeat;
+      border: 3px solid #9BDAFE;
+
+      .tierImg {
+        img {
+          width: 100%;
+          border-radius: 0 0 20px 0;
+        }
+
+        .tierIcon {
+          position: absolute;
+          width: 34px;
+          height: 32px;
+          left: 3px;
+          top: 3.25px;
+          background: #242625;
+          border-radius: 0px 0px 16px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: auto;
+            border-radius: 0;
+          }
+        }
+      }
+
+      .tierDetails {
+        padding: 10px 20px;
+
+        h3 {
+          @include fontEthlete(20px, $white, 600);
+        }
+
+        .font16White {
+          @include fontEthlete(16px, $white, 600);
+        }
+
+        .font16Gray {
+          @include fontEthlete(16px, $white, 600);
+          opacity: .56;
+        }
+      }
+    }
+  }
+
+  .utilityMain {
+    background: #08469B;
+    border: 7px solid rgba(155, 218, 254, 0.15);
+
+    .heading {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background: #112E88;
+      @include fontEthlete(25px, $white, 600);
+      text-transform: uppercase;
+    }
+  }
+
+  .nftUtilityMain {
+    padding-right: 34px;
+    padding-left: 42px;
+  }
+
+  .nftUtility {
+    background-color: #1242A6;
+
+    &:hover {
+      border-color: #02E3F9;
+    }
+
+    img {}
+
+    // width: 30%;
+    // padding: 19px 19px 19px 19px;
+  }
+
+  .nftUtilityText {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 38px;
+    @include fontEthlete(23px, #C0E3FC, 500);
+    line-height: 135.5%;
+    // left: 52.13px;
+  }
+
+  .imageUtility {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      border-color: #02E3F9;
+    }
+  }
+
+  .image-utility {
+    background-color: #0B98E0;
+    width: 6rem;
+
+    &:hover {
+      border-color: #02E3F9;
+    }
+  }
+
+  .statMain {
+    background: #08469B;
+    margin-top: 1rem;
+
+    .heading {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background: #112E88;
+      @include fontEthlete(25px, $white, 600);
+      text-transform: uppercase;
+    }
+  }
+
+  .statsImage {
+    height: 5rem !important
+  }
+
+  .seasonStatsName {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF
+  }
+
+  .seasonProgress {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 32px;
+    color: #FFFFFF
+  }
+
+  .progress {
+    width: 100%;
+    height: 1.5rem;
+    background-color: rgba(155, 218, 254, 0.15);
+  }
+
+  .progress-bar {
+    // this is for the bar itself
+    background-color: rgba($white, 0.8);
+  }
+
+
+
+  .utilitiedRightSide {
+    background-color: #EEE5C7;
+    border-radius: 12px;
+    margin-left: 25px;
+
+    .gearHelmet {
+      padding: 50px;
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: center;
+      background-image: url(../images/utilitiesIcon.png);
+
+      .image {
+        height: 30px !important;
+        width: 20rem !important;
+        z-index: 1;
+      }
+    }
+  }
+
+  .gearRightSideMain {
+    background-color: #EEE5C7;
+    border-radius: 12px;
+    margin-left: 25px;
+
+    .gearHelmet {
+      display: flex;
+      justify-content: center;
+      background-image: url(../images/utilitiesIcon.png);
+
+      .image {
+        height: 30px !important;
+        width: 20rem !important;
+        z-index: 1;
+      }
+    }
+
+    .geartextName {
+      padding: 20px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+
+    .gearTextDetails {
+      margin-left: 20px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+
+    .gearDetails {
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+      background-color: #F6E136;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    .textDetails {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    .priceDetails {
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 36px;
+      float: right;
+    }
+
+    .gearyellowBtn {
+      display: flex;
+      justify-content: center;
+      background: #F6E136;
+      padding: 20px 30px;
+      @include fontEthlete(20px, #0E3A96, 600);
+      border-radius: 0;
+      width: 100% !important;
+
+      &:hover {
+        background-color: #02E3F9;
+        border-color: #02E3F9;
+      }
+    }
+  }
+
+  .gearLeftSideMain {
+    background-color: rgba(17, 46, 136, 0.49);
+    padding: 10px 20px;
+
+    .gearCollectionrBox {
+      .gearCollectionImg {
+        .gearCollectionIcon {
+          .img-fluid {
+            position: absolute;
+            width: 40px;
+            height: 32px;
+            right: 0px;
+            top: 3.25px;
+            background-color: #242625;
+            border-radius: 0px 0px 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              width: auto;
+              border-radius: 0;
+            }
+          }
+        }
+
+        img {
+          height: 11.5rem;
+          width: 100%;
+          border-radius: 0px 0px 16px 0px;
+          background-color: #0B95DE;
+        }
+      }
+
+      .geartierDetails {
+        margin-top: -11px;
+        padding: 11px 20px;
+        background-color: rgba(255, 255, 255, 0.38);
+
+        h3 {
+          @include fontEthlete(20px, $white, 600);
+        }
+
+        .font16White {
+          @include fontEthlete(16px, $white, 600);
+        }
+
+        .font16Gray {
+          @include fontEthlete(16px, $white, 600);
+          opacity: .56;
+        }
+      }
+    }
+  }
+
+  .tableArea {
+    thead {
+      border-bottom: none;
+      background-color: #112E88;
+
+      th {
+        padding: 10px 13px;
+        line-height: 20px;
+        border: none;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+    }
+
+    tbody {
+      background-color: #132868;
+
+      tr {
+        border-color: rgba(17, 46, 136, 0.79);
+
+        td {
+          font-style: normal;
+          font-weight: 900;
+          font-size: 28px;
+          color: #FFFFFF;
+          padding: 10px 13px;
+
+          .hero-image {
+            background-color: blueviolet;
+            border-radius: 4rem;
+            width: 3rem;
+          }
+
+          img {
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.singleSelectedCollectionCard {
+  background-color: #EEE5C7;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .card-img-top {
+    // height: 300px;
+    // width: auto;
+    // margin: 40px 0;
+  }
+  .imgBig {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .body1 {
+    background: #EEE5C7;
+    border-top: 1.29768px solid rgba(0, 7, 36, 0.07);
+    backdrop-filter: blur(7.78608px);
+
+    .card-text {
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #172B4D;
+    }
+
+    .card-title {
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 30px;
+      color: #172B4D;
+    }
+  }
+
+  .body2 {
+    background-color: #F6E136;
+
+    .leftTitle,
+    .rightTitle {
+      .title {
+        font-family: 'Athletics';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #172B4D;
+      }
+
+      .detail {
+        font-family: 'Athletics';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 30px;
+        color: #172B4D;
+      }
+    }
+  }
+}
+
+.text {
+  max-width: 100%;
+}
+
+.searchIcon {
+  width: 90%;position: relative;
+  z-index: 1;
+
+  @media (max-width: 767) {
+    width: 100%;
+  }
+}
+
+.icon {
+  top: 12px;
+  color: #fff;
+  cursor: pointer;
+  left: 20px
+}
+
+.searchIcon input {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 290px;
+  height: 70px;
+  font-size: 24px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 100;
+  padding-left: 80px;
+
+  @media (max-width: 575px) {
+    font-size: 12px;
+    font-weight: 700px;
+  }
+}
+
+.types {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  @media (max-width:575px) {
+    font-size: 10px;
+    font-weight: 700px;
+  }
+}
+
+.marketPlaceImage {
+  position: absolute;
+  top: 120px;
+  right: 150px;
+
+  @media (max-width:576px) {
+    display: none;
+  }
+}
+
+.marketPlaceImage .img {
+  max-height: 45vh !important;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gearImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  height: 205px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.navCustom {
+  border: 0 !important;
+
+  // flex-wrap: nowrap;
+  // overflow-x: auto;
+  // &::-webkit-scrollbar {
+  //   height: 10px;
+  // }
+  svg {
+    height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+  }
+
+  .nav-item {
+    margin-bottom: 5px;
+
+    .nav-link {
+      width: max-content;
+      background-color: #D4E6FE;
+      border-radius: 0;
+      border: 0;
+      @include fontEthlete(22px, #4A5662, 600);
+      padding: 8px 13px;
+
+      .textBgBlue {
+        font-family: "Athletics";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.019em;
+        color: #172B4D;
+        background-color: #3FE3EF;
+        padding: 7px 9px;
+        margin-bottom: 1px;
+      }
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      background-color: #3FE3EF;
+      color: #0A1917;
+
+      .textBgBlue {
+        font-family: "Athletics";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.019em;
+        color: #FFFFFF;
+        background-color: #172B4D;
+        padding: 7px 9px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+}
+
+.customAccordion {
+  .accordion {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          @include font(28px, $white, 500);
+          background-color: #112E88 !important;
+
+          &:after {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          padding: 0 !important;
+
+          .accordionDetails {
+            padding: 30px;
+
+            &.bgBlue {
+              background-color: #0241AB;
+            }
+
+            .detailsRow {
+              background-color: #9BA5E10A;
+
+              .icComman {
+                width: 64px;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+              }
+
+              .icOne {
+                background-color: #A77E0C;
+                border: solid 2px #F2C443;
+              }
+
+              .icTwo {
+                background-color: #3547B0;
+                border: solid 2px #9BA5E1;
+              }
+
+              .icThree {
+                background-color: #75A70C;
+                border: solid 2px #BAF243;
+              }
+
+              .icFour {
+                background-color: #0C78A7;
+                border: solid 2px #3CAFE0;
+              }
+
+              .iconbgPattern {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url(../images/btnPattern.png);
+                background-size: cover;
+                z-index: 0;
+              }
+
+              .font20Yellow {
+                @include font(20px, #F2C443, 500);
+              }
+
+              .font20Light {
+                @include font(20px, #C8CEEF, 500);
+              }
+
+              .font20Green {
+                @include font(20px, #D8F49B, 500);
+              }
+
+              .font20Blue {
+                @include font(20px, #79D7FF, 500);
+              }
+
+              .font24White {
+                @include font(24px, $white, 500);
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modalCustom {
+  .modal-content {
+    background: $themeSky;
+    border: 4px solid #77C8F6;
+    border-radius: 0;
+
+    .modal-header {
+      background-color: $themeBlue;
+      padding: 15px;
+      border-radius: 0;
+
+      .modal-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h1.title {
+          @include fontEthlete(30px, $white, 500);
+        }
+      }
+
+      .content {
+        @include fontEthlete(18px, $white, 300);
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .btn-close {
+        @include font(12px, $white, 300);
+        border: 0;
+        border-radius: 10px;
+        width: 54px !important;
+        height: 54px !important;
+        height: fit-content;
+        width: fit-content;
+        letter-spacing: 0.18px;
+        transition: background-color 0.1s;
+        background: $red url(../images/btnClose.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 1;
+
+        &:hover,
+        &.active {
+          background-color: $red;
+          transition: background-color 0.1s;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 0;
+    }
+
+    .form-label {
+      @include fontEthlete(22px, $themeBlue, 400);
+    }
+
+    .fieldSkyBG {
+      background: rgba(136, 199, 243, 0.44) !important;
+      padding: 15px;
+    }
+
+    .fieldTransparent {
+      background-color: transparent;
+      border: 0;
+      height: 30px;
+      width: 300px;
+      @include fontEthlete(26px, $themeBlue, 500);
+
+      &::placeholder {
+        @include fontEthlete(26px, $themeBlue, 500);
+      }
+    }
+
+    .coinIcon {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-color: #112E88;
+    }
+
+    .form-control {
+      background: rgba(136, 199, 243, 0.44) !important;
+      border: 0;
+      border-radius: 0;
+      height: 60px;
+      padding: 15px;
+      @include fontEthlete(26px, $themeBlue, 500);
+
+      &::placeholder {
+        @include fontEthlete(26px, $themeBlue, 500);
+      }
+    }
+
+    textarea.form-control {
+      height: unset;
+    }
+
+    .font32Blue {
+      @include fontEthlete(32px, $themeBlue, 900);
+    }
+
+  }
+}
+
+.formRadio {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  label {
+    width: auto;
+    background: #9BDAFE;
+    @include fontEthlete(24px, $themeBlue, 900);
+  }
+
+  /* hide input */
+  input.radio:empty {
+    // margin-left: -999px;
+    display: none;
+  }
+
+  /* style label */
+  input.radio:empty~label {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* toggle hover */
+  input.radio:hover:not(:checked)~label {
+    color: $white;
+    background: #0B95DE;
+    border: solid 2px $white;
+  }
+
+  /* toggle on */
+  input.radio:checked~label {
+    color: $white;
+    background: #0B95DE;
+    border: solid 2px $white;
+  }
+}
+
+.txnSummary {
+  .font24Blue {
+    @include fontEthlete(24px, $themeBlue, 500);
+  }
+
+  .font24BlueBold {
+    @include fontEthlete(24px, $themeBlue, 700);
+  }
+
+  hr {
+    border-top: solid 2px #93D2F9;
+    opacity: 1;
+  }
+}
+
+.lineUpPage {
+  h3 {
+    @include fontEthlete(24px, $white, 700);
+  }
+
+  .playerStatsDetails {
+    a {
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+    }
+
+    .playerPic {
+      margin: 0 auto;
+      display: table;
+      width: 70%;
+    }
+  }
+
+  .playerDetails {
+    background-color: #1D2529;
+
+    .heading {
+      background-color: #242E33;
+      padding: 5px 30px;
+      @include fontEthlete(25px, $white, 700);
+    }
+
+    .details {
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .playerPic {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-color: #D6C7EE;
+        margin: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 100%;
+        }
+      }
+
+      h2 {
+        @include fontEthlete(32px, $white, 700);
+        line-height: 30px;
+      }
+      .font22LightBlue {
+        @include fontEthlete(22px, #9BDAFE, 500);
+      }
+      .font22LightYellow {
+        @include fontEthlete(22px, #F6FE9B, 500);
+      }
+
+      p {
+        @include fontEthlete(27px, $white, 500);
+        font-style: italic;
+        line-height: 24px;
+
+        span {
+          color: #FCF6C0;
+        }
+      }
+
+      .playerLabel {
+        background-color: #6637B4;
+        border: solid 4px #C099FF;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include fontEthlete(25px, $white, 600);
+      }
+    }
+
+    .playerItems {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #242E33;
+      padding: 15px 30px;
+      .font34White {
+        @include fontEthlete(34px, $white, 600);
+      }
+    }
+    .statsTable {
+      width: 100%;
+      .table {
+        margin: 0;
+        tr {
+          th, td {
+            text-align: center;
+            border: 0;
+          }
+          th {
+            @include fontEthlete(18px, $white, 700);
+            background-color: #242E33;
+          }
+          td {
+            @include fontEthlete(20px, #C8C9C9, 700);
+          }
+        }
+      }
+    }
+  }
+}
+
+.gameRuleParts {
+  margin-bottom: 20px;
+
+  .heading {
+    background-color: #09368A;
+    @include fontEthlete(28px, $white, 600);
+    padding: 20px;
+  }
+
+  .details {
+    background-color: #092B6A;
+    padding: 20px;
+
+    ul {
+      li {
+        @include fontEthlete(25px, $white, 300);
+        margin-bottom: 20px;
+        list-style-type: disc !important;
+      }
+    }
+  }
+}
+
+.lineupGround {
+  background: #257423;
+  border: 6px solid rgba(255, 255, 255, 0.83);
+  height: 852px;
+
+  .offencePart {
+    background: #257423;
+    height: 100%;
+    width: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include fontEthlete(40px, $white, 700);
+
+    .textRotate {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+    }
+  }
+
+  .deffencePart {
+    background-color: #53AA48;
+    height: 100%;
+    width: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include fontEthlete(40px, $white, 700);
+
+    .textRotate {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+    }
+  }
+
+  .middlePart {
+    border-right: 6px solid rgba(255, 255, 255, 0.83);
+    border-left: 6px solid rgba(255, 255, 255, 0.83);
+
+    .middlePartLeft {
+      background-image: url(../images/lineLeftRpt.png);
+      background-repeat: repeat;
+      height: 100%;
+    }
+
+    .middlePartRight {
+      background-image: url(../images/lineRightRpt.png);
+      background-repeat: repeat;
+      height: 100%;
+    }
+
+    .line {
+      background-image: url(../images/Lines.png);
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.playerDetailsPosition {
+  position: absolute;
+  z-index: 99;
+  left: 5%;
+  top: 100%;
+  // width: 700px;
+}
+
+.myProfilePage {
+  .profileDetails {
+    .heading {
+      background-color: #09368A;
+      padding: 15px 25px;
+
+      h3 {
+        @include fontEthlete(28px, $white, 700);
+      }
+    }
+
+    .profileBody {
+      background-color: #092B6A;
+
+      .iconBlue {
+        background-color: #3547B0;
+        border: solid 3px #9BA5E1;
+        background-image: url(../images/profileIconLine.png);
+        background-size: cover;
+        width: 74px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .font20Head {
+        @include fontEthlete(20px, #C8CEEF, 500);
+        text-transform: uppercase;
+      }
+
+      .font20Details {
+        @include fontEthlete(20px, #C0E3FC, 500);
+        text-transform: uppercase;
+      }
+
+      .iconTeal {
+        background-color: #0C78A7;
+        border: solid 3px #3CAFE0;
+        background-image: url(../images/profileIconLine.png);
+        background-size: cover;
+        width: 74px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .font20Head2 {
+        @include fontEthlete(20px, #43BEF2, 500);
+        text-transform: uppercase;
+      }
+
+      .profileAbout {
+        .font24White {
+          @include fontEthlete(24px, $white, 500);
+        }
+
+        hr {
+          opacity: 1;
+          border-top: solid 1px rgba($white, 0.16);
+          margin: 10px 0;
+        }
+
+        p {
+          @include fontEthlete(24px, $white, 200);
+          margin: 0;
+        }
+      }
+
+      .passwordPart {
+        .form-label {
+          @include fontEthlete(24px, $white, 300);
+        }
+
+        .customPswdOuter {
+          position: relative;
+
+          .passwordIcon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+
+            svg path {
+              fill: $white;
+            }
+          }
+
+          .form-control {
+            background-color: #9BA5E10A;
+            padding: 20px;
+            border: 0;
+            @include fontEthlete(24px, $white, 300);
+
+            &::placeholder {
+              @include fontEthlete(24px, $white, 300);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.LinkButton {
+  background-color: transparent;
+  @include fontEthlete(24px, #3FE3EF, 600);
+  border: 0;
+  text-transform: uppercase;
+  padding: 0;
+
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: transparent;
+    @include fontEthlete(24px, #3FE3EF, 600);
+    border: 0;
+  }
+}
+
+.cameraButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #FEFAC7;
+  border: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: #FEFAC7;
+    border: 0;
+  }
+}
+
+.eventPage {
+  .event {
+    .eventDetails {
+      background-color: #1D2529;
+      padding: 15px;
+      min-height: 150px;
+
+      .date {
+        @include fontEthlete(14px, #FFDC8E, 500);
+      }
+
+      .title {
+        @include fontEthlete(24px, $white, 700);
+      }
+
+      .location {
+        @include fontEthlete(15px, $white, 500);
+
+        span {
+          color: #8EE4FF;
+        }
+      }
+    }
+  }
+}
+
+.buyButton {
+  background-color: #EAFEBE;
+  @include fontEthlete(24px, #000, 800);
+  border: 0;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 0;
+
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: rgba(234, 254, 190, .8);
+    @include fontEthlete(24px, #000, 800);
+    border: 0;
+  }
+}
+
+.buyButtonSM {
+  background-color: #EAFEBE;
+  @include fontEthlete(18px, #000, 800);
+  border: 0;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 0;
+
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: rgba(234, 254, 190, .8);
+    @include fontEthlete(18px, #000, 800);
+    border: 0;
+  }
+}
+
+.buyButtonPurpleSM {
+  background-color: #95AFF2;
+  @include fontEthlete(18px, #000, 800);
+  border: 0;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 0;
+
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: rgba(234, 254, 190, .8);
+    @include fontEthlete(18px, #000, 800);
+    border: 0;
+  }
+}
+
+// Notify Modal start
+.modalNotify {
+  .modal-content {
+    background: $white;
+    border-radius: 0;
+
+    .modal-header {
+      background-color: $white;
+      padding: 15px;
+      border-radius: 0;
+      border-bottom: solid 1px #F0F3FB;
+
+      .modal-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h1.title {
+          @include fontEthlete(30px, $black, 500);
+
+          div {
+            background-color: #DCF0FE;
+            width: 38px;
+            height: 38px;
+            border-radius: 2px;
+            @include fontEthlete(24px, #0989D6, 500);
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      .content {
+        @include fontEthlete(18px, $white, 300);
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .btn-close {
+        @include font(12px, $white, 300);
+        border: 0;
+        border-radius: 10px;
+        background-color: #E4FEAD !important;
+        width: 54px !important;
+        height: 54px !important;
+        border: solid 3px #F2FFD7;
+        border-radius: 3px;
+        height: fit-content;
+        width: fit-content;
+        letter-spacing: 0.18px;
+        transition: background-color 0.1s;
+        background: $red url(../images/btnCloseBlack.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 1;
+
+        &:hover,
+        &.active {
+          background-color: $red;
+          transition: background-color 0.1s;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 0;
+
+      .bodrBotm {
+        border-bottom: solid 1px #F0F3FB;
+      }
+
+      .userPic {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-color: #D6C7EE;
+
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 100%;
+        }
+      }
+
+      .title {
+        @include fontEthlete(24px, #0D193F, 500);
+
+        span {
+          font-weight: 300;
+        }
+      }
+
+      .date {
+        @include fontEthlete(18px, #45537C, 300);
+      }
+
+      .msgDetails {
+        background: #D4E6FE;
+        border-radius: 4.20065px;
+        @include fontEthlete(18px, #0D193F, 300);
+        padding: 12px;
+      }
+
+      .nav-link {
+        @include fontEthlete(18px, #0989D6, 500);
+      }
+    }
+  }
+}
+
+// Notify Modal end
+
+// Cart Modal start
+.modalCart {
+  .modal-content {
+    background: $white;
+    border-radius: 0;
+
+    .modal-header {
+      background-color: $white;
+      padding: 15px;
+      border-radius: 0;
+      border-bottom: solid 1px #F0F3FB;
+
+      .modal-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h1.title {
+          @include fontEthlete(30px, $black, 500);
+
+          div {
+            background-color: #F84D68;
+            width: 38px;
+            height: 38px;
+            border-radius: 2px;
+            @include fontEthlete(24px, $white, 500);
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .cartConnectWalletButton {
+          background-color: transparent !important;
+          border-radius: 0;
+          border: 0;
+
+          .connectWalletIconBG {
+            width: 64px;
+            height: 64px;
+            background-color: #FEDEAD;
+            border-radius: 3px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          @include fontEthlete(20px, #4A5662, 500);
+
+          .font24 {
+            @include fontEthlete(24px, #4A5662, 700);
+            line-height: 20px;
+          }
+        }
+      }
+
+      .content {
+        @include fontEthlete(18px, $white, 300);
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .btn-close {
+        @include font(12px, $white, 300);
+        border: 0;
+        border-radius: 10px;
+        background-color: #E4FEAD !important;
+        width: 54px !important;
+        height: 54px !important;
+        border: solid 3px #F2FFD7;
+        border-radius: 3px;
+        height: fit-content;
+        width: fit-content;
+        letter-spacing: 0.18px;
+        transition: background-color 0.1s;
+        background: $red url(../images/btnCloseBlack.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 1;
+
+        &:hover,
+        &.active {
+          background-color: $red;
+          transition: background-color 0.1s;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 0;
+
+      .bodrBotm {
+        border-bottom: solid 1px #F0F3FB;
+      }
+
+      .userPic {
+        width: 95px;
+        height: 95px;
+        background: #D6C7EE;
+        border-radius: 4.96269px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      .title {
+        @include fontEthlete(28px, #0D193F, 800);
+      }
+
+      .price {
+        @include fontEthlete(24px, #45537C, 600);
+      }
+    }
+
+    .modal-footer {
+      background-color: #F1F9FE;
+      border: 0;
+
+      .font20Blue {
+        @include fontEthlete(20px, #112E88, 400);
+      }
+
+      .font24Blue {
+        @include fontEthlete(20px, #112E88, 600);
+      }
+
+      .font24BlueBold {
+        @include fontEthlete(20px, #112E88, 800);
+      }
+
+      hr {
+        border-top: solid 2px #93D2F92B;
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Cart Modal end
+
+.inboxPage {
+  .msgCount {
+    background: rgba(245, 251, 255, 0.14);
+    border-radius: 3.10474px;
+    width: 38px;
+    height: 38px;
+    @include fontEthlete(24px, $white, 500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inboxSearch {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .list {
+    background-color: #D4E6FE;
+    padding: 15px 30px;
+
+    .symbol {
+      background-color: #F9CFAB;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include fontEthlete(24px, #803C01, 700);
+    }
+
+    .details {
+      .title {
+        @include fontEthlete(24px, #0A1917, 500);
+
+        span {
+          font-weight: 200
+        }
+      }
+
+      .date {
+        @include fontEthlete(18px, #0A1917, 200);
+      }
+
+      p {
+        @include fontEthlete(18px, $white, 200);
+        display: none;
+      }
+    }
+
+    &.active {
+      background: #132868;
+
+      .details {
+
+        .title,
+        .date {
+          color: $white;
+        }
+
+        p {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .inboxDetails {
+    background: #132868;
+
+    .heading {
+      padding: 30px;
+      border-bottom: 1px solid #214178;
+
+      .date {
+        @include fontEthlete(20px, rgba(255, 255, 255, 0.67), 200);
+      }
+
+      .title {
+        @include fontEthlete(32px, $white, 500);
+      }
+
+      .senderDetails {
+        .symbol {
+          background-color: #D3F9FE;
+          width: 65px;
+          height: 65px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include fontEthlete(24px, #132868, 700);
+        }
+
+        .companyName {
+          @include fontEthlete(24px, $white, 500);
+          line-height: 24px
+        }
+
+        .personName {
+          @include fontEthlete(16px, rgba(255, 255, 255, 0.67), 500);
+        }
+      }
+    }
+
+    .details {
+      padding: 30px;
+
+      p {
+        @include fontEthlete(20px, $white, 300);
+      }
+    }
+  }
+}
+
+.headBtnLine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/headBtnLine.png);
+  background-size: cover;
+  z-index: 0;
+}
+
+// admin panel new pages start
+.adminCommanPageSection {
+  background-color: $black;
+  border: solid 1px #4E4E4E;
+
+  .headingBlue {
+    background-color: $blue;
+    min-height: 52px;
+    padding: 10px 20px;
+
+    h3 {
+      @include font(24px, $white, 500);
+    }
+  }
+
+  .label {
+    @include font(18px, $white, 400);
+  }
+
+  .InputField {
+    background-color: #0F0F0F;
+    border: 1px solid #2B2B2B;
+    border-radius: 0;
+    padding: 10px 15px;
+    height: 53px;
+    @include font(16px, $white, 300);
+  }
+
+  .text-muted {
+    @include font(14px, #8D8D8D, 300);
+    font-style: italic;
+  }
+
+  .showHideBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 46px;
+    border: solid 1px #707070;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+  }
+
+  .uploadImg {
+    border: dotted 2px #707070;
+    border-radius: 0;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    @include font(18px, #606060, 400);
+    text-align: center;
+
+    .inputFile {
+      opacity: 0;
+      width: 100%;
+      height: 200px;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .radioButton {
+    .form-check-label {
+      @include font(18px, $white, 400);
+    }
+  }
+
+  .font18White {
+    @include font(18px, $white, 400);
+  }
+}
+
+.btnWhiteBordered {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.datepickerInput[type="time"] {
+  position: relative;
+
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f017";
+    color: #A5A4BF;
+    padding: 0 5px;
+    font-size: 22px;
+  }
+
+  &:hover:after {
+    color: $blue;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+  }
+
+  &::-webkit-inner-spin-button {
+    z-index: 1;
+  }
+
+  &::-webkit-clear-button {
+    z-index: 1;
+  }
+}
+
+.datepickerInput[type="date"] {
+  position: relative;
+
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073";
+    color: #A5A4BF;
+    padding: 0 5px;
+    font-size: 22px;
+  }
+
+  &:hover:after {
+    color: $blue;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+  }
+
+  &::-webkit-inner-spin-button {
+    z-index: 1;
+  }
+
+  &::-webkit-clear-button {
+    z-index: 1;
+  }
+}
+
+.uploadedImgBox {
+  border: dotted 2px #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 130px;
+}
+
+.addAttributesPart {
+  background: #242323;
+
+  .heading {
+    @include font(24px, $white, 400);
+    padding: 20px 30px;
+
+    p {
+      @include font(16px, #777777, 400);
+    }
+  }
+
+  .borderBottom {
+    border-bottom: 1px solid #3B3B3B;
+  }
+
+  .detailsPart {
+    padding: 20px 30px;
+  }
+}
+
+.customeToggleBtnSM {
+  input+label {
+    width: 40px !important;
+    height: 26px !important;
+    background-color: gray !important;
+    border: 0 !important;
+
+    &::after {
+      width: 20px !important;
+      height: 20px !important;
+      top: 3px !important;
+      left: 4px !important;
+    }
+  }
+
+  input:checked+label {
+    background-color: #0078D4 !important;
+  }
+
+  input:checked+label {
+    &::after {
+      width: 20px !important;
+      height: 20px !important;
+      top: 3px !important;
+      left: 17px !important;
+      background-color: #fff !important;
+      border: 0 !important;
+    }
+  }
+}
+
+.customTabsParent {
+  .tabsSideButtons {
+    top: 0;
+    right: 20px;
+
+    .btnCloseTicket {
+      background-color: #00C864;
+      padding: 12px;
+      border-radius: 8px;
+      height: 50px;
+      width: 50px;
+    }
+
+    .btnInProgress {
+      background-color: #E91908;
+      padding: 12px;
+      border-radius: 8px;
+      height: 50px;
+      width: 50px;
+    }
+
+    label {
+      font-family: 'GT Walsheim Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 17px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.eventTabs {
+  ul {
+    margin: 0 !important;
+    margin-right: 20px !important;
+
+    li {
+      .nav-link {
+        @include font(16px, $white, 400);
+      }
+    }
+  }
+}
+
+.eventTable {
+  .table {
+    tr {
+      th {
+        background-color: $blue !important;
+      }
+    }
+  }
+}
+
+.adminEventImg {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #363636;
+  border-radius: 100%;
+  display: contents;
+
+  img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.eventPackageHeading {
+  h3 {
+    @include font(24px, $white, 500);
+  }
+
+  hr {
+    border-top: solid 1px #707070;
+    opacity: 1;
+  }
+}
+
+.couponDataPart .stripedTable .table tr td {
+  vertical-align: top;
+  text-align: left;
+}
+
+.selectFieldBordered {
+  background-color: transparent;
+  border: solid 1px $white;
+  border-radius: 0;
+  padding: 5px;
+  height: 37px;
+  @include font(16px, $white, 400);
+  filter: brightness(0) invert(1);
+
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.topRatingPart {
+  background-color: #171717;
+  padding: 15px 20px;
+  border: solid 1px #4E4E4E;
+  height: 100%;
+
+  h2 {
+    @include font(24px, $white, 500);
+  }
+
+  p {
+    @include font(18px, $white, 300);
+  }
+
+  .ratingStar {
+    display: flex;
+    align-items: center;
+
+    .font40White {
+      @include font(40px, $white, 500);
+    }
+  }
+}
+
+.customDDwithImg {
+
+  .select-dropdown {
+    display: inline-block;
+    position: relative;
+    color: #53565a;
+    background-color: #0F0F0F;
+    border-radius: 4px;
+    width: 100%;
+    .ddArrow {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+
+    }
+
+    &.is-active {
+      input[type="text"] {
+        // border-color: $highlight;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      i {
+        top: 6px;
+        transform: rotate(180deg);
+        // color: $highlight;
+      }
+
+      ul {
+        display: block;
+      }
+    }
+
+    #js-ddInput {
+      position: relative;
+      z-index: 1;
+      color: #53565a;
+      border-radius: 4px;
+      border: 0;
+      outline: none !important;
+      padding: 10px 12px;
+      // padding-right: 30px;
+      text-overflow: ellipsis;
+      width: 100%;
+      background: transparent;
+      cursor: pointer;
+      user-select: none !important;
+      @include font(16px, $white, 400);
+      span {
+        margin-left: 15px;
+      }
+    }
+
+    i {
+      position: absolute;
+      top: 6.5px;
+      right: 5px;
+    }
+
+    ul {
+      display: none;
+      position: absolute;
+      z-index: 999;
+      background: transparent;
+      width: calc(100% - 2px);
+      list-style-type: none;
+      // border: 1px solid #b1babf;
+      border-top: 0;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding: 0;
+      margin: 10px 0 0 0;
+
+      li {
+        cursor: pointer;
+        padding: 10px 14px;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        background-color: #0F0F0F;
+        @include font(16px, $white, 400);
+        border: 1px solid #2B2B2B;
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+}
+.grayBorder {
+  border: solid 1px #4E4E4E;
+}
+.bgGray {
+  background: #202020;
+}
+.ddLink {
+  @include fontEthlete(22px !important, #667085, 400);
+}
+.walletModal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .btn {
+    padding: 0;
+    border: 0;
+    &:hover {
+      border: 0;
+    }
+  }
+}
+.walletDDMain {
+  .dropdown-menu {
+    width: 280px;
+    border-radius: 0;
+    .imgBG {
+      width: 40px;
+      height: 40px;
+      background: #F9FAFB;
+      border-radius: 10px;
+      padding: 8px;
+      display: flex;
+    }
+    .dropdown-item {
+      @include fontEthlete(18px, #142868, 600 !important);
+    }
+  }
+}
+
+.communityDDMain {
+  .dropdown-menu {
+    width: 450px;
+    border-radius: 0;
+    .imgBG {
+      width: 40px;
+      height: 40px;
+      display: flex;
+    }
+    .dropdown-item {
+      @include fontEthlete(18px, #142868, 600 !important);
+      text-transform: uppercase;
+      padding: 10px;
+      .ddArrow {
+        display: none;
+        position: absolute;
+        right: 20px;
+      }
+      &:hover {
+        .ddArrow {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.profileDDMain {
+  .dropdown-menu[data-bs-popper]{
+    left: -7px;
+  }
+  .dropdown-menu {
+    // width: 100px;
+    border-radius: 0;
+    .imgBG {
+      width: 40px;
+      height: 40px;
+      display: flex;
+    }
+    .dropdown-item {
+      @include fontEthlete(18px, #142868, 600 !important);
+      text-transform: uppercase;
+      padding: 10px;
+      .ddArrow {
+        display: none;
+        position: absolute;
+        right: 20px;
+      }
+      &:hover {
+        .ddArrow {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.WeeklyResultTable {
+  table {
+      thead {
+          background-color: $themeBlue;
+          th {
+              @include fontEthlete(20px, $white, 500);
+              letter-spacing: 0.02em;
+              padding: 10px 16px;
+          }
+          th.minWidth {
+              min-width: 250px;
+          }
+      }
+      tbody {
+          background-color: #132868;
+          tr {
+              border-width: 1.01692px 0px;
+              border-style: solid;
+              border-color: rgba(17, 46, 136, 0.79);
+              &:hover td {
+                background-color: #112E88C9;
+              }
+              td {
+                  padding: 15px 20px;
+                  vertical-align: middle;
+                  span.title {
+                      @include fontEthlete(24px, #FEF49B, 600);
+                      letter-spacing: 0.02em;
+                  }
+                  .font28 {
+                    @include fontEthlete(24px, #9BDAFE, 600);
+                  }
+                  .detailColumn {
+                      display: flex;
+                      align-items: center;
+                      .img {
+                        border-radius: 50%;
+                          img {
+                              object-fit: cover;
+                              // background-color: #D6C7EE;
+                              height: 66px;
+                              width: 66px;
+                              border-radius: 50%;
+                              padding: 2px;
+                          }
+                      }
+                      .bg1 {background-color: #D6C7EE;}
+                      .bg2 {background-color: #FFCDC2;}
+                      .bg3 {background-color: #EEEAC7;}
+                      .bg4 {background-color: #EEEAC7;}
+                      .bg5 {background-color: #C7EED0;}
+                      .bg6 {background-color: #C7E7EE;}
+                      .content {
+                          display: flex;
+                          flex-direction: column;
+                          h4.title {
+                              @include fontEthlete(24px, #92CEF9, 400);
+                              letter-spacing: 0.02em;
+                              margin-bottom: 0px
+                          }
+                          p {
+                              @include fontEthlete(20px, $lightSky, 400);
+                          }
+                      }
+                      
+                  }
+              }
+          }
+      }
+  }
+}
+.weeklyResultRight {
+  .partOne {
+    background-image: url(../images/transactionRow.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #3FE3EF;
+    padding: 30px;
+    h2 {
+      @include fontEthlete(32px, #172B4D, 600);
+      text-transform: uppercase;
+    }
+    p {
+      @include fontEthlete(15px, rgba(23, 43, 77, 0.8), 400);
+      text-transform: uppercase;
+    }
+    .font56Dark {
+      @include fontEthlete(56px, #172B4D, 700);
+      line-height: 30px;
+    }
+  }
+  .partTwo {
+    background-image: url(../images/transactionRow2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #9BDAFE;
+    padding: 30px;
+    h2 {
+      @include fontEthlete(32px, #172B4D, 600);
+      text-transform: uppercase;
+    }
+    p {
+      @include fontEthlete(15px, rgba(23, 43, 77, 0.8), 400);
+      text-transform: uppercase;
+    }
+    .font56Dark {
+      @include fontEthlete(56px, #172B4D, 700);
+      line-height: 30px;
+    }
+  }
+  .partThree {
+    background-image: url(../images/transactionRow3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #F9EB7F;
+    padding: 30px;
+    h2 {
+      @include fontEthlete(32px, #4D4B17, 600);
+      text-transform: uppercase;
+    }
+    p {
+      @include fontEthlete(15px, rgba(77, 72, 23, 0.8), 400);
+      text-transform: uppercase;
+    }
+    .font56Dark {
+      @include fontEthlete(56px, #4D4817, 700);
+      line-height: 30px;
+    }
+  }
+}
+.font22White {
+  @include fontEthlete(22px, $white, 400);
+}
+.cardLinkBlk {
+  color: #000;
+  &:hover {
+    color: #000;
+  }
+  img {
+    // height: 230px;
+  }
+}
+.navMainNew {
+  background-color: transparent !important;
+  padding: 0;
+  width: auto;
+  .navbar-nav {
+    a {
+      width: max-content;
+      background-color: #D4E6FE;
+      border-radius: 0;
+      border: 0;
+      @include fontEthlete(22px, #4A5662, 600);
+      padding: 8px 13px;
+      &:hover,
+      &.active {
+        background-color: #3FE3EF;
+        color: #0A1917;
+      }
+    }
+  }
+}
+
+.seasonStateProgress {
+  .icComman {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .icOne {
+    background-color: #FD6297;
+    border: solid 2px #FE9BBE;
+  }
+  
+  .icTwo {
+    background-color: #31B055;
+    border: solid 2px #D7F4D7;
+  }
+  
+  .icThree {
+    background-color: #0B95DE;
+    border: solid 2px #9BDAFE;
+  }
+  
+  .icFour {
+    background-color: #DEC90B;
+    border: solid 2px #FCFE9B;
+  }
+
+  .icFive {
+    background-color: #FD6DDD;
+    border: solid 2px #EA9BFE;
+  }
+  
+  .iconbgPattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/btnPattern.png);
+    background-size: cover;
+    z-index: 0;
+  }
+}
+
+// modalPurchaseNFT start
+.modalPurchaseNFT {
+  .modal-header {
+    border-bottom: 1px solid rgba(192, 227, 252, 0.36);
+    .networkLabel {
+      background-color: #E8FEFF;
+      padding: 10px 15px;
+      border-radius: 36px;
+      display: flex;
+      align-items: center;
+      @include fontEthlete(20px, #4A5662, 400);
+      .circle {
+        width: 24px;
+        height: 24px;
+        background-color: #29B6AF;
+        border-radius: 100%;
+      }
+    }
+  }
+  .transformPart {
+    .fromPurchase {
+      width: 40px;
+      height: 40px;
+      background: #F6C343;
+      border-radius: 100%;
+    }
+    .toPurchase {
+      width: 40px;
+      height: 40px;
+      background: #01828E;
+      border-radius: 100%;
+    }
+    p {
+      @include fontEthlete(24px, #4A5662, 600);
+    }
+  }
+  .purchasePart {
+    background: #F9FAFA;
+    p {
+      @include fontEthlete(24px, #4A5662, 400);
+    }
+    .font36Dark {
+      @include fontEthlete(36px, #4A5662, 500);
+    }
+  }
+  .transactionDetailsPart {
+    .borderArea {
+      border: 2px solid #F6F7F7;
+      border-radius: 20px;
+      padding: 20px;
+      .font24Black {
+        @include fontEthlete(24px, #0D193F, 600);
+      }
+      .font22GrayNormal {
+        @include fontEthlete(22px, #5B5D66, 400);
+      }
+      .font22GraySemi {
+        @include fontEthlete(22px, #5B5D66, 600);
+      }
+      .font22Green {
+        @include fontEthlete(22px, #53A451, 400);
+      }
+      hr {
+        border-top: 1px solid #F9FAFA;
+        opacity: 1;
+      }
+    }
+  }
+  .btnGray {
+    @include fontEthlete(24px, #5B5D66, 700);
+    background-color: #F9FAFA;
+    border-radius: 68px;
+    padding: 15px 100px;
+    height: fit-content;
+    width: fit-content;
+    letter-spacing: 0.18px;
+    transition: background-color 0.1s;
+    border: 0;
+  
+    &:hover,
+    &:active,
+    &:focus {
+      @include fontEthlete(24px, #5B5D66, 700);
+      background-color: #F9FAFA;
+      transition: background-color 0.1s;
+    }
+  }
+  .btnBlue {
+    @include fontEthlete(24px, $white, 700);
+    background-color: #367BCF;
+    border-radius: 68px;
+    padding: 15px 100px;
+    height: fit-content;
+    width: fit-content;
+    letter-spacing: 0.18px;
+    transition: background-color 0.1s;
+    border: 0;
+  
+    &:hover,
+    &:active,
+    &:focus {
+      @include fontEthlete(24px, $white, 700);
+      background-color: #367BCF;
+      transition: background-color 0.1s;
+    }
+  }
+}
+.MarketplaceInProcess {
+  h2 {
+    @include fontEthlete(36px, #E5F3FD, 600);
+  }
+  p {
+    @include fontEthlete(28px, #FCFDFD, 500);
+    .fontYellow {
+      color: #FEFD9B;
+    }
+  }
+}
+.btnWidthCustom {
+  max-width: 450px;
+}
+.radial_lines {
+  position: absolute;
+  top: -100px;
+  z-index: 0;
+  img {
+    animation: rotation 20s infinite linear;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#tooltip-top > .tooltip-inner {
+  background-color: #D4E6FE;
+  @include fontEthlete(20px, #000, 500);
+}
+.bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
+  border-top-color: #D4E6FE;
+}
+.marketplacePageMain {
+  .customHeader .navMain .basicConnectBtns .same {
+    background: #F6E136;
+    border: 4px solid #FEFD9B;
+  }
+  .customHeader .navMain .basicConnectBtns .same .btn,
+  .customHeader .navMain .basicConnectBtns .same .btn:hover {
+    height: unset;
+  }
+}
+.nftImg {
+  img {
+    max-width: 70px;
+  }
+}
+.lineUpPage {
+  .popover-arrow {
+    display: none;
+  }
+  .popover-body {
+    padding: 0;
+    border-radius: 0;
+    width: 715px;
+  }
+}
+.positionSticky {
+  position: sticky;
+  top: 0;
+}
+body.swal2-shown > [aria-hidden="true"] {
+  transition: 0.1s filter;
+  filter: blur(10px);
+}

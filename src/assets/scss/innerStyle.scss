@@ -1,0 +1,1432 @@
+@import "variable";
+@import "mixin";
+@import "fonts";
+
+
+// ===== TEXT =====
+
+
+// ======= BUTTON =======
+.lightSkyBorderBtn {
+    background: #0B95DE;
+    border: 2px solid $lightSky;
+    border-radius: 0;
+    &:hover {
+      background-color: #02E3F9;
+      border-color: #02E3F9;
+    }
+}
+
+.grayBtn {
+    background-color: #D4E6FE;
+    border-radius: 0;
+    border: 0;
+    padding: 8px 13px;
+}
+
+.plusYellowBtn {
+    background-color: #E4FEAD !important;
+    border: solid 3px $white;
+    border-radius: 7px;
+    padding: 7px 10px;
+}
+
+.btnGlow {
+    background-color: #3FE3EF;
+    font-family: 'Athletics';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.019em;
+    color: #0A1917;
+    padding: 10px 15px;
+}
+
+.btnLightBlue {
+    background-color: #9BDAFE;
+    font-family: 'Athletics';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.019em;
+    color: #0A1917;
+    padding: 10px 15px;
+}
+ 
+.headerParent {
+    .avatarIcon {
+        display: flex;
+        align-items: center;
+        .imgOuter {
+            img {
+                object-fit: cover;
+                background-color: #D6C7EE;
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                // padding: 1px;
+                object-position: -2px 7px;
+            }
+        }
+    }
+    .headerTitleIcon {
+        height: 60px;
+    }
+    .titleTextMini {
+        @include fontEthlete(20px, $lightSky, 300);
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        margin-top: 10px;
+    }
+}
+
+// ===== react-joyride-customCss =====
+#react-joyride-portal {
+    .react-joyride__overlay {
+        background: #000000ad !important;
+    }
+}
+.react-joyride__tooltip {
+    background-color: #1D2529 !important;
+    border-radius: 11.3338px !important;
+    color: #FCFCFD !important;
+    // padding: 0 !important;
+    // padding-top: 8px !important;
+    h4 {
+        text-align: left;
+        padding: 8px 10px;
+    }
+    div[style="padding: 20px 10px;"] {
+        padding: 0 !important;
+    }
+    .customTourTooltip {
+        font-family: 'Athletics';
+        font-style: normal;
+        text-align: start;
+        padding: 8px 10px;
+        .customTitle {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FCFCFD;
+        }
+        .customDetail {
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 20px;
+            color: #EAECF0;
+            margin-bottom: 0;
+        }
+    }
+    button[title=Close] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF !important;
+        border: 0.56543px solid #F0F3FB !important;
+        border-radius: 50% !important;
+        padding: 8px 6px !important;
+        right: 12px !important;
+        top: 12px !important;
+        svg {
+            height: 10px !important;
+            stroke: #111111 !important;
+        }
+    }
+    button[title=Skip] {
+        color: #fff !important;
+    }
+    button[title=Next] {
+        background-color: #FCFCFD !important;
+        color: #111111 !important;
+    }
+}
+.__floater__arrow {
+    span svg polygon {
+        fill: #1D2529;
+    }
+}
+// =============
+
+.tabSideBtnParent {
+    .tabSideBtns {
+        position: absolute;
+        top: 0;
+        right: 0;
+        // width: 100%;
+        .collepsSearchOuter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            justify-content: flex-end;
+            height: 50px;
+            .collepsSearch {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #D4E6FE;
+                height: 100%;
+                padding: 6px;
+                width: 100%;
+                margin-right: 30px;
+            }
+            input {
+                background: none;
+                border: none;
+                outline: none;
+                height: 100%;
+                padding: 0 6px;
+                font-family: "Athletics";
+                font-size: 22px;
+                color: #4A5662;
+                font-weight: 500;
+                letter-spacing: .5px;
+                width: 100%;
+                // border: 1px solid green;
+            }
+            .btn1 {
+                height: 100%;
+                padding: 0 6px;
+                svg { height: 25px; }
+            }
+            .grayBtn.open {
+                height: 100%;
+                padding: 0 5px;
+                width: 50px;
+                svg { height: 24px; }
+            }
+            .grayBtn.close {
+                height: 100%;
+                padding: 0 5px;
+                width: 50px;
+                background-color: rgba(0, 0, 0, 0.626);
+                span {
+                    font-size: 24px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.btnDisable:disabled{
+    opacity: 0.6;
+    cursor: not-allowed !important;
+}
+
+.darkBlueBg {
+    background-color: #082254;
+    padding: 30px;
+}
+
+.customeToggleBtn {
+    input + label {
+        cursor: pointer;
+        background-color: #6A8095;
+        height: 38px;
+        width: 70px;
+        padding: 6px;
+        display: block;
+        position: relative;
+        border-radius: 20px;
+        transition: all 200ms;
+        &::after {
+            content: "";
+            background-color: $white;
+            height: 26px;
+            width: 26px;
+            position: absolute;
+            top: 6px;
+            left: 7px;
+            border-radius: 50%;
+        }
+    }
+    input:checked + label {
+        background-color: #3FE3EF;
+        border: 1px solid #47BEC7;
+        transition: all 200ms;
+        &::after {
+            top: 5px;
+            left: unset;
+            right: 5px;
+            border: 1px solid #47BEC7;
+        }
+    }
+}
+
+.customInput {
+    background-color: #0E2C67;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .customFormGroup {
+        flex: 1;
+        .customLabel1 {
+            font-family: 'Athletics';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: #C0E3FC;
+        }
+        input, .customLabel2 {
+            background: none;
+            border: none;
+            outline: none;
+            color: $white;
+            font-family: 'Athletics';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 27px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.328)
+            }
+        }
+        small {
+            font-family: 'Athletics';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: #C0E3FC;
+        }
+    }
+    .PswdViewIcon, .PswdHideIcon {
+        height: 30px;
+        color: #6A8095;
+    }
+}
+
+
+.walletPage {
+    .overviewTab {
+        .overviewCard {
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #eafcc4;
+            .card-img-top {
+                width: auto;
+                max-height: 150px;
+                height: 150px;
+                margin: auto;
+            }
+            .body1 {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-top: 0.649266px solid rgba(0, 7, 36, 0.07);
+                background-color: #E4FEAD;
+                backdrop-filter: blur(3.8956px);
+                .card-text {
+                    @include fontEthlete(14px, #172B4D, 500);
+                    line-height: 18px;
+                    text-transform: uppercase;
+                }
+                .card-title {
+                    @include fontEthlete(24px, #172B4D, 600);
+                    line-height: 30px;
+                }
+            }
+            .body2 {
+                background-color: $black;
+                .card-title {
+                    @include fontEthlete(25px, $white, 600);
+                    font-style: normal;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    .transHistoryTab {
+        table {
+            thead {
+                background-color: $themeBlue;
+                th {
+                    @include fontEthlete(16px, $white, 500);
+                    letter-spacing: 0.02em;
+                    padding: 10px 16px;
+                }
+                th.minWidth {
+                    min-width: 250px;
+                }
+            }
+            tbody {
+                background-color: #132868;
+                tr {
+                    border-width: 1.01692px 0px;
+                    border-style: solid;
+                    border-color: rgba(17, 46, 136, 0.79);
+                    td {
+                        padding: 15px 20px;
+                        vertical-align: middle;
+                        span.title {
+                            @include fontEthlete(18px, $white, 400);
+                            letter-spacing: 0.02em;
+                        }
+                        a.link svg {
+                            height: 20px;
+                        }
+                        .detailColumn {
+                            display: flex;
+                            align-items: center;
+                            .icon {
+                                padding: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: #C0E3FC;
+                                border-radius: 50%;
+                                svg {
+                                    height: 22px;
+                                    padding: 2px;
+                                }
+                            }
+                            .img {
+                                img {
+                                    object-fit: cover;
+                                    background-color: #D6C7EE;
+                                    height: 45px;
+                                    width: 45px;
+                                    border-radius: 50%;
+                                    padding: 2px;
+                                }
+                            }
+                            .content {
+                                display: flex;
+                                flex-direction: column;
+                                h4.title {
+                                    @include fontEthlete(22px, $white, 500);
+                                    letter-spacing: 0.02em;
+                                    margin-bottom: 0px
+                                }
+                                p {
+                                    @include fontEthlete(14px, $lightSky, 400);
+                                }
+                            }
+                        }
+                        .status {
+                            background: rgba(189, 250, 239, 0.03);
+                            border-radius: 4.06768px;
+                            padding: 8.13536px 16.2707px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .savedCardTab {
+        .savedCards {
+            border: none;
+            border-radius: 33.8845px;
+            overflow: hidden;
+            width: 450px;
+            .cardHeader {
+                padding: 0;
+                border-radius: 0;
+                height: 150px;
+                .cardLogos {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 60px;
+                    svg.CardLogoIcon1, svg.CardLogoIcon2, svg.VisaWhiteIcon, svg.VisaBlackIcon, svg.VisaIcon2 {
+                        height: 40px;
+                    }
+                }
+                .card-img-top {}
+            }
+            .bodyContent {
+                background-color: #111111;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 35px;
+                height: 150px;
+                .card-title {
+                    @include font(24px, $white, 400);
+                    font-family: 'Neue Machina';
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 35px;
+                    letter-spacing: 0.06em;
+                }
+                .cardNumber {
+                    width: 212px;
+                }
+                .expDate {
+                    .title {
+                        @include font(22px, $white, 300);
+                        font-family: 'Neue Machina';
+                        font-style: normal;
+                        line-height: 22px;
+                        letter-spacing: 0.04em;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.reviewRatingPage {
+    .pageContentTitleArea {
+        .StarIcon {
+            height: 37px;
+        }
+    }
+    .reviewRatingTable {
+        table {
+            thead {
+                background-color: $themeBlue;
+                th {
+                    @include fontEthlete(16px, $white, 500);
+                    letter-spacing: 0.02em;
+                    padding: 10px 16px;
+                }
+                th.minWidth {
+                    min-width: 250px;
+                }
+            }
+            tbody {
+                background-color: #132868;
+                tr {
+                    border-width: 1.01692px 0px;
+                    border-style: solid;
+                    border-color: rgba(17, 46, 136, 0.79);
+                    td {
+                        padding: 15px 20px;
+                        vertical-align: middle;
+                        span.title {
+                            @include fontEthlete(18px, $white, 400);
+                            letter-spacing: 0.02em;
+                        }
+                        .detailColumn {
+                            display: flex;
+                            align-items: center;
+                            .img {
+                                img {
+                                    object-fit: cover;
+                                    background-color: #D6C7EE;
+                                    height: 45px;
+                                    width: 45px;
+                                    border-radius: 50%;
+                                    padding: 2px;
+                                }
+                            }
+                            .content {
+                                display: flex;
+                                flex-direction: column;
+                                h4.title {
+                                    @include fontEthlete(22px, $white, 500);
+                                    letter-spacing: 0.02em;
+                                    margin-bottom: 0px
+                                }
+                                p {
+                                    @include fontEthlete(14px, $lightSky, 400);
+                                }
+                            }
+                        }
+                        .review {
+                            @include fontEthlete(15px, $white, 300);
+                            line-height: 138%;
+                            letter-spacing: -0.019em;
+                        }
+                        .StarIcon, .StartEmptyIcon {
+                            height: 28px;
+                        }
+                        .statusDot {
+                            width: 16.09px;
+                            height: 16.09px;
+                            border-radius: 50%;
+                            display: block;
+                            &.onHold {background: #0ECCF3}
+                            &.inProgress {background: #F69A44}
+                            &.completed {background: #0EF36A}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nftCollectionPage {
+    .nftCards {
+        border: none;
+        border-radius: 6px;
+        overflow: hidden;
+        .card-header {
+            padding: 0;
+            border-radius: 0;
+            border-bottom: none;
+            padding:10px;
+            .card-img-top {
+                // max-height: 280px;
+                // height: 280px;
+            }
+        }
+        .card-body {
+            background-color: $white;
+            .card-title {
+                @include fontEthlete(30px, #172B4D, 900);
+                line-height: 115%;
+            }
+            .btnLink {
+                @include fontEthlete(20px, $black, 600);
+                line-height: 20px;
+                text-transform: uppercase;
+                background: none;
+                .RightArrowIcon {
+                    height: 18px;
+                }
+            }
+        }
+    }
+    .rightSec {
+        .topAthlete {
+            background-color: #1D2529;
+            .heading {
+              background-color: #9BDAFE;
+              padding: 10px 30px 7px 30px;
+              @include fontEthlete(25px, #094A6C, 700);
+            }
+            .details {
+              padding: 15px 30px;
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              .playerPic {
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+                background-color: #D6C7EE;
+                img {
+                  width: 70px;
+                  height: 70px;
+                  border-radius: 100%;
+                }
+              }
+              h2 {
+                @include fontEthlete(32px, $white, 700);
+                line-height: 30px;
+              }
+              p {
+                @include fontEthlete(27px, $white, 500);
+                font-style: italic;
+                line-height: 24px;
+                span {
+                  color: #C0E3FC;
+                }
+              }
+              .playerLabel {
+                background-color: #0B95DE;
+                border: solid 4px #C0E3FC;
+                width: 55px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Athletics";
+                font-size: 22px;
+                color: #fff;
+                font-weight: 600;
+                transform: rotate(45deg);
+                span {
+                    transform: rotate(315deg);
+                }
+              }
+            }
+            .playerItems {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              padding: 15px 30px;
+              svg {
+                  height: 30px
+              }
+              .font34White {
+                @include fontEthlete(34px, $white, 600);
+              }
+            }
+        }
+        .trendingAthleteTable {
+            table {
+                thead {
+                    background-color: #912DA9;
+                    th {
+                        @include fontEthlete(16px, $white, 500);
+                        letter-spacing: 0.02em;
+                        padding: 10px 30px 7px 30px;
+                        .heading {
+                            @include fontEthlete(25px, $white, 700);
+                          }
+                    }
+                }
+                tbody {
+                    background-color: #1D2529;
+                    tr {
+                        border-width: 1.01692px 0px;
+                        border-style: solid;
+                        border-color: rgba(255, 255, 255, 0.15);
+                        td {
+                            padding: 15px 20px;
+                            vertical-align: middle;
+                            span.title {
+                                @include fontEthlete(18px, $white, 400);
+                                letter-spacing: 0.02em;
+                            }
+                            span.profit {
+                                @include fontEthlete(14px, #59CC7F, 400);
+                            }
+                            span.loss {}
+                            .detailColumn {
+                                display: flex;
+                                align-items: center;
+                                .img {
+                                    img {
+                                        object-fit: cover;
+                                        background-color: #D6C7EE;
+                                        height: 45px;
+                                        width: 45px;
+                                        border-radius: 50%;
+                                        padding: 2px;
+                                    }
+                                }
+                                .content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    h4.title {
+                                        @include fontEthlete(22px, $white, 500);
+                                        letter-spacing: 0.02em;
+                                        margin-bottom: 0px
+                                    }
+                                    p {
+                                        @include fontEthlete(14px, $white, 400);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pccStorePage {
+    // .navCustom {
+    //     .GymnisticIcon {
+    //         // height: 22px;
+    //     }
+    // }
+    .pccStoreCard {
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #F3EBFF;
+        .card-body {
+            &.body1 {
+                padding-right: 60px;
+                .card-text {
+                    @include fontEthlete(14px, #172B4D, 500);
+                    line-height: 18px;
+                    text-transform: uppercase;
+                }
+                .card-title {
+                    @include fontEthlete(24px, #172B4D, 800);
+                    line-height: 30px;
+                }
+                .iconOuter {
+                    background-color: #242625;
+                    padding: 8px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-radius: 0px 0px 0px 23.0338px;
+                    .AddCartIcon {
+                        height: 40px;
+                        color: $white;
+                    }
+                }
+            }
+            &.body2 {
+                background: #F1EBF9;
+                border-top: 1px solid rgba(0, 0, 0, 0.03);
+                p {
+                    &.title {
+                        font-family: 'Athletics';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #172B4D;
+                    }
+                    &.content {
+                        font-family: 'Athletics';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: right;
+                        color: #172B4D;
+                    }
+                }
+            }
+        }
+        .card-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 205px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        button {
+            background-color: #D247EA;
+            padding: 10px 15px;
+            .GoldCLetterIcon { height: 38px; }
+            span {
+                @include fontEthlete(20px, $white, 900);
+                line-height: 25px;
+            }
+        }
+        // ------ hover ---- 
+        &:hover {
+            background-color: #F7EFD5;
+            .card-body {
+                &.body2 {
+                    background-color: #F6EDCE;
+                    border-top: 1.43961px solid rgba(0, 0, 0, 0.03);
+                }
+            }
+            button {
+                background-color: #F6E136;
+                span {color: #242625;}
+            }
+        }
+    }
+}
+
+.settingPage {
+    .accountTab {
+        .mainHeading {
+            font-family: 'Athletics';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .darkBlueBg {
+            .bioArea {
+                .profile {
+                    img {
+                        object-fit: cover;
+                        background-color: #EEE3C7;
+                        height: 90px;
+                        width: 90px;
+                        border-radius: 50%;
+                        padding: 2px;
+                    }
+                }
+                .name {
+                    font-family: 'Athletics';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 30px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                .bio {
+                    font-family: 'Athletics';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 25px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: #C0E3FC;
+                }
+            }
+            .btnChangePswd {
+                background-color: #3FE3EF;
+                font-family: 'Athletics';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: -0.019em;
+                color: #0A1917;
+                padding: 25px 15px;
+            }
+        }
+    }
+}
+
+.btnBack768Max {
+    font-family: "Athletics";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    display: none;
+}
+@media (max-width: 768px) {
+    .lineUpPage {
+        // .playerList {
+            
+        // }
+        // .selectedPlayer {
+        // }
+        .playerListPos {
+            // position: absolute;
+          transition: all .3s;
+        }
+        .selectedPlayerPos {
+            // position: absolute;
+            // right: -1000px;
+        }
+    }
+
+    .btnBack768Max {
+        display: block;
+    }
+}
+
+
+// ==========
+
+@media (min-width: 250px) {
+    .walletPage {
+        .overviewTab {
+            .overviewCard {
+                .card-img-top {
+                    height: calc(6.25rem + ((1vw - 2.5px) * 3.7037));
+                    min-height: 0vw;
+                }
+                .body1 {
+                    padding-top: calc(0.4375rem + ((1vw - 2.5px) * 0.2222));
+                    padding-bottom: calc(0.4375rem + ((1vw - 2.5px) * 0.2222));
+                    min-height: 0vw;
+                    .card-text {
+                        font-size: calc(0.625rem + ((1vw - 2.5px) * 0.2963));
+                        line-height: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+                        min-height: 0vw;
+                    }
+                    .card-title {
+                        font-size: calc(0.875rem + ((1vw - 2.5px) * 0.7407));
+                        line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                        min-height: 0vw;
+                    }
+                }
+                .body2 {
+                    .card-title {
+                        font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.7407));
+                        line-height: calc(1.6875rem + ((1vw - 2.5px) * 0.963));
+                        min-height: 0vw;
+                    }
+                }
+            }
+        }
+        .transHistoryTab {
+            table {
+                thead {
+                    th {
+                        font-size: calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+                        padding: calc(0.4375rem + ((1vw - 2.5px) * 0.2222)) calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+                    }
+                    th.minWidth {
+                        min-width: calc(12.5rem + ((1vw - 2.5px) * 3.7037));
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: calc(0.6875rem + ((1vw - 2.5px) * 0.2963)) calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+                            span.title {
+                                font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+                            }
+                            a.link svg {
+                                height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+                            }
+                            .detailColumn {
+                                .icon {
+                                    padding: calc(0.5rem + ((1vw - 2.5px) * 0.1481));
+                                    svg {
+                                        height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+                                        padding: calc(0.0625rem + ((1vw - 2.5px) * 0.0741));
+                                    }
+                                }
+                                .img {
+                                    img {
+                                        height: calc(2rem + ((1vw - 2.5px) * 0.963));
+                                        width: calc(2rem + ((1vw - 2.5px) * 0.963));
+                                        padding: calc(0.0625rem + ((1vw - 2.5px) * 0.0741));
+                                    }
+                                }
+                                .content {
+                                    h4.title {
+                                        font-size: calc(0.875rem + ((1vw - 2.5px) * 0.5926));
+                                    }
+                                    p {
+                                        font-size: calc(0.625rem + ((1vw - 2.5px) * 0.2963));
+                                    }
+                                }
+                            }
+                            .status {
+                                padding: 8.13536px calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .savedCardTab {
+            .savedCards {
+                border-radius: calc(1.5625rem + ((1vw - 2.5px) * 0.5926));
+                width: calc(15.625rem + ((1vw - 2.5px) * 14.8148));
+                .cardHeader {
+                    height: calc(5.625rem + ((1vw - 2.5px) * 4.4444));
+                    .cardLogos {
+                        padding: 0 calc(2.5rem + ((1vw - 2.5px) * 1.4815));
+                        svg.CardLogoIcon1, svg.CardLogoIcon2, svg.VisaWhiteIcon, svg.VisaBlackIcon, svg.VisaIcon2 {
+                            height: calc(1.75rem + ((1vw - 2.5px) * 0.8889));
+                        }
+                    }
+                }
+                .bodyContent {
+                    padding: 0 calc(1.5625rem + ((1vw - 2.5px) * 0.7407));
+                    height: calc(5.625rem + ((1vw - 2.5px) * 4.4444));
+                    .card-title {
+                        font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.6667));
+                        line-height: calc(1.25rem + ((1vw - 2.5px) * 1.1111));
+                    }
+                    .cardNumber {
+                        width: calc(8.125rem + ((1vw - 2.5px) * 6.0741));
+                    }
+                    .expDate {
+                        .title {
+                            font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+                            line-height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // =======
+    .pccStorePage {
+        // .navCustom {
+        //     .GymnisticIcon {
+        //         // height: 22px;
+        //     }
+        // }
+        .pccStoreCard {
+            .card-body {
+                &.body1 {
+                    padding-right: calc(2.5rem + ((1vw - 2.5px) * 1.4815));
+                    .card-text {
+                        font-size: calc(0.6875rem + ((1vw - 2.5px) * 0.2222));
+                        line-height: calc(0.8125rem + ((1vw - 2.5px) * 0.3704));
+                    }
+                    .card-title {
+                        font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.6667));
+                        line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                    }
+                    .iconOuter {
+                        padding: calc(0.375rem + ((1vw - 2.5px) * 0.1481));
+                        .AddCartIcon {
+                            height: calc(1.5625rem + ((1vw - 2.5px) * 1.1111));
+                        }
+                    }
+                }
+                &.body2 {
+                    p {
+                        &.title {
+                            font-size: calc(0.75rem + ((1vw - 2.5px) * 0.2963));
+                            line-height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+                        }
+                        &.content {
+                            font-size: calc(0.75rem + ((1vw - 2.5px) * 0.2963));
+                            line-height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+                        }
+                    }
+                }
+            }
+            .card-img {
+                width: calc(9.375rem + ((1vw - 2.5px) * 4.0741));
+                margin-top: calc(1.875rem + ((1vw - 2.5px) * 0.7407));
+            }
+            button {
+                padding: calc(0.5rem + ((1vw - 2.5px) * 0.1481)) calc(0.75rem + ((1vw - 2.5px) * 0.2222));
+                .GoldCLetterIcon { height: calc(1.25rem + ((1vw - 2.5px) * 0.7407)); }
+                span {
+                    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+                    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.3704));
+                }
+            }
+            
+        }
+    }
+    // ======
+    .singleSelectedCollectionCard {
+        .card-img-top {
+        //   height: calc(8.75rem + ((1vw - 2.5px) * 11.8519));
+        //   margin: calc(1.25rem + ((1vw - 2.5px) * 1.4815)) 0;
+        //   min-height: 0vw;
+        }
+        .body1 {
+          .card-text {
+              font-size: calc(0.5625rem + ((1vw - 2.5px) * 0.6667));
+              line-height: calc(0.6875rem + ((1vw - 2.5px) * 0.8148));
+              min-height: 0vw;
+          }
+          .card-title {
+              font-size: calc(0.9375rem + ((1vw - 2.5px) * 1.1111));
+              line-height: calc(0.9375rem + ((1vw - 2.5px) * 1.1111));
+              min-height: 0vw;
+          }
+        }
+        .body2 {
+          .leftTitle, .rightTitle {
+            .title {
+              font-size: calc(0.625rem + ((1vw - 2.5px) * 0.7407));
+              line-height: calc(0.6875rem + ((1vw - 2.5px) * 0.8148));
+              min-height: 0vw;
+            }
+            .detail {
+              font-size: calc(0.875rem + ((1vw - 2.5px) * 0.963));
+              line-height: calc(0.9375rem + ((1vw - 2.5px) * 1.1111));
+              min-height: 0vw;
+            }
+          }
+        } 
+    }
+    // =======
+    .nftCollectionPage {
+        .nftCards {
+            .card-header {
+            // padding: calc(1.25rem + ((1vw - 2.5px) * 0.7407)) calc(0.375rem + ((1vw - 2.5px) * 0.2963)) 0 calc(0.375rem + ((1vw - 2.5px) * 0.2963));
+            min-height: 0vw;
+                .card-img-top {
+                    // height: 280px;
+                }
+            }
+            .card-body {
+                .card-title {
+                    font-size: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                    line-height: calc(1.25rem + ((1vw - 2.5px) * 1.2593));
+                    min-height: 0vw;
+                }
+                .btnLink {
+                    @include fontEthlete(calc(0.75rem + ((1vw - 2.5px) * 0.5926)), $black, 600);
+                    line-height: calc(0.75rem + ((1vw - 2.5px) * 0.5926));
+                    min-height: 0vw;
+                    .RightArrowIcon {
+                        height: calc(0.75rem + ((1vw - 2.5px) * 0.5926));
+                        min-height: 0vw;
+                    }
+                }
+            }
+        }
+        .rightSec {
+            .topAthlete {
+                .heading {
+                  padding: calc(0.4375rem + ((1vw - 2.5px) * 0.2222)) calc(1.25rem + ((1vw - 2.5px) * 0.7407)) calc(0.25rem + ((1vw - 2.5px) * 0.2222)) calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                  font-size: calc(0.875rem + ((1vw - 2.5px) * 0.8148));
+                  min-height: 0vw;
+                }
+                .details {
+                  padding: 15px calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                  min-height: 0vw;
+                  .playerPic {
+                    width: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+                    height: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+                    min-height: 0vw;
+                    img {
+                      width: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+                      height: calc(2.8125rem + ((1vw - 2.5px) * 1.8519));
+                      min-height: 0vw;
+                    }
+                  }
+                  h2 {
+                    font-size: calc(1.125rem + ((1vw - 2.5px) * 1.037));
+                    line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                    min-height: 0vw;
+                  }
+                  p {
+                    font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.8889));
+                    line-height: calc(0.875rem + ((1vw - 2.5px) * 0.7407));
+                    min-height: 0vw;
+                  }
+                  .playerLabel {
+                    width: calc(1.875rem + ((1vw - 2.5px) * 1.8519));
+                    height: calc(1.875rem + ((1vw - 2.5px) * 1.8519));
+                    font-size: calc(0.8125rem + ((1vw - 2.5px) * 0.6667));
+                    min-height: 0vw;
+                  }
+                }
+                .playerItems {
+                  padding: calc(0.625rem + ((1vw - 2.5px) * 0.3704)) calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                  min-height: 0vw;
+                  svg {
+                      height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                      min-height: 0vw;
+                  }
+                  .font34White {
+                    font-size: calc(1.1875rem + ((1vw - 2.5px) * 1.1111));
+                    min-height: 0vw;
+                  }
+                }
+            }
+            .trendingAthleteTable {
+                table {
+                    thead {
+                        th {
+                           font-size: calc(0.625rem + ((1vw - 2.5px) * 0.4444));
+                            padding: calc(0.375rem + ((1vw - 2.5px) * 0.2963)) calc(1.25rem + ((1vw - 2.5px) * 0.7407)) calc(0.25rem + ((1vw - 2.5px) * 0.2222)) calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                            min-height: 0vw;
+                            .heading {
+                                font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.7407));
+                                min-height: 0vw;
+                              }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding: calc(0.625rem + ((1vw - 2.5px) * 0.3704)) calc(0.75rem + ((1vw - 2.5px) * 0.5926));
+                                min-height: 0vw;
+                                span.title {
+                                    font-size: calc(0.625rem + ((1vw - 2.5px) * 0.5926));
+                                    min-height: 0vw;
+                                }
+                                span.profit {
+                                    font-size: calc(0.5625rem + ((1vw - 2.5px) * 0.3704));
+                                    min-height: 0vw;
+                                }
+                                .detailColumn {
+                                    .img {
+                                        img {
+                                            height: calc(1.5625rem + ((1vw - 2.5px) * 1.4815));
+                                            width: calc(1.5625rem + ((1vw - 2.5px) * 1.4815));
+                                            min-height: 0vw;
+                                        }
+                                    }
+                                    .content {
+                                        h4.title {
+                                            font-size: calc(0.8125rem + ((1vw - 2.5px) * 0.6667));
+                                            min-height: 0vw;
+                                        }
+                                        p {
+                                            font-size: calc(0.5625rem + ((1vw - 2.5px) * 0.3704));
+                                            min-height: 0vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // =========
+    .settingPage {
+        .accountTab {
+            .mainHeading {
+                font-size: calc(1rem + ((1vw - 2.5px) * 0.6667));
+                line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                min-height: 0vw;
+            }
+            .darkBlueBg {
+                .bioArea {
+                    .profile {
+                        img {
+                            height: calc(4.0625rem + ((1vw - 2.5px) * 1.8519));
+                            width: calc(4.0625rem + ((1vw - 2.5px) * 1.8519));
+                            padding: calc(0.0625rem + ((1vw - 2.5px) * 0.0741));
+                            min-height: 0vw;
+                        }
+                    }
+                    .name {
+                        font-size: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                        line-height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+                        min-height: 0vw;
+                    }
+                    .bio {
+                        font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+                        line-height: calc(1rem + ((1vw - 2.5px) * 0.6667));
+                        min-height: 0vw;
+                    }
+                }
+                .btnChangePswd {
+                    font-size: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+                    line-height: calc(1rem + ((1vw - 2.5px) * 0.6667));
+                    padding: calc(1rem + ((1vw - 2.5px) * 0.6667)) calc(0.625rem + ((1vw - 2.5px) * 0.3704));
+                    min-height: 0vw;
+                }
+            }
+        }
+    }
+    // ========
+    .customInput {
+        padding: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+        min-height: 0vw;
+        .customFormGroup {
+            .customLabel1 {
+                font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+                line-height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+                min-height: 0vw;
+            }
+            input, .customLabel2 {
+                font-size: calc(0.9375rem + ((1vw - 2.5px) * 0.7407));
+                line-height: calc(1.0625rem + ((1vw - 2.5px) * 0.7407));
+                min-height: 0vw;
+            }
+            small {
+                font-size: calc(0.75rem + ((1vw - 2.5px) * 0.4444));
+                line-height: calc(0.875rem + ((1vw - 2.5px) * 0.4444));
+                min-height: 0vw;
+            }
+        }
+        .PswdViewIcon, .PswdHideIcon {
+            height: calc(1.25rem + ((1vw - 2.5px) * 0.7407));
+            min-height: 0vw;
+        }
+    }
+    // =======
+    .customeToggleBtn {
+        input + label {
+            height: calc(1.425rem + ((1vw - 2.5px) * 1.1259));
+            width: calc(2.625rem + ((1vw - 2.5px) * 2.0741));
+            padding: calc(0.225rem + ((1vw - 2.5px) * 0.1778));
+            border-radius: 20px;
+            min-height: 0vw;
+            &::after {
+                height: calc(0.975rem + ((1vw - 2.5px) * 0.7704));
+                width: calc(0.975rem + ((1vw - 2.5px) * 0.7704));
+                top: calc(0.225rem + ((1vw - 2.5px) * 0.1778));
+                left: calc(0.2625rem + ((1vw - 2.5px) * 0.2074));
+                min-height: 0vw;
+            }
+        }
+        input:checked + label {
+            &::after {
+                top: calc(0.1875rem + ((1vw - 2.5px) * 0.1481));
+                right: calc(0.1875rem + ((1vw - 2.5px) * 0.1481));
+                min-height: 0vw;
+            }
+        }
+    }
+    // ======
+    .darkBlueBg {
+        padding: calc(1.125rem + ((1vw - 2.5px) * 0.8889));
+    }
+  }
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 992px) {
+    .tabSideBtnParent {
+        .tabSideBtns {
+            position: unset;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (max-width: 320px) {}
+
+@media (max-width: 768px) {
+    .defHideMax768 {
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    .defHideMin769 {
+        display: none;
+    }
+}
+
+.loader-model.modal  {
+    z-index: 9999999;
+}
+
+.auth-loader {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    align-items: center;
+}
+
+.player-selection-option {
+    img {
+        width: 30px;
+    }
+    .player-id {
+        font-size: 13px;
+    }
+}
+.cropper-image{
+    height: 500px;
+}
+
+.full-screen-loader {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointInfo {
+    .font22LightBlue {
+        font-family: "Athletics";
+        font-size: 22px;
+        color: #9BDAFE;
+        font-weight: 500;
+    }
+
+    .font22LightYellow {
+        font-family: "Athletics";
+        font-size: 22px;
+        color: #F6FE9B;
+        font-weight: 500;
+    }
+}

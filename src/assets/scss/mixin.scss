@@ -1,0 +1,17 @@
+@mixin font($size, $color, $weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+@mixin fontEthlete($size, $color, $weight) {
+  font-family: 'Athletics';
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+@mixin fontGilroy($size, $color, $weight) {
+  font-family: 'Gilroy';
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}

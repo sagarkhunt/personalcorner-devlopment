@@ -1,0 +1,630 @@
+.customTabsParent .tabsSideButtons {
+  top: 0;
+  right: 20px;
+}
+
+.customTabsParent .tabsSideButtons .btnCloseTicket {
+  background-color: #00C864;
+  padding: 12px;
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+}
+
+.customTabsParent .tabsSideButtons .btnInProgress {
+  background-color: #E91908;
+  padding: 12px;
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+}
+
+.customTabsParent .tabsSideButtons label {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.customTabsParent ul {
+  margin: 20px;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.customTabsParent ul li {
+  border-right: 1px solid #707070;
+}
+
+.customTabsParent ul li:last-child {
+  border: none;
+}
+
+.customTabsParent ul li button {
+  border-radius: 0 !important;
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF !important;
+  padding: 18px 22px;
+}
+
+.customTabsParent ul li button.active {
+  background-color: #2B01FE !important;
+}
+
+.customTabListHr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 1;
+  color: #4E4E4E;
+}
+
+.generalInputGroup input[type=text] {
+  background-color: #0F0F0F;
+  border: 1px solid #2B2B2B;
+  border-radius: 0;
+  height: 50px;
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.generalInputGroup input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+}
+
+.generalInputGroup label {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab {
+  padding: 20px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent {
+  max-height: 1000px;
+  overflow-y: auto;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent::-webkit-scrollbar-track {
+  border: none;
+  background-color: #313131;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent::-webkit-scrollbar {
+  width: 22px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent::-webkit-scrollbar-thumb {
+  background-color: #636363;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav {
+  margin-right: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item {
+  margin-bottom: 15px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link .topContent {
+  padding: 18px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link .topContent .title {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link .topContent .content .date {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  color: #848484;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link .topContent .content .awb {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 19px;
+  color: #848484;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link .topContent .content .awb span {
+  background-color: #E2E2E2;
+  border-radius: 10px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link .bottomContent {
+  padding: 8px 18px 8px 18px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link .bottomContent .number {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  color: #030303;
+  padding-right: 10px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link.active {
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link.active .topContent .title {
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link.active .topContent .content .date {
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link.active .topContent .content .awb {
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link.active .topContent .content .awb span {
+  background-color: #978CCF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link.active .customTabListHr {
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsParent .nav .nav-item .nav-link.active .bottomContent .number {
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .headArea .title {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .headArea .content p {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue {
+  background-color: #FFFFFF;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue .personDetail {
+  padding: 20px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue .personDetail img {
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue .personDetail .name {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue .personDetail .date {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  color: #848484;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue .bottomDetail {
+  padding: 20px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue .bottomDetail p {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .issueListArea .issue .bottomDetail .regards {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 75px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup input.typeText {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px 15px 15px 30px;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup input.typeText::-webkit-input-placeholder {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup input.typeText:-ms-input-placeholder {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup input.typeText::-ms-input-placeholder {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup input.typeText::placeholder {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup button, .adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .inpGroup .btnAttactFile {
+  width: 100px;
+  height: 100%;
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0F0F0F;
+  border-left: 1px solid #707070;
+  background: transparent;
+}
+
+.adminPageMainCommon.supportPage .activeTicketTab .customNavTabsDetailSection .attachFileArea .btnBlue {
+  width: 150px;
+}
+
+._202020 {
+  background-color: #202020;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList {
+  padding: 20px;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item {
+  margin-bottom: 15px;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link {
+  background-color: #0F0F0F;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link .content {
+  position: relative;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link .content .profile img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link .content .profile .name {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link .content .profile .bio {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link .content .rightPart .emailCount {
+  background-color: #2B01FE;
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 5px 9px;
+  border-radius: 5px;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link .content .rightPart .time {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link .content .detailIcon {
+  position: absolute;
+  top: -6px;
+  right: 0px;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link.active {
+  background-color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link.active .content .profile .name {
+  color: #0F0F0F;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link.active .content .profile .bio {
+  color: #0F0F0F;
+}
+
+.adminPageMainCommon.allNotificationPage .emailList .customNavTabsParent .nav .nav-item .nav-link.active .content .rightPart .time {
+  color: #0F0F0F;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .topIcons {
+  padding: 15px;
+  border-bottom: 1px solid #313131;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .titleArea {
+  padding: 20px;
+  border-bottom: 1px solid #313131;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .titleArea .date {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .titleArea .title {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .composeEmailArea {
+  padding: 20px;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .composeEmailArea .profile img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .composeEmailArea .profile .name {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .composeEmailArea .profile .role {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .composeEmailArea .profile .dateTime {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .receivedEmail p {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .emailEditor img {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.adminPageMainCommon.allNotificationPage .singleEmailOpen .emailEditor .btnBlue {
+  padding: 15px 40px;
+}
+
+.adminPageMainCommon.allNotificationPage #emailListLeft {
+  width: 100%;
+}
+
+.adminPageMainCommon.allNotificationPage #emailListRight {
+  display: none;
+  background-color: #000000;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane {
+  border-top: 1px solid #707070;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .generalTab .mainTitle {
+  border-bottom: 1px solid #707070;
+  padding: 20px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .generalTab .mainTitle h4 {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .generalTab .area {
+  padding: 25px 20px 0 20px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .currencyTab {
+  padding: 25px 20px 0 20px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table thead {
+  border: transparent;
+  background-color: #2B2B2B;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table thead th {
+  padding: 20px 15px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table thead th:first-child {
+  padding-left: 25px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table thead th:last-child {
+  padding-right: 25px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table tbody {
+  border: transparent;
+  margin-top: 20px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table tbody tr:first-child td {
+  padding-top: 20px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table tbody td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table tbody td:first-child {
+  padding-left: 25px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table tbody td:last-child {
+  padding-right: 25px;
+}
+
+.adminPageMainCommon.adminSettingPage .tab-pane .emailTab table thead th, .adminPageMainCommon.adminSettingPage .tab-pane .emailTab table tbody td {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=adminStyle.css.map */

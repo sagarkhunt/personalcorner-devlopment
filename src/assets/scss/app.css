@@ -1,0 +1,7083 @@
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Thin"), local("GT-Walsheim-Pro-Thin"), url("../font/GTWalsheimPro-Thin.woff2") format("woff2"), url("../font/GTWalsheimPro-Thin.woff") format("woff"), url("../font/GTWalsheimPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Light"), local("GT-Walsheim-Pro-Light"), url("../font/GTWalsheimPro-Light.woff2") format("woff2"), url("../font/GTWalsheimPro-Light.woff") format("woff"), url("../font/GTWalsheimPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Regular"), local("GT-Walsheim-Pro-Regular"), url("../font/GTWalsheimPro-Regular.woff2") format("woff2"), url("../font/GTWalsheimPro-Regular.woff") format("woff"), url("../font/GTWalsheimPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Medium"), local("GT-Walsheim-Pro-Medium"), url("../font/GTWalsheimPro-Medium.woff2") format("woff2"), url("../font/GTWalsheimPro-Medium.woff") format("woff"), url("../font/GTWalsheimPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Bold"), local("GT-Walsheim-Pro-Bold"), url("../font/GTWalsheimPro-Bold.woff2") format("woff2"), url("../font/GTWalsheimPro-Bold.woff") format("woff"), url("../font/GTWalsheimPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro UltraBold"), local("GT-Walsheim-Pro-UltraBold"), url("../font/GTWalsheimPro-UltraBold.woff2") format("woff2"), url("../font/GTWalsheimPro-UltraBold.woff") format("woff"), url("../font/GTWalsheimPro-UltraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local("GT Walsheim Pro Black"), local("GT-Walsheim-Pro-Black"), url("../font/GTWalsheimPro-Black.woff2") format("woff2"), url("../font/GTWalsheimPro-Black.woff") format("woff"), url("../font/GTWalsheimPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Black"), local("Athletics-Black"), url("../font/Athletics-Black.woff2") format("woff2"), url("../font/Athletics-Black.woff") format("woff"), url("../font/Athletics-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Bold Italic"), local("Athletics-BoldItalic"), url("../font/Athletics-BoldItalic.woff2") format("woff2"), url("../font/Athletics-BoldItalic.woff") format("woff"), url("../font/Athletics-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Black Italic"), local("Athletics-BlackItalic"), url("../font/Athletics-BlackItalic.woff2") format("woff2"), url("../font/Athletics-BlackItalic.woff") format("woff"), url("../font/Athletics-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics ExtraBold Italic"), local("Athletics-ExtraBoldItalic"), url("../font/Athletics-ExtraBoldItalic.woff2") format("woff2"), url("../font/Athletics-ExtraBoldItalic.woff") format("woff"), url("../font/Athletics-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Medium Italic"), local("Athletics-MediumItalic"), url("../font/Athletics-MediumItalic.woff2") format("woff2"), url("../font/Athletics-MediumItalic.woff") format("woff"), url("../font/Athletics-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Bold"), local("Athletics-Bold"), url("../font/Athletics-Bold.woff2") format("woff2"), url("../font/Athletics-Bold.woff") format("woff"), url("../font/Athletics-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Italic"), local("Athletics-Italic"), url("../font/Athletics-Italic.woff2") format("woff2"), url("../font/Athletics-Italic.woff") format("woff"), url("../font/Athletics-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics ExtraBold"), local("Athletics-ExtraBold"), url("../font/Athletics-ExtraBold.woff2") format("woff2"), url("../font/Athletics-ExtraBold.woff") format("woff"), url("../font/Athletics-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Light Italic"), local("Athletics-LightItalic"), url("../font/Athletics-LightItalic.woff2") format("woff2"), url("../font/Athletics-LightItalic.woff") format("woff"), url("../font/Athletics-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Light"), local("Athletics-Light"), url("../font/Athletics-Light.woff2") format("woff2"), url("../font/Athletics-Light.woff") format("woff"), url("../font/Athletics-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Regular"), local("Athletics-Regular"), url("../font/Athletics-Regular.woff2") format("woff2"), url("../font/Athletics-Regular.woff") format("woff"), url("../font/Athletics-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: local("Athletics Medium"), local("Athletics-Medium"), url("../font/Athletics-Medium.woff2") format("woff2"), url("../font/Athletics-Medium.woff") format("woff"), url("../font/Athletics-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../font/NeueMachina-Light.eot");
+  src: url("../font/NeueMachina-Light.eot") format("embedded-opentype"), url("../font/NeueMachina-Light.woff2") format("woff2"), url("../font/NeueMachina-Light.woff") format("woff"), url("../font/NeueMachina-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../font/NeueMachina-Ultrabold.eot");
+  src: url("../font/NeueMachina-Ultrabold.eot") format("embedded-opentype"), url("../font/NeueMachina-Ultrabold.woff2") format("woff2"), url("../font/NeueMachina-Ultrabold.woff") format("woff"), url("../font/NeueMachina-Ultrabold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../font/NeueMachina-Regular.eot");
+  src: url("../font/NeueMachina-Regular.eot?#iefix") format("embedded-opentype"), url("../font/NeueMachina-Regular.woff2") format("woff2"), url("../font/NeueMachina-Regular.woff") format("woff"), url("../font/NeueMachina-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "GT Walsheim Pro", sans-serif;
+}
+
+* {
+  list-style-type: none !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.btnBlue {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #2B01FE;
+  border-radius: 10px;
+  padding: 15px 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnBlue:hover, .btnBlue:active, .btnBlue:focus {
+  background-color: rgba(43, 1, 254, 0.8);
+  color: #fff;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnYellow {
+  font-family: 'Athletics';
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  background-color: #F6E136;
+  border-radius: 0;
+  padding: 15px 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+  border: 8px solid #FEFD9B;
+  text-transform: uppercase;
+}
+
+.btnYellow:hover, .btnYellow:active, .btnYellow:focus {
+  background-color: #02E3F9;
+  border-color: #02E3F9;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.yellowBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F6E136;
+  border: 8px solid #FEFD9B;
+  padding: 25px 32px;
+  font-family: 'Athletics';
+  font-size: 32px;
+  color: #020100;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.yellowBtn:hover, .yellowBtn:active, .yellowBtn:focus {
+  background-color: #02E3F9;
+  border-color: #02E3F9;
+}
+
+.skyLightBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0B95DE;
+  border: 8px solid #9BDAFE;
+  padding: 25px 32px;
+  font-family: 'Athletics';
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0;
+}
+
+.skyLightBtn:hover, .skyLightBtn:active, .skyLightBtn:focus {
+  background-color: #02E3F9;
+  border-color: #02E3F9;
+}
+
+.btnAccept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0989D6;
+  border: 0;
+  padding: 8px 24px;
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btnAccept:hover, .btnAccept:active, .btnAccept:focus {
+  background: #0989D6;
+}
+
+.btnDecline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F5F9FF;
+  border: 1px solid #F0F3FB;
+  padding: 8px 24px;
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #45537C;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btnDecline:hover, .btnDecline:active, .btnDecline:focus {
+  background: #F5F9FF;
+  color: #45537C;
+  border: 1px solid #F0F3FB;
+}
+
+.btnLinkBlue {
+  background: transparent !important;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #0989D6;
+  font-weight: 500;
+}
+
+.btnLinkBlue:hover, .btnLinkBlue:active, .btnLinkBlue:focus {
+  background: transparent !important;
+  color: #0989D6 !important;
+  border: 0;
+}
+
+.btnDarkBlue {
+  background: #132868 !important;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.btnDarkBlue:hover, .btnDarkBlue:active, .btnDarkBlue:focus {
+  background: #132868;
+  color: #fff;
+  border: 0;
+}
+
+.btnClose {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #F44336;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnClose:hover, .btnClose:active, .btnClose:focus {
+  background-color: #F44336;
+  color: #fff;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnBlue-sm {
+  min-width: 200px;
+  height: 46px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #2B01FE;
+  border-radius: 6px;
+  padding: 10px 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+  border: 0;
+}
+
+.btnBlue-sm:hover, .btnBlue-sm:active, .btnBlue-sm:focus {
+  background-color: rgba(43, 1, 254, 0.8);
+  color: #fff;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnWhite {
+  font-size: 18px;
+  color: #2B01FE;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnWhite:hover, .btnWhite:active, .btnWhite:focus {
+  background-color: #fff;
+  color: #2B01FE;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnBlack {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 12px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnBlack:hover, .btnBlack:active, .btnBlack:focus {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnSocial {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #0B95DE;
+  border: 4px solid #77C8F6;
+  border-radius: 0;
+  padding: 12px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.btnSocial:hover, .btnSocial:active, .btnSocial:focus {
+  background-color: rgba(11, 149, 222, 0.8);
+  color: #fff;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.fontBlue {
+  color: #2B01FE;
+}
+
+.linkBlue {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #0777CB;
+  font-weight: 500;
+}
+
+.fontBlue20 {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+._main {
+  position: relative;
+  min-height: 100vh;
+}
+
+.authPage {
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.authPage .logo img {
+  height: 70px;
+}
+
+.authPage .authFormSection {
+  background: #9BDAFE;
+  border: 4px solid #77C8F6;
+}
+
+.authPage .authFormSection .headArea {
+  background-color: #112E88;
+  padding: 15px;
+}
+
+.authPage .authFormSection .headArea .title {
+  font-family: 'Athletics';
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .headArea .content {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.authPage .authFormSection .authForm .form-label {
+  font-family: 'Athletics';
+  font-size: 22px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .form-control {
+  background: rgba(136, 199, 243, 0.44) !important;
+  border: 0;
+  border-radius: 0;
+  height: 60px;
+  padding: 15px;
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .form-control::-webkit-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .form-control:-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .form-control::-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .form-control::placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .customPswdOuter {
+  position: relative;
+}
+
+.authPage .authFormSection .authForm .customPswdOuter .form-control {
+  background: rgba(136, 199, 243, 0.44) !important;
+  border: 0;
+  border-radius: 0;
+  height: 60px;
+  padding: 15px;
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .customPswdOuter .form-control::-webkit-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .customPswdOuter .form-control:-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .customPswdOuter .form-control::-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .customPswdOuter .form-control::placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .authForm .customPswdOuter .showHideBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #2B01FE;
+}
+
+.authPage .authFormSection .authForm .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+
+.authPage .authFormSection .authForm .form-check .form-check-input {
+  border-radius: 4px;
+  border: solid 2px #112E88;
+  height: 30px;
+  width: 30px;
+  margin-top: 0;
+  background-color: transparent;
+}
+
+.authPage .authFormSection .authForm .form-check .form-check-input:checked[type=checkbox] {
+  background-image: url(../images/icCheckmark.svg);
+}
+
+.authPage .authFormSection .authForm .form-check .form-check-label {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #112E88;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.authPage .authFormSection .authForm .btnSubmit {
+  letter-spacing: 0.18px;
+}
+
+.authPage .authFormSection .partition .line {
+  background-color: #92D1F8;
+  height: 3px;
+  width: 35%;
+}
+
+.authPage .authFormSection .partition .or {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+
+.authPage .authFormSection .socialLoginBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.authPage .authFormSection .socialLoginBtns .btnSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.authPage .authFormSection .socialLoginBtns .btnSocial img {
+  height: 26px;
+}
+
+.authPage .authFormSection .socialLoginBtns .btnSocial svg {
+  font-size: 26px;
+}
+
+.authPage .authFormSection .socialLoginBtns .btnSocial svg.iconFb {
+  color: #2B01FE;
+}
+
+.authPage .authFormSection .socialLoginBtns .btnSocial svg.iconTwitter {
+  color: #00acee;
+}
+
+.authPage .logoBottom img {
+  height: 60px;
+}
+
+.authPage hr {
+  opacity: 0.1;
+  color: #fff;
+}
+
+.authPage .menuBottomAuth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.authPage .menuBottomAuth .link {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.authPage .menuBottomAuth .part {
+  background-color: #fff;
+  height: 18px;
+  width: 1px;
+}
+
+.customHeader {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid rgba(161, 220, 254, 0.15);
+  z-index: 999;
+}
+
+.customHeader .navTop {
+  background-color: #2B01FE;
+}
+
+.customHeader .navTop .basicConnectBtns .same {
+  border-left: 1px solid rgba(255, 255, 255, 0.273);
+}
+
+.customHeader .navTop .basicConnectBtns .same svg {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.customHeader .navTop .basicConnectBtns .same button,
+.customHeader .navTop .basicConnectBtns .same a {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.customHeader .navMain {
+  width: '-webkit-fill-available';
+  background-color: transparent !important;
+}
+
+.customHeader .navMain .logo img {
+  height: 70px;
+}
+
+.customHeader .navMain .logo .logoName {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.customHeader .navMain .navbar-collapse .navbar-nav {
+  gap: 40px;
+}
+
+.customHeader .navMain .navbar-collapse .navbar-nav .nav-link {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.customHeader .navMain .navbar-collapse .same {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.customHeader .navMain .basicConnectBtns {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.customHeader .navMain .basicConnectBtns .same {
+  background: #FFFFFF;
+  border: 2px solid #142868;
+  margin-right: 20px !important;
+}
+
+.customHeader .navMain .basicConnectBtns .same svg {
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+  background-color: #142868;
+  border-radius: 4rem;
+  padding: 0px 3px 0px 3px;
+  font-size: 20px;
+}
+
+.customHeader .navMain .basicConnectBtns .same button,
+.customHeader .navMain .basicConnectBtns .same a {
+  font-size: 18px;
+  color: #142868;
+  font-weight: 300;
+}
+
+.customFooter {
+  background-image: url("../images/Halftone.svg");
+  background-color: #1A2D59;
+}
+
+.customFooter .top .logo .logoName {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.customFooter .top .links a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.customFooter .bottom .copyRightLine {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.customFooter .bottom .socialIcons svg {
+  color: #fff;
+}
+
+.pageMainCommon {
+  padding-top: 120px;
+}
+
+.pageMainCommon .aboutSection {
+  background-image: url("../images/Halftone.svg");
+  background-color: #B5E4FF;
+}
+
+.pageMainCommon .aboutSection img {
+  width: 100%;
+}
+
+.pageMainCommon .aboutSection .content {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.pageMainCommon .aboutSection .content .mainHeading {
+  font-family: 'Athletics';
+  font-size: 50px;
+  color: #001146;
+  font-weight: 900;
+  padding: 10px 20px;
+}
+
+.pageMainCommon .aboutSection .holder {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 300;
+}
+
+.pageMainCommon .aboutSection .holder2 {
+  padding: 10px 0px;
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  background-color: #0B95DE;
+  border: 4px solid #9BDAFE;
+}
+
+.pageMainCommon .aboutSection .holder2 button {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.pageMainCommon .aboutSection .curveSection {
+  background-color: #1A2D59;
+  border-radius: 50%;
+}
+
+.pageMainCommon .aboutSection .top {
+  height: 30px;
+  margin: auto -150px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: #ebebeb;
+}
+
+.pageMainCommon .aboutSection .outerDiv {
+  overflow: hidden;
+}
+
+.pageMainCommon .aboutSection body {
+  background-color: orange;
+}
+
+.pageMainCommon .aboutSection .rightContent .mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pageMainCommon .aboutSection .rightContent .content {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
+.pageMainCommon .aboutSection .rightContent .btnConnectWallet {
+  letter-spacing: 0.18px;
+}
+
+.homePage {
+  background-image: url(../images/bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.homePage .bannerSection {
+  position: relative;
+  z-index: 2;
+  height: 40rem;
+  width: 100%;
+}
+
+.homePage .bannerSection h1,
+.homePage .bannerSection p {
+  text-align: center;
+}
+
+.homePage .bannerSection .bannerSectionArea {
+  left: 0;
+}
+
+.homePage .bannerSection .bannerSectionArea .headArea .mainHeading2 {
+  font-family: 'Gilroy';
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+
+.homePage .bannerSection .bannerSectionArea .headArea .holder {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.homePage .bannerSection .bannerSectionArea .headArea .holder .btnEarnWith {
+  background-color: #F6E136;
+  padding: 10px 20px;
+  color: #020100;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #020100;
+  font-weight: 600;
+  border: 5px solid #FEFD9B;
+}
+
+.homePage .bannerSection .bannerSectionArea .hero-image {
+  width: 67% !important;
+}
+
+.homePage .bannerSection .bannerSectionArea .mt-10 {
+  margin-top: -9.5rem !important;
+}
+
+.homePage .bannerSection .bannerSectionArea .image {
+  position: relative;
+  z-index: -999999;
+}
+
+.homePage .bannerSection .bannerSectionArea .image img {
+  position: relative;
+  z-index: -999999;
+}
+
+.homePage .bannerSection #div2 {
+  position: relative;
+  height: 100px;
+  z-index: 1;
+}
+
+.homePage .bannerSection #image {
+  position: absolute;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.homePage .bannerSection #image .heroImage {
+  padding: 1rem 15rem 1rem 15rem;
+}
+
+.homePage .bannerSection #image .heroImage img {
+  height: 23.8rem;
+}
+
+.homePage .marketplaceSection {
+  background-image: url("../images/Halftone.svg");
+  background-color: #9BDAFE;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.homePage .marketplaceSection .content {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.homePage .marketplaceSection .content .mainHeading {
+  font-family: 'Athletics';
+  font-size: 33px;
+  color: #001146;
+  font-weight: 900;
+  padding: 20px 50px;
+}
+
+.homePage .marketplaceSection .holder {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 300;
+}
+
+.homePage .marketplaceSection .tierBox {
+  background-color: #000724;
+  background-repeat: repeat;
+}
+
+.homePage .marketplaceSection .tierBox .tierImg img {
+  width: 100%;
+}
+
+.homePage .marketplaceSection .tierBox .tierImg h3 {
+  background-color: #000724;
+  text-align: center;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  padding: 10px 20px;
+}
+
+.homePage .marketplaceSection .tierBox .tierDetails {
+  padding: 10px 20px 10px 10px;
+  background-color: #F9E74A;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.homePage .marketplaceSection .tierBox .tierDetails h3 {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.homePage .marketplaceSection .tierBox .tierDetails .font16White {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.homePage .marketplaceSection .tierBox .tierDetails .font16Gray {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  opacity: .56;
+}
+
+.homePage .marketplaceSection .tierBox .tierDetails .btnEth {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.homePage .marketplaceSection .contentArea .left .btnConnectWallet {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.homePage .marketplaceSection .contentArea .left .btnConnectWallet .rightArrow {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.homePage .marketplaceSection .contentArea .left .walletTitle {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.homePage .marketplaceSection .contentArea .right p {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.homePage .featuredNftsSection {
+  background-color: #1d1d1dfd;
+  padding: 70px 0;
+}
+
+.homePage .featuredNftsSection .headArea .mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 55px;
+}
+
+.homePage .featuredNftsSection .cardArea .nftCard {
+  background-color: #000;
+}
+
+.homePage .featuredNftsSection .cardArea .nftCard .card-img {
+  height: 300px;
+  width: 280px;
+}
+
+.homePage .featuredNftsSection .cardArea .nftCard .card-body .card-title {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.homePage .featuredNftsSection .cardArea .nftCard .card-body .cardContent1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.homePage .featuredNftsSection .cardArea .nftCard .card-body .cardContent2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.homePage .featuredNftsSection .cardArea .nftCard .card-body .btnExplore {
+  padding: 10px 25px;
+}
+
+.homePage .ytVideoSection {
+  padding-top: 150px;
+  background-image: url("../images/Halftone.svg");
+  background-color: #D4E6FE;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-position: center center;
+}
+
+.homePage .ytVideoSection .sectionContent {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -30%;
+}
+
+.homePage .ytVideoSection .sectionContent .headArea .mainHeading2 {
+  font-family: 'Athletics';
+  font-size: 36px;
+  color: rgba(0, 17, 70, 0.76);
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+
+.homePage .ytVideoSection .sectionContent .headArea .mainHeading {
+  font-family: 'Athletics';
+  font-size: 50px;
+  color: #001146;
+  font-weight: 900;
+}
+
+.homePage .ytVideoSection .sectionContent #content {
+  position: relative;
+}
+
+.homePage .ytVideoSection .sectionContent #content img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.homePage .ytVideoSection .sectionContent .ytVideoArea {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  border: 3px solid #132868;
+}
+
+.homePage .ytVideoSection .sectionContent .ytVideoArea .helmet {
+  position: absolute;
+  top: -7rem;
+  left: -14rem;
+  height: 50% !important;
+}
+
+.homePage .ytVideoSection .sectionContent .ytVideoArea .ball {
+  position: absolute;
+  bottom: -6rem;
+  right: -7rem;
+}
+
+.homePage .ytVideoSection .sectionContent .ytVideoArea .ytTitles {
+  z-index: 2;
+  background-color: #D4E6FE;
+  text-align: left;
+  max-width: 900px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: -7px;
+}
+
+.homePage .ytVideoSection .sectionContent .ytVideoArea .ytTitles .title1 {
+  font-family: 'Athletics';
+  font-size: 22px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.homePage .ytVideoSection .sectionContent .ytVideoArea .ytTitles .title2 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
+.homePage .trendingNftsSection {
+  padding-top: 300px;
+  background-image: url("../images/Halftone.svg");
+  background-color: #D4E6FE;
+}
+
+.homePage .trendingNftsSection .main .headArea {
+  cursor: pointer;
+  color: white;
+}
+
+.homePage .trendingNftsSection .main .headArea .mainHeading {
+  text-align: center;
+}
+
+.homePage .trendingNftsSection .main .headArea .mainHeading h1 {
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #172B4D;
+  font-weight: 900;
+}
+
+.homePage .trendingNftsSection .main .headArea .mainHeading span {
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #2B58C4;
+  font-weight: 900;
+}
+
+.homePage .trendingNftsSection .main .headArea .explor-icon {
+  background-color: #112E88;
+  color: white;
+  height: 10vh;
+  padding-top: 15px;
+}
+
+.homePage .trendingNftsSection .main .headArea p {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  color: rgba(0, 17, 70, 0.82);
+}
+
+.homePage .trendingNftsSection .main .headAreaContent {
+  background-color: #112E88;
+}
+
+.homePage .trendingNftsSection .main .headAreaContent p {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  color: white;
+  padding: 0px 20px;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox {
+  background-color: #212322;
+  background-image: url(../images/tierBoxPattern.png);
+  background-repeat: repeat;
+  border: 3px solid #9BDAFE;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox .tierImg img {
+  width: 100%;
+  border-radius: 0 0 20px 0;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox .tierImg .tierIcon {
+  position: absolute;
+  width: 34px;
+  height: 32px;
+  left: 3px;
+  top: 3.25px;
+  background: #242625;
+  border-radius: 0px 0px 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox .tierImg .tierIcon img {
+  width: auto;
+  border-radius: 0;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox .tierDetails {
+  padding: 10px 20px;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox .tierDetails h3 {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox .tierDetails .font16White {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .tierBox .tierDetails .font16Gray {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  opacity: .56;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard {
+  background-color: #191c1c;
+  position: relative;
+  margin-bottom: 68px;
+  border-radius: none;
+  margin-top: 7px;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .imgDiv {
+  position: absolute;
+  top: -68px;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .imgDiv img {
+  height: 130px;
+  width: 130px;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .card-body {
+  text-align: center;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .card-body .card-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .card-body .cardContent1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .card-body .cardContent2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .btnName {
+  background-color: black;
+  font-family: 'Athletics';
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.homePage .trendingNftsSection .main .col-sm-5cols .nftCard .btnExplore {
+  padding: 10px 25px;
+  background-color: yellow;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .homePage .trendingNftsSection .main .col-sm-5cols {
+    width: 20%;
+    float: left;
+  }
+}
+
+.homePage .liveFeedSection {
+  padding: 60px 0;
+  background-image: url("../images/Halftone.svg");
+  background-color: #D4E6FE;
+}
+
+.homePage .liveFeedSection .headArea {
+  background-color: #3FE3EF;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.homePage .liveFeedSection .headArea .headerContent .mainHeading h1 {
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 900;
+  color: #001146;
+}
+
+.homePage .liveFeedSection .headArea .headerContent .explor-icon {
+  background-color: #112E88;
+  color: white;
+  height: 10vh;
+  padding-top: 15px;
+}
+
+.homePage .liveFeedSection .headArea p {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  color: rgba(0, 17, 70, 0.82);
+}
+
+.homePage .liveFeedSection .headAreaContent {
+  background-color: #3FE3EF;
+}
+
+.homePage .liveFeedSection .headAreaContent p {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  color: rgba(0, 17, 70, 0.82);
+  padding: 0px 20px;
+}
+
+.homePage .liveFeedSection .contentArea table {
+  overflow: hidden;
+}
+
+.homePage .liveFeedSection .contentArea table thead {
+  border-bottom: none;
+  background-color: #112E88;
+}
+
+.homePage .liveFeedSection .contentArea table thead th {
+  padding: 10px 47px;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.homePage .liveFeedSection .contentArea table thead th:last-child {
+  border-right: none;
+}
+
+.homePage .liveFeedSection .contentArea table tbody {
+  background-color: #132868;
+}
+
+.homePage .liveFeedSection .contentArea table tbody tr {
+  border-color: rgba(17, 46, 136, 0.79);
+}
+
+.homePage .liveFeedSection .contentArea table tbody tr td {
+  padding: 10px 13px;
+  font-family: 'Athletics';
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.homePage .liveFeedSection .contentArea table tbody tr td .hero-image {
+  background-color: blueviolet;
+  border-radius: 4rem;
+  width: 3rem;
+}
+
+.homePage .liveFeedSection .contentArea table tbody tr td img {
+  width: 1.5rem;
+}
+
+.homePage .liveFeedSection .contentArea table tbody tr td .link {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.homePage .liveFeedSection .btnLoadMore {
+  padding: 10px 60px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.homePage .ourMissionSection {
+  background-image: url("../images/Halftone.svg");
+  background-color: #CFE3FD;
+  padding: 70px 0;
+  padding-top: 30;
+}
+
+.homePage .ourMissionSection .leftContent {
+  background-color: #D4E6FE;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(0, 17, 70, 0.82);
+}
+
+.homePage .ourMissionSection .leftContent .title {
+  font-family: 'Athletics';
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(0, 17, 70, 0.82);
+  letter-spacing: 0.02em;
+  padding: 10px 20px;
+  background-color: #5FE8F2;
+  border-bottom: 3px solid #132868;
+}
+
+.homePage .ourMissionSection .leftContent .maindiv {
+  padding: 20px 20px;
+  border-bottom: 3px solid #132868;
+}
+
+.homePage .ourMissionSection .leftContent .maindiv .content {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+  color: rgba(0, 17, 70, 0.82);
+}
+
+.homePage .ourMissionSection .leftContent .maindiv .content a {
+  color: #fff;
+  border-bottom: 1px solid;
+}
+
+.homePage .ourMissionSection .rightImg {
+  height: 1px;
+}
+
+.homePage .ourMissionSection .rightImg img {
+  height: 431px;
+  background-color: #5FE8F2;
+  border: 9px solid #132868;
+}
+
+.homePage .ourMissionSection .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.homePage .ourMissionSection .footer a {
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #001146;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nftListPage .nftListSection {
+  background-color: #191919;
+  padding: 70px 0;
+}
+
+.nftListPage .nftListSection .headArea .mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 55px;
+}
+
+.nftListPage .nftListSection .headArea .content {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.nftDetailPage .aboutNftSection {
+  background-color: #191919;
+}
+
+.nftDetailPage .aboutNftSection .leftImg {
+  background-color: #000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 80px 50px 0 50px;
+}
+
+.nftDetailPage .aboutNftSection .rightContent {
+  padding-top: 80px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nftDetailPage .aboutNftSection .rightContent .mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .aboutNftSection .rightContent .content {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .aboutNftSection .rightContent .btnConnectWallet {
+  padding: 10px 60px;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nftDetailPage .aboutNftSection .rightContent .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nftDetailPage .aboutNftSection .rightContent .socialIcons a svg {
+  font-size: 34px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.nftDetailPage .aboutNftSection .rightContent .socialIcons .line {
+  background-color: #fff;
+  height: 2px;
+  width: 40px;
+}
+
+.nftDetailPage .tiersSection {
+  background-color: #000;
+  padding: 60px 0;
+}
+
+.nftDetailPage .tiersSection .headArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.nftDetailPage .tiersSection .headArea .line {
+  width: 12%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.nftDetailPage .tiersSection .headArea .mainHeading {
+  font-size: 50px;
+  color: #2B01FE;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .tiersSection .rightImg {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nftDetailPage .tiersSection .leftContent .mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .tiersSection .leftContent .content {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  width: 80%;
+}
+
+.nftDetailPage .tiersSection .leftContent .content2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.nftDetailPage .tiersSection .leftContent .content3 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.nftDetailPage .tiersSection .leftContent .btnConnectWallet {
+  padding: 10px 100px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nftDetailPage .utilitySection {
+  padding: 80px 0 60px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #191919;
+}
+
+.nftDetailPage .utilitySection .headArea .mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .utilitySection .headArea .content {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.nftDetailPage .utilitySection .contentLisitngArea .listingArea .nftCard {
+  background-color: #000;
+  border-radius: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.nftDetailPage .utilitySection .contentLisitngArea .listingArea .nftCard .card-img {
+  padding: 8px;
+  width: 380px;
+}
+
+.nftDetailPage .utilitySection .contentLisitngArea .listingArea .nftCard .card-body .card-title {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .utilitySection .contentLisitngArea .listingArea .nftCard .card-body .card-text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.nftDetailPage .utilitySection .contentLisitngArea .listingArea .nftCard .card-body .btnExplore {
+  padding: 8px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.nftDetailPage .playerItmSection {
+  background-color: #191919;
+  padding: 60px 0;
+}
+
+.nftDetailPage .playerItmSection .headArea .mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .playerItmSection .listingArea .nftCard {
+  background-color: #0c0c0c;
+  border-radius: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nftDetailPage .playerItmSection .listingArea .nftCard .imgBody {
+  margin: 10px;
+  background-color: #000;
+  height: 370px;
+  width: 370px;
+}
+
+.nftDetailPage .playerItmSection .listingArea .nftCard .imgBody .card-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nftDetailPage .playerItmSection .listingArea .nftCard .card-body {
+  text-align: center;
+}
+
+.nftDetailPage .playerItmSection .listingArea .nftCard .card-body .card-title {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.nftDetailPage .playerItmSection .listingArea .nftCard .card-body .card-text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.nftDetailPage .playerItmSection .listingArea .nftCard .card-body .btnExplore {
+  padding: 8px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.aboutPage .bannerSection {
+  background-image: url(../images/aboutBannerBG.png);
+  background-color: #101314;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  background-position: center center;
+}
+
+.aboutPage .bannerSection .bannerImgRight {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  max-width: 50%;
+}
+
+.aboutPage h4.mainHeading {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.aboutPage p.content {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.aboutPage .personalCornerSection {
+  background-color: #000;
+  padding: 70px 0;
+}
+
+.aboutPage .personalCornerSection h1.mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.aboutPage .personalCornerSection p.content {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.aboutPage .aboutNFTSection {
+  background-color: #0f1314;
+  padding: 70px 0;
+}
+
+.aboutPage .aboutNFTSection p.content {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.eventPage .bannerSection {
+  background-image: url(../images/eventBannerBG.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.eventPage h4.mainHeading {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.eventPage .upcomingEventSection {
+  background-color: #000;
+  padding: 70px 0;
+}
+
+.eventPage .upcomingEventSection h1.mainHeading {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.eventPage .upcomingEventSection h3.smallHeading {
+  font-size: 30px;
+  color: #2B01FE;
+  font-weight: 600;
+}
+
+.eventPage .upcomingEventSection .eventListPart {
+  background-color: #0f0f0f;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.eventPage .upcomingEventSection .eventListPart .date {
+  font-size: 20px;
+  color: #2B01FE;
+  font-weight: 600;
+}
+
+.eventPage .upcomingEventSection .eventListPart .eventTitle {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.eventPage .upcomingEventSection .eventListPart .eventDetails {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.eventPage .upcomingEventSection .eventListPart .leftLight {
+  border-left: solid 1px #575757;
+}
+
+.eventDetailsPage .bannerSection {
+  background-image: url(../images/eventBannerBG.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.eventDetailsPage h4.mainHeading {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.eventDetailsPage .upcomingEventSectionOne {
+  background-color: #000;
+  padding: 70px 0;
+}
+
+.eventDetailsPage .upcomingEventSectionOne h3.smallHeading {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.eventDetailsPage .upcomingEventSectionOne p.content {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.eventDetailsPage .upcomingEventSectionTwo {
+  background-image: url(../images/eventDetailsBG.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 472px;
+  padding: 70px 0;
+}
+
+.eventDetailsPage .upcomingEventSectionTwo h3.smallHeading {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.eventDetailsPage .upcomingEventSectionTwo .eventDetailsBox {
+  background-color: #171717;
+  height: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.eventDetailsPage .upcomingEventSectionTwo .eventDetailsBox .Heading {
+  background-color: #2B01FE;
+  min-height: 60px;
+  padding: 15px 25px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.eventDetailsPage .upcomingEventSectionTwo .eventDetailsBox .details {
+  padding: 25px;
+}
+
+.eventDetailsPage .upcomingEventSectionTwo .eventDetailsBox .details p {
+  font-size: 18px;
+  color: #707070;
+  font-weight: 300;
+}
+
+.eventDetailsPage .upcomingEventSectionThree {
+  background-color: #000000;
+  padding: 70px 0;
+}
+
+.eventDetailsPage .upcomingEventSectionThree h3.smallHeading {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.eventDetailsPage .upcomingEventSectionThree p.content {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packagePart {
+  margin-top: 80px;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable {
+  margin-top: 40px;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th {
+  width: 33.33%;
+  padding: 15px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #e4e4e4;
+  font-size: 30px;
+  color: #36393f;
+  font-weight: 700;
+  border-right: solid 1px #c4c4c4;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th:last-child {
+  border-right: 0;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(2) {
+  background-color: #2B01FE;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(2) span {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(2) p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(3) {
+  background-color: #1f313f;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(3) span {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(3) p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table td {
+  font-size: 16px;
+  color: #36393f;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 15px;
+  vertical-align: middle;
+  border-right: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+}
+
+.eventDetailsPage .upcomingEventSectionThree .packageTable table td:last-child {
+  border-right: 0;
+}
+
+.detailsPage {
+  background-color: #000000;
+  padding: 70px 0;
+}
+
+.detailsPage .detailsPageSectionOne .imgBorder {
+  border: solid 15px #191919;
+}
+
+.detailsPage .detailsPageSectionOne .detailsRightPart h3.smallHeading {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.detailsPage .detailsPageSectionOne .detailsRightPart .font16White {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.detailsPage .detailsPageSectionOne .detailsRightPart .font8White {
+  font-size: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.detailsPage .detailsPageSectionOne .detailsRightPart .socialBtn {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+}
+
+.detailsPage .detailsPageSectionOne .grayPart {
+  background-color: #191919;
+}
+
+.detailsPage .detailsPageSectionOne .grayPart .title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  padding: 15px 25px;
+  border-bottom: solid 1px #3b3b3b;
+}
+
+.detailsPage .detailsPageSectionOne .grayPart .details {
+  padding: 25px;
+}
+
+.detailsPage .detailsPageSectionOne .grayPart .details h4 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.detailsPage .detailsPageSectionOne .grayPart .details p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.detailsPage .detailsPageSectionOne .grayPart .details .coinPrice {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.detailsPage .detailsPageSectionOne .grayPart .details .coinPrice span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.detailsPage .detailsPageSectionTwo .heading {
+  background-color: #2B01FE;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  padding: 15px 25px;
+}
+
+.marketplacePage {
+  background-image: url("../images/Halftone.svg");
+  background-color: #1A2D59;
+}
+
+.marketplacePage .marketplaceBanner {
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+
+.marketplacePage .marketplaceBanner h4.mainHeading {
+  font-size: 96px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.marketplacePage .marketplaceBanner p {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.marketplacePage .marketplaceListing {
+  padding: 70px 0;
+}
+
+.marketplacePage .marketplaceListing .sidebarFilter .accordion .accordion-item {
+  border-radius: 0;
+  border: 0;
+  background-color: #0f1314 !important;
+  margin-bottom: 30px;
+}
+
+.marketplacePage .marketplaceListing .sidebarFilter .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.marketplacePage .marketplaceListing .sidebarFilter .accordion .accordion-item .accordion-header .accordion-button:after {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.marketplacePage .marketplaceListing .sidebarFilter .accordion .accordion-item .accordion-body {
+  background-color: transparent;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.marketplacePage .marketplaceListing .sidebarFilter .accordion .accordion-item .accordion-body ul.coinList {
+  padding: 0;
+  margin: 0;
+}
+
+.marketplacePage .marketplaceListing .sidebarFilter .accordion .accordion-item .accordion-body ul.coinList li {
+  padding: 0;
+  margin: 0 0 20px 0;
+  list-style-type: none;
+}
+
+.marketplacePage .marketplaceListing .sidebarFilter .accordion .accordion-item .accordion-body ul.coinList li a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marketplacePage .start-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100% !important;
+  background: #A1DCFE;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.marketplacePage .start-game p {
+  font-size: 24px;
+  color: #1A2E5A;
+  font-weight: 500;
+}
+
+.marketplacePage .start-game h3 {
+  font-size: 40px;
+  color: #1A2E5A;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.marketplacePage .gameImage {
+  border-radius: 4px;
+}
+
+.fontBlue {
+  color: #2B01FE;
+}
+
+.fontBold {
+  font-weight: 600;
+}
+
+.btnBordered {
+  border: solid 1px #fff;
+  background-color: #2B01FE;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 0;
+  padding: 7px 30px;
+}
+
+.linkWhite24 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.linkWhite24:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.accordion .accordion-item {
+  border-radius: 0;
+  border: 0;
+  background-color: transparent !important;
+  margin-bottom: 30px;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button:after {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.accordion .accordion-item .accordion-body {
+  background-color: transparent;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.accordion-button {
+  border-radius: 0 !important;
+  background-color: #2B01FE !important;
+}
+
+.propertyBox {
+  background-color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 130px;
+}
+
+.propertyBox h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.propertyBox p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.filterArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filterArea .search input,
+.filterArea .search select,
+.filterArea .sortBy input,
+.filterArea .sortBy select {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 290px;
+  height: 70px;
+  font-size: 24px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 100;
+  padding-left: 16px;
+}
+
+.filterArea .search input::-webkit-input-placeholder,
+.filterArea .search select::-webkit-input-placeholder,
+.filterArea .sortBy input::-webkit-input-placeholder,
+.filterArea .sortBy select::-webkit-input-placeholder {
+  font-size: 24px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 100;
+}
+
+.filterArea .search input:-ms-input-placeholder,
+.filterArea .search select:-ms-input-placeholder,
+.filterArea .sortBy input:-ms-input-placeholder,
+.filterArea .sortBy select:-ms-input-placeholder {
+  font-size: 24px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 100;
+}
+
+.filterArea .search input::-ms-input-placeholder,
+.filterArea .search select::-ms-input-placeholder,
+.filterArea .sortBy input::-ms-input-placeholder,
+.filterArea .sortBy select::-ms-input-placeholder {
+  font-size: 24px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 100;
+}
+
+.filterArea .search input::placeholder,
+.filterArea .search select::placeholder,
+.filterArea .sortBy input::placeholder,
+.filterArea .sortBy select::placeholder {
+  font-size: 24px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 100;
+}
+
+.filterArea .search .part,
+.filterArea .sortBy .part {
+  right: 40px;
+  top: 5px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.filterArea .search svg,
+.filterArea .sortBy svg {
+  top: 12px;
+  color: #fff;
+  cursor: pointer;
+  left: 20px;
+}
+
+.listingArea .hrline {
+  width: 100%;
+  height: 5px;
+  background: #1C3A88;
+}
+
+.listingArea .card-header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .listingArea .card-header-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 24px;
+    float: left;
+  }
+}
+
+.listingArea .crown-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  margin-top: 14px !important;
+  z-index: 1;
+  min-width: 22%;
+}
+
+.listingArea .interval {
+  background-color: #1A2D59 !important;
+  margin-left: 20px;
+  color: #ABDEFD;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .listingArea .interval {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+.listingArea .pfcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.listingArea .pftext {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.listingArea .bgNew {
+  background-color: #1A2D59 !important;
+}
+
+.listingArea .nftCard {
+  background-color: #1A2D59;
+  border-radius: 0;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.listingArea .nftCard .card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.listingArea .nftCard .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.listingArea .nftCard .card-body .card-title {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.listingArea .nftCard .card-body .card-text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.listingArea .nftCard .card-body .btnExplore {
+  padding: 8px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.listingArea .nftCard .card-body .card-textNew {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+.listingArea .nftCard .card-body .hoverBtn {
+  display: none;
+}
+
+.listingArea .nftCard:hover .hoverBtn {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .listingArea .nftCard {
+    margin-bottom: 20px;
+  }
+}
+
+.btnLoadMore {
+  padding: 10px 60px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.groupBtnBlue {
+  background-color: #2B01FE;
+  border-color: #171717;
+}
+
+.groupBtnBlue:hover {
+  background-color: #2B01FE;
+}
+
+.font12White {
+  font-size: 12px !important;
+  color: #fff;
+  font-weight: 200;
+}
+
+.selectField,
+.inputField {
+  background-color: transparent;
+  border: solid 1px #707070;
+  border-radius: 5px;
+  height: 48px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.selectField:focus,
+.inputField:focus {
+  background-color: transparent;
+}
+
+.playnow-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttonBordered {
+  font-style: normal;
+  background-color: #192E5A !important;
+  border: solid 1px #192E5A;
+  border-radius: 5px;
+  padding: 15px;
+  height: 60px;
+  width: 30%;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.buttonBordered:hover, .buttonBordered:focus {
+  background-color: transparent;
+}
+
+@media (max-width: 575px) {
+  .buttonBordered {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.scrollAccordian {
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+.radioButton ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.radioButton ul li {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.radioButton ul li input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.radioButton ul li label {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  padding-left: 25px;
+  margin: 5px auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.radioButton ul li:hover label {
+  color: #ffffff;
+}
+
+.radioButton ul li .check {
+  display: block;
+  position: absolute;
+  border: 1px solid #707070;
+  border-radius: 100%;
+  height: 13px;
+  width: 13px;
+  top: 10px;
+  left: 0px;
+  z-index: 5;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+
+.radioButton ul li:hover .check {
+  border: 1px solid #ffffff;
+}
+
+.radioButton ul li .check::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 11px;
+  width: 11px;
+  top: 0;
+  left: 0;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+.radioButton input[type="radio"]:checked ~ .check {
+  border: 1px solid #707070;
+}
+
+.radioButton input[type="radio"]:checked ~ .check::before {
+  background: #2B01FE;
+}
+
+.radioButton input[type="radio"]:checked ~ label {
+  color: #fff;
+}
+
+.social-loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.678);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #040404;
+  width: 320px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.sidebar .pro-sidebar {
+  width: 100%;
+  height: calc(100vh - 82px);
+}
+
+.sidebar .pro-sidebar .pro-sidebar-inner {
+  background-color: #101010;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu > .pro-inner-item > .pro-arrow-wrapper .pro-arrow {
+  border-color: #fff !important;
+}
+
+.sidebar .pro-sidebar .pro-menu {
+  padding: 0;
+}
+
+.sidebar .pro-sidebar .pro-menu a {
+  color: #fff;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  border-bottom: solid 3px #000;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item:hover, .sidebar .pro-sidebar .pro-menu .pro-menu-item.active {
+  background-color: #2B01FE;
+  color: #fff;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item:hover svg path, .sidebar .pro-sidebar .pro-menu .pro-menu-item.active svg path {
+  fill: #fff;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item:hover .subMenu, .sidebar .pro-sidebar .pro-menu .pro-menu-item.active .subMenu {
+  background-color: transparent;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item:hover .pro-inner-item:hover, .sidebar .pro-sidebar .pro-menu .pro-menu-item.active .pro-inner-item:hover {
+  background-color: transparent !important;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item .pro-inner-item {
+  padding: 20px 30px;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item .pro-inner-list-item {
+  background-color: #010101 !important;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item .subMenu.pro-menu-item {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  border: 0;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item .subMenu.pro-menu-item .pro-menu-item {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  border: 0;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item .subMenu.pro-menu-item .pro-menu-item:hover {
+  background-color: transparent;
+  color: #2B01FE !important;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item .subMenu.pro-menu-item .pro-menu-item .nav-link:hover {
+  background-color: transparent;
+  color: #2B01FE !important;
+}
+
+.sidebar .pro-sidebar .pro-menu .pro-menu-item .subMenu.pro-menu-item .pro-menu-item .pro-inner-item:hover {
+  color: #2B01FE !important;
+  background-color: transparent !important;
+  font-weight: 600 !important;
+}
+
+.adminContent {
+  width: 100%;
+  padding-left: 320px;
+  background-color: #1C1C1C;
+}
+
+.adminContent .customHeader {
+  position: fixed;
+  width: calc(100% - 320px);
+  top: 0;
+  z-index: 99;
+}
+
+.adminContent .customHeader .navMain {
+  background-color: #fff !important;
+  padding: 20px;
+  height: 82px;
+}
+
+.adminContent .customHeader .navMain .searchMain {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminContent .customHeader .navMain .searchMain .search {
+  font-size: 13px;
+  color: #4D4F5C;
+  font-weight: 400;
+  min-width: 300px;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav {
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .divider {
+  border-left: solid 2px #EBEBF2;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .headerDropdown .dropdown-menu {
+  border-radius: 0;
+  padding: 0;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .headerDropdown .dropdown-menu .dropdown-item {
+  font-size: 13px;
+  color: #4D565C;
+  font-weight: 300;
+  padding: 10px;
+  border-bottom: solid 1px #F1F1F3;
+  text-align: center;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .headerDropdown .dropdown-menu .dropdown-item:last-child {
+  border: 0;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .headerDropdown .ddIcon {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .headerDropdown.show .ddIcon {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notification {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  right: 5px;
+  top: 5px;
+  background-color: #2B01FE;
+  border: solid 1px #4E4E4E;
+  border-radius: 100%;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu {
+  width: 450px;
+  border-radius: 0;
+  padding: 0;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu .heading {
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #4D4F5C;
+  font-weight: 300;
+  border-bottom: solid 1px #F1F1F3;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu .link {
+  font-size: 12px;
+  color: #3B86FF;
+  font-weight: 300;
+  padding: 10px 20px;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu .dropdown-item {
+  font-size: 13px;
+  color: #4D565C;
+  font-weight: 300;
+  padding: 10px 20px;
+  border-bottom: solid 1px #F1F1F3;
+  text-align: left;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu .dropdown-item .pic {
+  width: 40px;
+  height: 40px;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu .dropdown-item .pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu .dropdown-item p {
+  font-size: 11px;
+  color: #808495;
+  font-weight: 300;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu .dropdown-item:last-child {
+  border: 0;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .nav-link {
+  font-size: 14px;
+  color: #4D4F5C;
+  font-weight: 400;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .nav-link:hover {
+  color: #2B01FE;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .nav-link:hover svg path {
+  fill: #2B01FE;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .userPic {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.adminContent .customHeader .navMain .navbar-collapse .navbar-nav .userPic img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.adminPageMainCommon {
+  padding: 30px;
+  margin-top: 82px;
+}
+
+.adminPageMainCommon h2 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.adminPageMainCommon h2 span {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .threeBox {
+  padding: 25px;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .threeBox .font17White {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .threeBox h3 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .threeBox .font11Blue {
+  font-size: 12px;
+  color: #2B01FE;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .threeBox .font11Green {
+  font-size: 12px;
+  color: #3CC480;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .threeBox .font11Red {
+  font-size: 12px;
+  color: #FF4141;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .viewBox {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .soldBox {
+  background-color: #272727;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardOverviewSection .earningBox {
+  background-color: #171717;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardChartSection {
+  background-color: #000;
+  padding: 25px;
+}
+
+.adminPageMainCommon .dashboardChartSection h4 {
+  font-size: 19px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart .borderBottom {
+  border-bottom: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList {
+  padding: 0;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li {
+  border-bottom: solid 1px #4E4E4E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li .nftLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li .nftLeft .nftPic {
+  width: 88px;
+  height: 88px;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li .nftLeft .nftPic img {
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li .nftLeft .nftDetails h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li .nftLeft .nftDetails p {
+  font-size: 12px;
+  color: #AEAEAE;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li .nftRight .btnUpArrow {
+  background-color: #2B01FE;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminPageMainCommon .dashboardNFTSection .leftPart ul.topSellerNFTList li:last-child {
+  border: 0;
+}
+
+.adminPageMainCommon .dashboardNFTSection .rightPart {
+  background-color: #272727;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardNFTSection .rightPart .borderBottom {
+  border-bottom: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardNFTSection .rightPart .tredingNFTPart h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .dashboardNFTSection .rightPart .tredingNFTPart p {
+  font-size: 14px;
+  color: #AEAEAE;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .dashboardNFTSection h2 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .dashboardTicketSection .borderBottom {
+  border-bottom: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart .ticketListTable .table {
+  border-color: #4E4E4E;
+  text-align: center;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart .ticketListTable .table tr th {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  padding: 12px;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart .ticketListTable .table tr td {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  padding: 12px;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart .ticketListTable .table tr th:first-child {
+  border-left: 0;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart .ticketListTable .table tr th:last-child {
+  border-right: 0;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart .ticketListTable .table tr td:first-child {
+  border-left: 0;
+}
+
+.adminPageMainCommon .dashboardTicketSection .leftPart .ticketListTable .table tr td:last-child {
+  border-right: 0;
+}
+
+.adminPageMainCommon .dashboardTicketSection h2 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .dashboardTicketSection .rightPart .goftCard {
+  padding: 25px;
+}
+
+.adminPageMainCommon .dashboardTicketSection .rightPart .goftCard h2.title {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .dashboardTicketSection .rightPart .goftCard h1.discount {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 38px;
+  margin-top: 30px;
+}
+
+.adminPageMainCommon .dashboardTicketSection .rightPart .goftCard .font24 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .dashboardTicketSection .rightPart .goftCard .font14 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .dashboardTicketSection .rightPart .bgOne {
+  background: #4300ff;
+  background: linear-gradient(23deg, rgba(67, 0, 255, 0.76) 0%, rgba(216, 97, 195, 0.76) 100%);
+}
+
+.adminPageMainCommon .dashboardTicketSection .rightPart .bgTwo {
+  background: #0a9dd4;
+  background: linear-gradient(23deg, rgba(10, 157, 212, 0.76) 0%, rgba(92, 208, 252, 0.76) 100%);
+}
+
+.adminPageMainCommon .link14 {
+  font-size: 14px;
+  color: #AEAEAE;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .link14:hover {
+  color: #2B01FE;
+}
+
+.adminPageMainCommon .btnLike {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+}
+
+.adminPageMainCommon .mediaLiabrarySection {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .filterPart {
+  background-color: #2B01FE;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .filterPart .filterBtn {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .filterPart .searchPart {
+  background-color: #fff;
+  width: 270px;
+  height: 45px;
+  padding: 10px 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .filterPart .searchPart .searchField {
+  border: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .filterPart .searchPart .searchBtn {
+  padding: 10px;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .mediaLiabraryContent .mediaLiabrary .actionBtnMain {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .mediaLiabraryContent .mediaLiabrary .actionBtnMain .actionBtn {
+  width: 26px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  float: left;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .mediaLiabraryContent .mediaLiabrary .actionBtnMain .actionBtn:hover svg text {
+  fill: #2B01FE;
+}
+
+.adminPageMainCommon .mediaLiabrarySection .mediaLiabraryContent .mediaLiabrary:hover .actionBtnMain {
+  display: block;
+}
+
+.adminPageMainCommon .contentManagementSection {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .contentManagementSection .nav-pills .nav-item {
+  margin-right: 2px;
+}
+
+.adminPageMainCommon .contentManagementSection .nav-pills .nav-item .nav-link {
+  background-color: #202020;
+  min-width: 260px;
+  min-height: 68px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminPageMainCommon .contentManagementSection .nav-pills .nav-item .nav-link:hover, .adminPageMainCommon .contentManagementSection .nav-pills .nav-item .nav-link.active {
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content {
+  padding: 30px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .cmsLabel {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .cmsField {
+  background-color: #fff;
+  border-radius: 0;
+  height: 60px;
+  padding: 15px 30px;
+  font-size: 24px;
+  color: #1C1C1C;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .cmsFieldSM {
+  background-color: #fff !important;
+  border-radius: 0;
+  height: 44px;
+  padding: 0 12px;
+  font-size: 18px;
+  color: #1C1C1C;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .cmsLabel2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart {
+  /* switch Button start */
+  /* switch Button end */
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .heading {
+  position: relative;
+  height: 60px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: solid 1px #5B5B5B;
+  width: 100%;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .heading h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .form-check .form-check-input {
+  border-radius: 0;
+  border-color: #707070;
+  height: 36px;
+  width: 36px;
+  margin-top: 0;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .form-check .form-check-input:checked {
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .form-check .form-check-label {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 200;
+  margin-left: 25px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .knobs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .switch {
+  position: relative;
+  top: 50%;
+  width: 130px;
+  height: 44px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .switch.b2 {
+  border-radius: 2px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .knobs:before,
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .knobs:after,
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .knobs span {
+  position: absolute;
+  top: 0;
+  width: 65px;
+  height: 44px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 200;
+  text-align: center;
+  border-radius: 0;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .knobs:before {
+  content: "";
+  left: 0;
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .knobs:after {
+  content: "No";
+  right: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .checkbox:checked + .knobs span {
+  color: #4e4e4e;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .checkbox:checked + .knobs:before {
+  left: 0;
+  background-color: #fff;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .checkbox:checked + .knobs:after {
+  color: #fff;
+  background-color: #f44336;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart #switchButton .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart input[type="date"] {
+  position: relative;
+  background-color: #fff !important;
+  border-radius: 0;
+  height: 44px;
+  padding: 12px;
+  font-size: 18px;
+  color: #1C1C1C;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart input[type="date"]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f073";
+  color: #A5A4BF;
+  padding: 0 5px;
+  font-size: 22px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart input[type="date"]:hover:after {
+  color: #2B01FE;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart input[type="date"]::-webkit-inner-spin-button {
+  z-index: 1;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart input[type="date"]::-webkit-clear-button {
+  z-index: 1;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .dragDropBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .dragDropBtn:hover {
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .borderedBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: solid 1px #707070;
+}
+
+.adminPageMainCommon .contentManagementSection .tab-content .optionPart .borderedBtn:hover {
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon .pagesSection {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .pagesSection .filterPart {
+  float: right;
+}
+
+.adminPageMainCommon .pagesSection .filterPart .searchPart {
+  margin: 5px;
+  background-color: #fff;
+  width: 270px;
+  height: 45px;
+  padding: 10px 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminPageMainCommon .pagesSection .filterPart .searchPart .searchField {
+  border: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.adminPageMainCommon .pagesSection .filterPart .searchPart .searchBtn {
+  padding: 10px;
+}
+
+.adminPageMainCommon .pagesSection .nav-pills .nav-item .nav-link {
+  background-color: #202020;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  border-right: solid 1px #707070;
+  padding: 15px 20px;
+  min-width: 156px;
+  text-align: center;
+}
+
+.adminPageMainCommon .pagesSection .nav-pills .nav-item .nav-link:hover, .adminPageMainCommon .pagesSection .nav-pills .nav-item .nav-link.active {
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon .paginationCustom .pagination {
+  margin-bottom: 0;
+}
+
+.adminPageMainCommon .paginationCustom .pagination .page-item:first-child .page-link,
+.adminPageMainCommon .paginationCustom .pagination .page-item:last-child .page-link {
+  border-radius: 0;
+  background-color: transparent;
+  border: solid 1px #707070;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .paginationCustom .pagination .page-item {
+  padding: 0 3px;
+}
+
+.adminPageMainCommon .paginationCustom .pagination .page-item.active .page-link {
+  background-color: #2B01FE;
+  color: #fff;
+  border: solid 1px #2B01FE;
+}
+
+.adminPageMainCommon .paginationCustom .pagination .page-item .page-link {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  font-size: 16px;
+  color: #707070;
+  font-weight: 200;
+  border: solid 1px #fff;
+}
+
+.adminPageMainCommon .paginationCustom .pagination .page-item .page-link:hover {
+  background-color: #2B01FE;
+  color: #fff;
+  border: solid 1px #2B01FE;
+}
+
+.adminPageMainCommon .stripedTable .table {
+  border-color: #4E4E4E;
+  text-align: center;
+}
+
+.adminPageMainCommon .stripedTable .table tr th {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  padding: 8px 12px;
+  background-color: #2B01FE;
+  vertical-align: middle;
+}
+
+.adminPageMainCommon .stripedTable .table tr th.bgDark {
+  background-color: #202020;
+}
+
+.adminPageMainCommon .stripedTable .table tr td {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 200;
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.adminPageMainCommon .stripedTable .table tr th:first-child {
+  border-left: 0;
+  text-align: left;
+}
+
+.adminPageMainCommon .stripedTable .table tr th:last-child {
+  border-right: 0;
+}
+
+.adminPageMainCommon .stripedTable .table tr td:first-child {
+  border-left: 0;
+  text-align: left;
+}
+
+.adminPageMainCommon .stripedTable .table tr td:last-child {
+  border-right: 0;
+}
+
+.adminPageMainCommon .stripedTable .table-striped > tbody > tr:nth-child(2n+1) > td,
+.adminPageMainCommon .stripedTable .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #232323;
+}
+
+.adminPageMainCommon .userDataMain {
+  border: solid 1px #707070;
+  border-radius: 8px;
+}
+
+.adminPageMainCommon .userDataMain ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.adminPageMainCommon .userDataMain ul li {
+  border-right: solid 1px #707070;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 200;
+  padding: 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminPageMainCommon .userDataMain ul li:last-child {
+  border: 0;
+}
+
+.adminPageMainCommon .userDataMain ul li .fontMidium {
+  font-weight: 400;
+}
+
+.adminPageMainCommon .usersScreenSection {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .usersScreenSection .filterPart {
+  background-color: #2B01FE;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.adminPageMainCommon .usersScreenSection .filterPart .leftPart .font18White {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .usersScreenSection .filterPart .filterBtn {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+}
+
+.adminPageMainCommon .usersScreenSection .filterPart .searchPart {
+  background-color: #fff;
+  width: 270px;
+  height: 45px;
+  padding: 10px 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminPageMainCommon .usersScreenSection .filterPart .searchPart .searchField {
+  border: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.adminPageMainCommon .usersScreenSection .filterPart .searchPart .searchBtn {
+  padding: 10px;
+}
+
+.adminPageMainCommon .statusActive {
+  background-color: #D2EBD3;
+  font-size: 16px;
+  color: #2C9D30;
+  font-weight: 300;
+  min-width: 140px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminPageMainCommon .statusInactive {
+  background-color: #F5D0CD;
+  font-size: 16px;
+  color: #A52015;
+  font-weight: 300;
+  min-width: 140px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminPageMainCommon .paginationMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.adminPageMainCommon .paginationMain .pageEntries {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .profileSection {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+  padding: 30px;
+}
+
+.adminPageMainCommon .profileSection .mainDetails h2 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .profileSection .mainDetails .font22White {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .profileSection .mainDetails .font22Blue {
+  font-size: 22px;
+  color: #2B01FE;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .profileSection .mainDetails .uploadImg {
+  border: dotted 2px #707070;
+  border-radius: 15px;
+  width: 470px;
+  height: 90px;
+  position: relative;
+  font-size: 19px;
+  color: #606060;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.adminPageMainCommon .profileSection .mainDetails .uploadImg span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+}
+
+.adminPageMainCommon .profileSection .mainDetails .uploadImg input {
+  opacity: 0;
+  width: 470px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.adminPageMainCommon .profileSection .otherDetails .heading {
+  background-color: #2B01FE;
+  min-height: 52px;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .profileSection .otherDetails .perInfoLabel {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .profileSection .otherDetails .perInfoField {
+  background-color: #fff;
+  border: solid 1px #707070;
+  border-radius: 0;
+  padding: 10px 15px;
+  height: 46px;
+  font-size: 18px;
+  color: #7E7E7E;
+  font-weight: 400;
+}
+
+.adminPageMainCommon .profileSection .otherDetails .text-muted {
+  font-size: 14px;
+  color: #8D8D8D;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.adminPageMainCommon .profileSection .otherDetails .showHideBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 46px;
+  border: solid 1px #707070;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+.adminPageMainCommon .menuManagementSection {
+  background-color: #000;
+  border: solid 1px #4E4E4E;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .title {
+  background-color: #2B01FE;
+  padding: 12px;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .title h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .title h3 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .title .chooseDropdown {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 0;
+  font-size: 14px;
+  color: #171717;
+  font-weight: 300;
+  height: 48px;
+  padding-right: 35px;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details .menuHeading {
+  background-color: #202020;
+  border: solid 1px #707070;
+  padding: 15px 20px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details ul.selectMenu {
+  background-color: #202020;
+  border: solid 1px #707070;
+  padding: 0;
+  margin: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details ul.selectMenu li {
+  display: block;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details ul.selectMenu li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details ul.selectMenu li a:hover {
+  background-color: #2B01FE;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details .dragAndDropMenuMain {
+  width: 70%;
+  margin-left: 10%;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details .dragAndDropMenuMain .dragAndDropMenu {
+  width: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.adminPageMainCommon .menuManagementSection .headerPart .details .dragAndDropMenuMain .dragAndDropMenu h3 {
+  font-size: 22px;
+  color: #171717;
+  font-weight: 500;
+}
+
+.adminAuthForm {
+  background-image: url(../images/adminLoginBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminAuthForm .whiteBG {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.adminAuthForm h1 {
+  font-size: 37px;
+  color: #2B01FE;
+  font-weight: 900;
+}
+
+.adminAuthForm .form-label {
+  font-size: 14px;
+  color: #343434;
+  font-weight: 500;
+}
+
+.adminAuthForm .aouthField {
+  border: solid 1px #E7E7E7;
+  border-radius: 30px;
+  background-color: #fff;
+  height: 61px;
+}
+
+.adminAuthForm .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+
+.adminAuthForm .form-check .form-check-input {
+  border-radius: 0;
+  border-color: #707070;
+  height: 13px;
+  width: 13px;
+  margin-top: 0;
+  background-color: #2B01FE;
+}
+
+.adminAuthForm .form-check .form-check-input:checked {
+  background-color: #2B01FE;
+}
+
+.adminAuthForm .form-check .form-check-label {
+  font-size: 12px;
+  color: #343434;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.adminAuthForm .link {
+  font-size: 12px;
+  color: #2B01FE;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.adminAuthForm p {
+  font-size: 12px;
+  color: #343434;
+  font-weight: 300;
+}
+
+.sidebarButton {
+  display: none;
+}
+
+.dataOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  overflow: hidden;
+}
+
+.LayoutBG {
+  background-image: url(../images/bg.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 40px;
+}
+
+.bigNFT {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+}
+
+.athleteHeader {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 99;
+}
+
+.athleteHeader .navButton {
+  background-color: #FEECAD !important;
+  border: solid 5px #fff;
+  border-radius: 7px;
+  background-image: url(../images/headBtnLine.png);
+  background-size: cover;
+}
+
+.athleteHeader .cartButton {
+  background-color: #E4FEAD !important;
+  border: solid 5px #fff;
+  border-radius: 7px;
+  background-image: url(../images/headBtnLine.png);
+  background-size: cover;
+}
+
+.athleteHeader .notifyButton {
+  background-color: #ADF0FE !important;
+  border: solid 5px #fff;
+  border-radius: 7px;
+  background-image: url(../images/headBtnLine.png);
+  background-size: cover;
+}
+
+.athleteHeader .btnSize {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.athleteHeader .btnBadge {
+  position: absolute;
+  background-color: #FA6B81;
+  width: 22px;
+  height: 22px;
+  right: 5px;
+  top: 10px;
+  border-radius: 4px;
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.athleteHeader .PCCBalanceButton {
+  background-color: #FFFBF0 !important;
+  border-radius: 7px;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #4A5662;
+  font-weight: 500;
+}
+
+.athleteHeader .PCCBalanceButton .font24 {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #4A5662;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.athleteHeader .EthBalanceButton {
+  background-color: #fff !important;
+  border-radius: 7px;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #4A5662;
+  font-weight: 500;
+}
+
+.athleteHeader .EthBalanceButton .font24 {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #4A5662;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.athleteHeader .navMain {
+  background-color: transparent !important;
+  padding: 0;
+  width: auto;
+}
+
+.athleteHeader .navMain .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.athleteHeader .navMain .navbar-nav .nav-link {
+  font-family: 'Athletics';
+  font-size: 28px;
+  color: #4A5662;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.019em;
+  padding: 5px 30px;
+}
+
+.athleteHeader .navMain .navbar-nav .nav-link:hover, .athleteHeader .navMain .navbar-nav .nav-link.active {
+  background-color: #3FE3EF;
+  color: #0A1917;
+}
+
+.offcanvas {
+  background-image: url(../images/menubg.png) !important;
+  background-repeat: repeat;
+  padding: 50px;
+  width: 750px !important;
+  z-index: 1050 !important;
+}
+
+.offcanvas a {
+  font-family: 'Athletics';
+  font-size: 30px;
+  color: #001146;
+  font-weight: 800;
+  padding: 8px 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.offcanvas a:hover, .offcanvas a.active {
+  color: #0763D0;
+}
+
+.offcanvas a:hover svg path, .offcanvas a.active svg path {
+  fill: #0763D0;
+}
+
+.offcanvas a svg {
+  margin-right: 15px;
+}
+
+.offcanvas-header {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+.offcanvas-header .btn-close {
+  background-color: #001146 !important;
+  border: solid 5px #0D1D4FAB;
+  border-radius: 7px;
+  opacity: 1;
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/menuClose.svg);
+  background-size: 50%;
+}
+
+.offcanvas-body {
+  padding: 0;
+}
+
+.offcanvas-body .PCCBalanceButton {
+  background-color: #FFFBF0 !important;
+  border-radius: 7px;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #4A5662;
+  font-weight: 500;
+}
+
+.offcanvas-body .PCCBalanceButton .font24 {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #4A5662;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.offcanvas-body .EthBalanceButton {
+  background-color: #fff !important;
+  border-radius: 7px;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #4A5662;
+  font-weight: 500;
+}
+
+.offcanvas-body .EthBalanceButton .font24 {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #4A5662;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.offcanvas-body .notifyButton {
+  background-color: #ADF0FE !important;
+  border: solid 5px #fff;
+  border-radius: 7px;
+  background-image: url(../images/headBtnLine.png);
+  background-size: cover;
+}
+
+.offcanvas-body .btnBadge {
+  position: absolute;
+  background-color: #FA6B81;
+  width: 22px;
+  height: 22px;
+  right: 5px;
+  top: 10px;
+  border-radius: 4px;
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.athleteSection .font32light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 32px !important;
+  color: #C0E3FC;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.athleteSection .seriesDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.athleteSection .font32teal {
+  font-family: 'Athletics';
+  font-size: 28px;
+  color: #02E3F9;
+  font-weight: 600;
+  font-size: 32px !important;
+  color: #02E3F9;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 32px;
+  letter-spacing: -0.019em;
+  text-decoration: line-through;
+}
+
+.athleteSection .font32lightNew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 32px !important;
+  color: #C0E3FC;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.athleteSection .font32tealNew {
+  font-family: 'Athletics';
+  font-size: 28px;
+  color: #02E3F9;
+  font-weight: 600;
+  font-size: 32px !important;
+  color: #02E3F9;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.019em;
+}
+
+.athleteSection .font54White {
+  font-family: 'Athletics';
+  font-size: 54px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.athleteSection .font32white {
+  font-size: 32px !important;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.athleteSection .font32whiteNew {
+  font-size: 32px !important;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.athleteSection .font32Yellow {
+  font-size: 32px !important;
+  color: #FEFD9B;
+  font-weight: 600;
+}
+
+.athleteSection .info-card {
+  cursor: pointer;
+  background-color: #D6C7EE;
+}
+
+.athleteSection .info-card:hover {
+  background-color: #F6E136;
+}
+
+.athleteSection .info-card:hover .info-img {
+  background-color: #F6E136;
+}
+
+.athleteSection .info-card:hover .info-Number {
+  background-color: #F6E136;
+  color: #000;
+}
+
+.athleteSection .info-card:hover .info-card-img {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .info-card:hover .gear-card-img {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .info-card:hover .utilities-card-img {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .svgOuter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 27px;
+  width: 27px;
+  background-color: #172B4D;
+  border-radius: 50%;
+}
+
+.athleteSection .svgOuter .DiamondIcon {
+  height: 25px;
+}
+
+.athleteSection .listingAreaMobile .playerNotAvailable {
+  background: #113DA8;
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.athleteSection .listingAreaMobile .playerNotAvailable .addBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #317BDA;
+  border-radius: 0 4px 0 0;
+  padding: 0;
+  height: 43px;
+  width: 43px;
+  border: 0;
+}
+
+.athleteSection .listingAreaMobile .playerNotAvailable .addBtn:hover, .athleteSection .listingAreaMobile .playerNotAvailable .addBtn:active, .athleteSection .listingAreaMobile .playerNotAvailable .addBtn:focus {
+  background-color: #317BDA;
+  border: 0;
+}
+
+.athleteSection .listingAreaMobile .active {
+  background-color: #F6E136;
+}
+
+.athleteSection .listingAreaMobile .active .info-img {
+  background-color: #F6E136;
+}
+
+.athleteSection .listingAreaMobile .active .info-card-img {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .listingAreaMobile .active .gear-card-img {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .listingAreaMobile .active .utilities-card-img {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .info-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-top: 10px !important;
+  z-index: 1;
+  margin-left: 9px;
+  background: #E9E1FE;
+  border-radius: 29px;
+}
+
+.athleteSection .infoImg {
+  top: 0;
+}
+
+.athleteSection .info-Number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 28px;
+  height: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-top: 10px !important;
+  z-index: 1;
+  margin-left: 9px;
+  background: #6637B4;
+  border-radius: 29px;
+  right: 10px;
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.athleteSection .gear-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+}
+
+.athleteSection .info-card-img {
+  width: auto;
+  padding: 20px 20px 0;
+}
+
+.athleteSection .info-card-img:hover {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .mainImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 250px;
+  width: auto;
+}
+
+.athleteSection .gear-card-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: #172B4D;
+}
+
+.athleteSection .info-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #172B4D;
+}
+
+.athleteSection .info-card-title .title {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.athleteSection .inner-text-info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  color: #172B4D;
+}
+
+.athleteSection .inner-text-info .eth1 {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  color: #172B4D;
+}
+
+.athleteSection .inner-text-info .eth2 {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  color: #172b4d81;
+}
+
+.athleteSection .playerLabel {
+  background-color: #6637B4;
+  border: solid 2px #C099FF;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.athleteSection .info-card-body-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.athleteSection .inner-text {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  color: #172B4D;
+}
+
+.athleteSection .gear-card-body-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.athleteSection .gear-card-img {
+  width: auto;
+  height: 250px;
+}
+
+.athleteSection .gear-card-img:hover {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .utilities-card-img {
+  width: auto;
+  height: 280px;
+}
+
+.athleteSection .utilities-card-img:hover {
+  background-color: #EEE5C7;
+}
+
+.athleteSection .utilitiesTextName {
+  padding: 20px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  color: #172B4D;
+}
+
+.athleteSection .utilitiesTextDetails {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #172B4D;
+}
+
+.athleteSection .socialBtn {
+  width: 64px;
+  height: 64px;
+  background: #0B95DE;
+  border: 4px solid #9BDAFE;
+  border-radius: 0;
+}
+
+.athleteSection .socialBtn:hover {
+  background-color: #02E3F9;
+  border-color: #02E3F9;
+}
+
+.athleteSection hr {
+  border-top: solid 2px rgba(255, 255, 255, 0.16);
+  margin: 30px 0;
+  opacity: 1;
+}
+
+.athleteSection .tierMain .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background: #112E88;
+  font-family: 'Athletics';
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.athleteSection .tierMain .tierBox {
+  background-color: #212322;
+  background-image: url(../images/tierBoxPattern.png);
+  background-repeat: repeat;
+  border: 3px solid #9BDAFE;
+}
+
+.athleteSection .tierMain .tierBox .tierImg img {
+  width: 100%;
+  border-radius: 0 0 20px 0;
+}
+
+.athleteSection .tierMain .tierBox .tierImg .tierIcon {
+  position: absolute;
+  width: 34px;
+  height: 32px;
+  left: 3px;
+  top: 3.25px;
+  background: #242625;
+  border-radius: 0px 0px 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.athleteSection .tierMain .tierBox .tierImg .tierIcon img {
+  width: auto;
+  border-radius: 0;
+}
+
+.athleteSection .tierMain .tierBox .tierDetails {
+  padding: 10px 20px;
+}
+
+.athleteSection .tierMain .tierBox .tierDetails h3 {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.athleteSection .tierMain .tierBox .tierDetails .font16White {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.athleteSection .tierMain .tierBox .tierDetails .font16Gray {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  opacity: .56;
+}
+
+.athleteSection .utilityMain {
+  background: #08469B;
+  border: 7px solid rgba(155, 218, 254, 0.15);
+}
+
+.athleteSection .utilityMain .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background: #112E88;
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.athleteSection .nftUtilityMain {
+  padding-right: 34px;
+  padding-left: 42px;
+}
+
+.athleteSection .nftUtility {
+  background-color: #1242A6;
+}
+
+.athleteSection .nftUtility:hover {
+  border-color: #02E3F9;
+}
+
+.athleteSection .nftUtilityText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 38px;
+  font-family: 'Athletics';
+  font-size: 23px;
+  color: #C0E3FC;
+  font-weight: 500;
+  line-height: 135.5%;
+}
+
+.athleteSection .imageUtility {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.athleteSection .imageUtility:hover {
+  border-color: #02E3F9;
+}
+
+.athleteSection .image-utility {
+  background-color: #0B98E0;
+  width: 6rem;
+}
+
+.athleteSection .image-utility:hover {
+  border-color: #02E3F9;
+}
+
+.athleteSection .statMain {
+  background: #08469B;
+  margin-top: 1rem;
+}
+
+.athleteSection .statMain .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background: #112E88;
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.athleteSection .statsImage {
+  height: 5rem !important;
+}
+
+.athleteSection .seasonStatsName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.athleteSection .seasonProgress {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.athleteSection .progress {
+  width: 100%;
+  height: 1.5rem;
+  background-color: rgba(155, 218, 254, 0.15);
+}
+
+.athleteSection .progress-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.athleteSection .utilitiedRightSide {
+  background-color: #EEE5C7;
+  border-radius: 12px;
+  margin-left: 25px;
+}
+
+.athleteSection .utilitiedRightSide .gearHelmet {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/utilitiesIcon.png);
+}
+
+.athleteSection .utilitiedRightSide .gearHelmet .image {
+  height: 30px !important;
+  width: 20rem !important;
+  z-index: 1;
+}
+
+.athleteSection .gearRightSideMain {
+  background-color: #EEE5C7;
+  border-radius: 12px;
+  margin-left: 25px;
+}
+
+.athleteSection .gearRightSideMain .gearHelmet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/utilitiesIcon.png);
+}
+
+.athleteSection .gearRightSideMain .gearHelmet .image {
+  height: 30px !important;
+  width: 20rem !important;
+  z-index: 1;
+}
+
+.athleteSection .gearRightSideMain .geartextName {
+  padding: 20px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.athleteSection .gearRightSideMain .gearTextDetails {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.athleteSection .gearRightSideMain .gearDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F6E136;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.athleteSection .gearRightSideMain .textDetails {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.athleteSection .gearRightSideMain .priceDetails {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  float: right;
+}
+
+.athleteSection .gearRightSideMain .gearyellowBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F6E136;
+  padding: 20px 30px;
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #0E3A96;
+  font-weight: 600;
+  border-radius: 0;
+  width: 100% !important;
+}
+
+.athleteSection .gearRightSideMain .gearyellowBtn:hover {
+  background-color: #02E3F9;
+  border-color: #02E3F9;
+}
+
+.athleteSection .gearLeftSideMain {
+  background-color: rgba(17, 46, 136, 0.49);
+  padding: 10px 20px;
+}
+
+.athleteSection .gearLeftSideMain .gearCollectionrBox .gearCollectionImg .gearCollectionIcon .img-fluid {
+  position: absolute;
+  width: 40px;
+  height: 32px;
+  right: 0px;
+  top: 3.25px;
+  background-color: #242625;
+  border-radius: 0px 0px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.athleteSection .gearLeftSideMain .gearCollectionrBox .gearCollectionImg .gearCollectionIcon .img-fluid img {
+  width: auto;
+  border-radius: 0;
+}
+
+.athleteSection .gearLeftSideMain .gearCollectionrBox .gearCollectionImg img {
+  height: 11.5rem;
+  width: 100%;
+  border-radius: 0px 0px 16px 0px;
+  background-color: #0B95DE;
+}
+
+.athleteSection .gearLeftSideMain .gearCollectionrBox .geartierDetails {
+  margin-top: -11px;
+  padding: 11px 20px;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+
+.athleteSection .gearLeftSideMain .gearCollectionrBox .geartierDetails h3 {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.athleteSection .gearLeftSideMain .gearCollectionrBox .geartierDetails .font16White {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.athleteSection .gearLeftSideMain .gearCollectionrBox .geartierDetails .font16Gray {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  opacity: .56;
+}
+
+.athleteSection .tableArea thead {
+  border-bottom: none;
+  background-color: #112E88;
+}
+
+.athleteSection .tableArea thead th {
+  padding: 10px 13px;
+  line-height: 20px;
+  border: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.athleteSection .tableArea tbody {
+  background-color: #132868;
+}
+
+.athleteSection .tableArea tbody tr {
+  border-color: rgba(17, 46, 136, 0.79);
+}
+
+.athleteSection .tableArea tbody tr td {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 10px 13px;
+}
+
+.athleteSection .tableArea tbody tr td .hero-image {
+  background-color: blueviolet;
+  border-radius: 4rem;
+  width: 3rem;
+}
+
+.athleteSection .tableArea tbody tr td img {
+  width: 1.5rem;
+}
+
+.singleSelectedCollectionCard {
+  background-color: #EEE5C7;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.singleSelectedCollectionCard .card-img-top {
+  height: 300px;
+  width: auto;
+  margin: 40px 0;
+}
+
+.singleSelectedCollectionCard .body1 {
+  background: #EEE5C7;
+  border-top: 1.29768px solid rgba(0, 7, 36, 0.07);
+  -webkit-backdrop-filter: blur(7.78608px);
+          backdrop-filter: blur(7.78608px);
+}
+
+.singleSelectedCollectionCard .body1 .card-text {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #172B4D;
+}
+
+.singleSelectedCollectionCard .body1 .card-title {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #172B4D;
+}
+
+.singleSelectedCollectionCard .body2 {
+  background-color: #F6E136;
+}
+
+.singleSelectedCollectionCard .body2 .leftTitle .title, .singleSelectedCollectionCard .body2 .rightTitle .title {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #172B4D;
+}
+
+.singleSelectedCollectionCard .body2 .leftTitle .detail, .singleSelectedCollectionCard .body2 .rightTitle .detail {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 30px;
+  color: #172B4D;
+}
+
+.text {
+  max-width: 100%;
+}
+
+.searchIcon {
+  width: 90%;
+}
+
+@media (max-width: 767) {
+  .searchIcon {
+    width: 100%;
+  }
+}
+
+.icon {
+  top: 12px;
+  color: #fff;
+  cursor: pointer;
+  left: 20px;
+}
+
+.searchIcon input {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 290px;
+  height: 70px;
+  font-size: 24px;
+  color: rgba(0, 17, 70, 0.82);
+  font-weight: 100;
+  padding-left: 80px;
+}
+
+@media (max-width: 575px) {
+  .searchIcon input {
+    font-size: 12px;
+    font-weight: 700px;
+  }
+}
+
+.types {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media (max-width: 575px) {
+  .types {
+    font-size: 10px;
+    font-weight: 700px;
+  }
+}
+
+.marketPlaceImage {
+  position: absolute;
+  top: 120px;
+  right: 150px;
+}
+
+@media (max-width: 576px) {
+  .marketPlaceImage {
+    display: none;
+  }
+}
+
+.marketPlaceImage .img {
+  max-height: 45vh !important;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gearImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 205px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.navCustom {
+  border: 0 !important;
+}
+
+.navCustom svg {
+  height: calc(0.9375rem + ((1vw - 2.5px) * 0.5185));
+}
+
+.navCustom .nav-item .nav-link {
+  background-color: #D4E6FE;
+  border-radius: 0;
+  border: 0;
+  font-family: 'Athletics';
+  font-size: 22px;
+  color: #4A5662;
+  font-weight: 600;
+  padding: 8px 13px;
+}
+
+.navCustom .nav-item .nav-link .textBgBlue {
+  font-family: "Athletics";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.019em;
+  color: #172B4D;
+  background-color: #3FE3EF;
+  padding: 7px 9px;
+  margin-bottom: 1px;
+}
+
+.navCustom .nav-item .nav-link:hover, .navCustom .nav-item .nav-link.active {
+  background-color: #3FE3EF;
+  color: #0A1917;
+}
+
+.navCustom .nav-item .nav-link:hover .textBgBlue, .navCustom .nav-item .nav-link.active .textBgBlue {
+  font-family: "Athletics";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.019em;
+  color: #FFFFFF;
+  background-color: #172B4D;
+  padding: 7px 9px;
+  margin-bottom: 1px;
+}
+
+.customAccordion .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #112E88 !important;
+}
+
+.customAccordion .accordion .accordion-item .accordion-header .accordion-button:after {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 0 !important;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails {
+  padding: 30px;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails.bgBlue {
+  background-color: #0241AB;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow {
+  background-color: #9BA5E10A;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .icComman {
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .icOne {
+  background-color: #A77E0C;
+  border: solid 2px #F2C443;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .icTwo {
+  background-color: #3547B0;
+  border: solid 2px #9BA5E1;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .icThree {
+  background-color: #75A70C;
+  border: solid 2px #BAF243;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .icFour {
+  background-color: #0C78A7;
+  border: solid 2px #3CAFE0;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .iconbgPattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/btnPattern.png);
+  background-size: cover;
+  z-index: 0;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .font20Yellow {
+  font-size: 20px;
+  color: #F2C443;
+  font-weight: 500;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .font20Light {
+  font-size: 20px;
+  color: #C8CEEF;
+  font-weight: 500;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .font20Green {
+  font-size: 20px;
+  color: #D8F49B;
+  font-weight: 500;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .font20Blue {
+  font-size: 20px;
+  color: #79D7FF;
+  font-weight: 500;
+}
+
+.customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .font24White {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.modalCustom .modal-content {
+  background: #9BDAFE;
+  border: 4px solid #77C8F6;
+  border-radius: 0;
+}
+
+.modalCustom .modal-content .modal-header {
+  background-color: #112E88;
+  padding: 15px;
+  border-radius: 0;
+}
+
+.modalCustom .modal-content .modal-header .modal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.modalCustom .modal-content .modal-header .modal-title h1.title {
+  font-family: 'Athletics';
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .modal-header .content {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.modalCustom .modal-content .modal-header .content span {
+  font-weight: 600;
+}
+
+.modalCustom .modal-content .modal-header .btn-close {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  border: 0;
+  border-radius: 10px;
+  width: 54px !important;
+  height: 54px !important;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+  background: #F44336 url(../images/btnClose.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 1;
+}
+
+.modalCustom .modal-content .modal-header .btn-close:hover, .modalCustom .modal-content .modal-header .btn-close.active {
+  background-color: #F44336;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.modalCustom .modal-content .modal-body {
+  padding: 0;
+}
+
+.modalCustom .modal-content .form-label {
+  font-family: 'Athletics';
+  font-size: 22px;
+  color: #112E88;
+  font-weight: 400;
+}
+
+.modalCustom .modal-content .fieldSkyBG {
+  background: rgba(136, 199, 243, 0.44) !important;
+  padding: 15px;
+}
+
+.modalCustom .modal-content .fieldTransparent {
+  background-color: transparent;
+  border: 0;
+  height: 30px;
+  width: 300px;
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .fieldTransparent::-webkit-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .fieldTransparent:-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .fieldTransparent::-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .fieldTransparent::placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .coinIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #112E88;
+}
+
+.modalCustom .modal-content .form-control {
+  background: rgba(136, 199, 243, 0.44) !important;
+  border: 0;
+  border-radius: 0;
+  height: 60px;
+  padding: 15px;
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .form-control::-webkit-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .form-control:-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .form-control::-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content .form-control::placeholder {
+  font-family: 'Athletics';
+  font-size: 26px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.modalCustom .modal-content textarea.form-control {
+  height: unset;
+}
+
+.modalCustom .modal-content .font32Blue {
+  font-family: 'Athletics';
+  font-size: 32px;
+  color: #112E88;
+  font-weight: 900;
+}
+
+.formRadio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* hide input */
+  /* style label */
+  /* toggle hover */
+  /* toggle on */
+}
+
+.formRadio label {
+  width: auto;
+  background: #9BDAFE;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #112E88;
+  font-weight: 900;
+}
+
+.formRadio input.radio:empty {
+  display: none;
+}
+
+.formRadio input.radio:empty ~ label {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.formRadio input.radio:hover:not(:checked) ~ label {
+  color: #fff;
+  background: #0B95DE;
+  border: solid 2px #fff;
+}
+
+.formRadio input.radio:checked ~ label {
+  color: #fff;
+  background: #0B95DE;
+  border: solid 2px #fff;
+}
+
+.txnSummary .font24Blue {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #112E88;
+  font-weight: 500;
+}
+
+.txnSummary .font24BlueBold {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #112E88;
+  font-weight: 700;
+}
+
+.txnSummary hr {
+  border-top: solid 2px #93D2F9;
+  opacity: 1;
+}
+
+.lineUpPage h3 {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.lineUpPage .playerStatsDetails a {
+  font-family: 'Athletics';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.lineUpPage .playerStatsDetails .playerPic {
+  margin: 0 auto;
+  display: table;
+}
+
+.lineUpPage .playerDetails {
+  background-color: #1D2529;
+}
+
+.lineUpPage .playerDetails .heading {
+  background-color: #242E33;
+  padding: 5px 30px;
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.lineUpPage .playerDetails .details {
+  padding: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lineUpPage .playerDetails .details .playerPic {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #D6C7EE;
+}
+
+.lineUpPage .playerDetails .details .playerPic img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.lineUpPage .playerDetails .details h2 {
+  font-family: 'Athletics';
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.lineUpPage .playerDetails .details p {
+  font-family: 'Athletics';
+  font-size: 27px;
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.lineUpPage .playerDetails .details p span {
+  color: #FCF6C0;
+}
+
+.lineUpPage .playerDetails .details .playerLabel {
+  background-color: #6637B4;
+  border: solid 4px #C099FF;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.lineUpPage .playerDetails .playerItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #242E33;
+  padding: 15px 30px;
+}
+
+.lineUpPage .playerDetails .playerItems .font34White {
+  font-family: 'Athletics';
+  font-size: 34px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.gameRuleParts {
+  margin-bottom: 20px;
+}
+
+.gameRuleParts .heading {
+  background-color: #09368A;
+  font-family: 'Athletics';
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.gameRuleParts .details {
+  background-color: #092B6A;
+  padding: 20px;
+}
+
+.gameRuleParts .details ul li {
+  font-family: 'Athletics';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+  list-style-type: disc !important;
+}
+
+.lineupGround {
+  background: #257423;
+  border: 6px solid rgba(255, 255, 255, 0.83);
+  height: 812px;
+}
+
+.lineupGround .offencePart {
+  background: #257423;
+  height: 100%;
+  width: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Athletics';
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.lineupGround .offencePart .textRotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.lineupGround .deffencePart {
+  background-color: #53AA48;
+  height: 100%;
+  width: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Athletics';
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.lineupGround .deffencePart .textRotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.lineupGround .middlePart {
+  border-right: 6px solid rgba(255, 255, 255, 0.83);
+  border-left: 6px solid rgba(255, 255, 255, 0.83);
+}
+
+.lineupGround .middlePart .middlePartLeft {
+  background-image: url(../images/lineLeftRpt.png);
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.lineupGround .middlePart .middlePartRight {
+  background-image: url(../images/lineRightRpt.png);
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.lineupGround .middlePart .line {
+  background-image: url(../images/Lines.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  width: 100%;
+  height: 100%;
+}
+
+.playerDetailsPosition {
+  position: absolute;
+  z-index: 99;
+  left: 5%;
+  top: 100%;
+}
+
+.myProfilePage .profileDetails .heading {
+  background-color: #09368A;
+  padding: 15px 25px;
+}
+
+.myProfilePage .profileDetails .heading h3 {
+  font-family: 'Athletics';
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.myProfilePage .profileDetails .profileBody {
+  background-color: #092B6A;
+}
+
+.myProfilePage .profileDetails .profileBody .iconBlue {
+  background-color: #3547B0;
+  border: solid 3px #9BA5E1;
+  background-image: url(../images/profileIconLine.png);
+  background-size: cover;
+  width: 74px;
+  height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myProfilePage .profileDetails .profileBody .font20Head {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #C8CEEF;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.myProfilePage .profileDetails .profileBody .font20Details {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #C0E3FC;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.myProfilePage .profileDetails .profileBody .iconTeal {
+  background-color: #0C78A7;
+  border: solid 3px #3CAFE0;
+  background-image: url(../images/profileIconLine.png);
+  background-size: cover;
+  width: 74px;
+  height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myProfilePage .profileDetails .profileBody .font20Head2 {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #43BEF2;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.myProfilePage .profileDetails .profileBody .profileAbout .font24White {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.myProfilePage .profileDetails .profileBody .profileAbout hr {
+  opacity: 1;
+  border-top: solid 1px rgba(255, 255, 255, 0.16);
+  margin: 10px 0;
+}
+
+.myProfilePage .profileDetails .profileBody .profileAbout p {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 200;
+  margin: 0;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .form-label {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter {
+  position: relative;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .passwordIcon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .passwordIcon svg path {
+  fill: #fff;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .form-control {
+  background-color: #9BA5E10A;
+  padding: 20px;
+  border: 0;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .form-control::-webkit-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .form-control:-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .form-control::-ms-input-placeholder {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .form-control::placeholder {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.LinkButton {
+  background-color: transparent;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #3FE3EF;
+  font-weight: 600;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.LinkButton:hover, .LinkButton.active, .LinkButton:focus {
+  background-color: transparent;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #3FE3EF;
+  font-weight: 600;
+  border: 0;
+}
+
+.cameraButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #FEFAC7;
+  border: 0;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cameraButton:hover, .cameraButton.active, .cameraButton:focus {
+  background-color: #FEFAC7;
+  border: 0;
+}
+
+.eventPage .event .eventDetails {
+  background-color: #1D2529;
+  padding: 15px;
+  min-height: 150px;
+}
+
+.eventPage .event .eventDetails .date {
+  font-family: 'Athletics';
+  font-size: 14px;
+  color: #FFDC8E;
+  font-weight: 500;
+}
+
+.eventPage .event .eventDetails .title {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.eventPage .event .eventDetails .location {
+  font-family: 'Athletics';
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.eventPage .event .eventDetails .location span {
+  color: #8EE4FF;
+}
+
+.buyButton {
+  background-color: #EAFEBE;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #000;
+  font-weight: 800;
+  border: 0;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 0;
+}
+
+.buyButton:hover, .buyButton.active, .buyButton:focus {
+  background-color: rgba(234, 254, 190, 0.8);
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #000;
+  font-weight: 800;
+  border: 0;
+}
+
+.modalNotify .modal-content {
+  background: #fff;
+  border-radius: 0;
+}
+
+.modalNotify .modal-content .modal-header {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 0;
+  border-bottom: solid 1px #F0F3FB;
+}
+
+.modalNotify .modal-content .modal-header .modal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.modalNotify .modal-content .modal-header .modal-title h1.title {
+  font-family: 'Athletics';
+  font-size: 30px;
+  color: #000;
+  font-weight: 500;
+}
+
+.modalNotify .modal-content .modal-header .modal-title h1.title div {
+  background-color: #DCF0FE;
+  width: 38px;
+  height: 38px;
+  border-radius: 2px;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #0989D6;
+  font-weight: 500;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modalNotify .modal-content .modal-header .content {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.modalNotify .modal-content .modal-header .content span {
+  font-weight: 600;
+}
+
+.modalNotify .modal-content .modal-header .btn-close {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  border: 0;
+  border-radius: 10px;
+  background-color: #E4FEAD !important;
+  width: 54px !important;
+  height: 54px !important;
+  border: solid 3px #F2FFD7;
+  border-radius: 3px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.18px;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+  background: #F44336 url(../images/btnCloseBlack.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 1;
+}
+
+.modalNotify .modal-content .modal-header .btn-close:hover, .modalNotify .modal-content .modal-header .btn-close.active {
+  background-color: #F44336;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.modalNotify .modal-content .modal-body {
+  padding: 0;
+}
+
+.modalNotify .modal-content .modal-body .bodrBotm {
+  border-bottom: solid 1px #F0F3FB;
+}
+
+.modalNotify .modal-content .modal-body .userPic {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #D6C7EE;
+}
+
+.modalNotify .modal-content .modal-body .userPic img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.modalNotify .modal-content .modal-body .title {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #0D193F;
+  font-weight: 500;
+}
+
+.modalNotify .modal-content .modal-body .title span {
+  font-weight: 300;
+}
+
+.modalNotify .modal-content .modal-body .date {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #45537C;
+  font-weight: 300;
+}
+
+.modalNotify .modal-content .modal-body .msgDetails {
+  background: #D4E6FE;
+  border-radius: 4.20065px;
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #0D193F;
+  font-weight: 300;
+  padding: 12px;
+}
+
+.modalNotify .modal-content .modal-body .nav-link {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #0989D6;
+  font-weight: 500;
+}
+
+.inboxPage .msgCount {
+  background: rgba(245, 251, 255, 0.14);
+  border-radius: 3.10474px;
+  width: 38px;
+  height: 38px;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inboxPage .inboxSearch {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inboxPage .list {
+  background-color: #D4E6FE;
+  padding: 15px 30px;
+}
+
+.inboxPage .list .symbol {
+  background-color: #F9CFAB;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #803C01;
+  font-weight: 700;
+}
+
+.inboxPage .list .details .title {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #0A1917;
+  font-weight: 500;
+}
+
+.inboxPage .list .details .title span {
+  font-weight: 200;
+}
+
+.inboxPage .list .details .date {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #0A1917;
+  font-weight: 200;
+}
+
+.inboxPage .list .details p {
+  font-family: 'Athletics';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+  display: none;
+}
+
+.inboxPage .list.active {
+  background: #132868;
+}
+
+.inboxPage .list.active .details .title,
+.inboxPage .list.active .details .date {
+  color: #fff;
+}
+
+.inboxPage .list.active .details p {
+  display: block;
+}
+
+.inboxPage .inboxDetails {
+  background: #132868;
+}
+
+.inboxPage .inboxDetails .heading {
+  padding: 30px;
+  border-bottom: 1px solid #214178;
+}
+
+.inboxPage .inboxDetails .heading .date {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.67);
+  font-weight: 200;
+}
+
+.inboxPage .inboxDetails .heading .title {
+  font-family: 'Athletics';
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.inboxPage .inboxDetails .heading .senderDetails .symbol {
+  background-color: #D3F9FE;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #132868;
+  font-weight: 700;
+}
+
+.inboxPage .inboxDetails .heading .senderDetails .companyName {
+  font-family: 'Athletics';
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.inboxPage .inboxDetails .heading .senderDetails .personName {
+  font-family: 'Athletics';
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.67);
+  font-weight: 500;
+}
+
+.inboxPage .inboxDetails .details {
+  padding: 30px;
+}
+
+.inboxPage .inboxDetails .details p {
+  font-family: 'Athletics';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.headBtnLine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/headBtnLine.png);
+  background-size: cover;
+  z-index: 0;
+}
+/*# sourceMappingURL=app.css.map */

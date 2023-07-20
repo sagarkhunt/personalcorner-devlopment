@@ -1,0 +1,1678 @@
+@import 'variable';
+@import 'mixin';
+
+
+@media (min-width: 320px) {
+
+    .homePage .bannerSection .leftContent .mainHeading,
+    .eventPage h4.mainHeading,
+    .marketplacePage .marketplaceBanner h4.mainHeading {
+        font-size: calc(1.25rem + ((1vw - 3.2px) * 2.5));
+        min-height: 0vw;
+    }
+
+    .homePage .marketplaceSection .mainHeading,
+    .homePage .featuredNftsSection .headArea .mainHeading,
+    .homePage .ytVideoSection .sectionContent .headArea .mainHeading,
+    .homePage .trendingNftsSection .headArea .mainHeading,
+    .homePage .liveFeedSection .headArea .mainHeading,
+    .pageMainCommon .aboutSection .rightContent .mainHeading,
+    .aboutPage .personalCornerSection h1.mainHeading,
+    .eventPage .upcomingEventSection h1.mainHeading,
+    .nftListPage .nftListSection .headArea .mainHeading,
+    .nftDetailPage .aboutNftSection .rightContent .mainHeading,
+    .nftDetailPage .tiersSection .headArea .mainHeading,
+    .nftDetailPage .tiersSection .leftContent .mainHeading,
+    .nftDetailPage .utilitySection .headArea .mainHeading,
+    .nftDetailPage .playerItmSection .headArea .mainHeading {
+        font-size: calc(1.25rem + ((1vw - 3.2px) * 1.875));
+        min-height: 0vw;
+        line-height: normal;
+    }
+
+    .homePage .ytVideoSection .sectionContent .headArea .mainHeading2,
+    .homePage .trendingNftsSection .headArea .mainHeading2,
+    .detailsPage .detailsPageSectionOne .detailsRightPart h3.smallHeading,
+    .eventDetailsPage .upcomingEventSectionOne h3.smallHeading,
+    .eventDetailsPage .upcomingEventSectionTwo h3.smallHeading,
+    .eventDetailsPage .upcomingEventSectionThree h3.smallHeading {
+        font-size: calc(1.25rem + ((1vw - 3.2px) * 1));
+        min-height: 0vw;
+    }
+
+    .aboutPage h4.mainHeading {
+        font-size: calc(1.125rem + ((1vw - 3.2px) * 0.375));
+        min-height: 0vw;
+    }
+
+    .aboutPage p.content,
+    .adminPageMainCommon h2 {
+        font-size: calc(1.25rem + ((1vw - 3.2px) * 1));
+        min-height: 0vw;
+    }
+
+    .aboutPage .personalCornerSection p.content,
+    .aboutPage .aboutNFTSection p.content,
+    .nftListPage .nftListSection .headArea .content,
+    .pageMainCommon .aboutSection .rightContent .content,
+    .nftDetailPage .utilitySection .headArea .content,
+    .nftDetailPage .utilitySection .contentLisitngArea .listingArea .nftCard .card-body .card-title,
+    .nftDetailPage .playerItmSection .listingArea .nftCard .card-body .card-title {
+        font-size: calc(1.125rem + ((1vw - 3.2px) * 0.375));
+        min-height: 0vw;
+    }
+
+    .eventPage .upcomingEventSection h3.smallHeading,
+    .nftDetailPage .tiersSection .leftContent .content2,
+    .nftDetailPage .tiersSection .leftContent .content3,
+    .adminPageMainCommon .contentManagementSection .tab-content .optionPart .heading h2 {
+        font-size: calc(1.125rem + ((1vw - 3.2px) * 0.75));
+        min-height: 0vw;
+    }
+
+    .eventPage p.font32Blue {
+        font-size: calc(1rem + ((1vw - 3.2px) * 1));
+        min-height: 0vw;
+    }
+
+    .eventPage .bannerSectionSecondPart .font54Blue,
+    .eventPage .eventPackage .font54Blue {
+        font-size: calc(1.25rem + ((1vw - 3.2px) * 1.625));
+        min-height: 0vw;
+    }
+
+    .eventPage .bannerSectionSecondPart p.font36Blue,
+    .eventPage .eventPackage p.font36Blue {
+        font-size: calc(1rem + ((1vw - 3.2px) * 0.875));
+        min-height: 0vw;
+    }
+
+    .weeklyResultRight .partOne h2,
+    .weeklyResultRight .partTwo h2,
+    .weeklyResultRight .partThree h2 {
+        font-size: calc(1.25rem + ((1vw - 3.2px) * 0.75));
+        min-height: 0vw;
+    }
+
+    .weeklyResultRight .partOne .font56Dark,
+    .weeklyResultRight .partTwo .font56Dark,
+    .weeklyResultRight .partThree .font56Dark {
+        font-size: calc(1.625rem + ((1vw - 3.2px) * 1.875));
+        min-height: 0vw;
+    }
+    .homePage .bannerSection .bannerSectionArea .headArea .mainHeading2 {
+        font-size: calc(1.5625rem + ((1vw - 3.2px) * 1.5625));
+        min-height: 0vw;
+      }
+      .homePage .marketplaceSection .content .mainHeading,
+      .pageMainCommon .aboutSection .content .mainHeading {
+        font-size: calc(1.4375rem + ((1vw - 3.2px) * 0.625));
+        min-height: 0vw;
+        padding: 20px 0;
+      }
+      .homePage .trendingNftsSection .main .headArea .mainHeading h1,
+      .homePage .trendingNftsSection .main .headArea .mainHeading span {
+        font-size: calc(1.125rem + ((1vw - 3.2px) * 0.4375));
+      }
+      .eventPageMain h4.mainHeading {
+        font-size: calc(1.875rem + ((1vw - 3.2px) * 3.75));
+        min-height: 0vw;
+      }
+      .eventPageMain p.font32Blue,
+      .eventPageMain .bannerSectionSecondPart p.font36Blue,
+      .eventPageMain .eventPackage p.font36Blue {
+        font-size: calc(1.125rem + ((1vw - 3.2px) * 0.875));
+        min-height: 0vw;
+      }
+      .eventPageMain .bannerSectionSecondPart .font54Blue,
+      .eventPageMain .eventPackage .font54Blue {
+        font-size: calc(1.375rem + ((1vw - 3.2px) * 1.5));
+        min-height: 0vw;
+      }
+}
+
+@media (min-width: 1920px) {
+
+    .homePage .bannerSection .leftContent .mainHeading,
+    .eventPage h4.mainHeading,
+    .marketplacePage .marketplaceBanner h4.mainHeading {
+        font-size: 60px;
+    }
+
+    .homePage .marketplaceSection .mainHeading,
+    .homePage .featuredNftsSection .headArea .mainHeading,
+    .homePage .ytVideoSection .sectionContent .headArea .mainHeading,
+    .homePage .trendingNftsSection .headArea .mainHeading,
+    .homePage .liveFeedSection .headArea .mainHeading,
+    .pageMainCommon .aboutSection .rightContent .mainHeading,
+    .aboutPage .personalCornerSection h1.mainHeading,
+    .eventPage .upcomingEventSection h1.mainHeading,
+    .nftListPage .nftListSection .headArea .mainHeading,
+    .nftDetailPage .aboutNftSection .rightContent .mainHeading,
+    .nftDetailPage .tiersSection .headArea .mainHeading,
+    .nftDetailPage .tiersSection .leftContent .mainHeading,
+    .nftDetailPage .utilitySection .headArea .mainHeading,
+    .nftDetailPage .playerItmSection .headArea .mainHeading {
+        font-size: 50px;
+    }
+
+    .homePage .ytVideoSection .sectionContent .headArea .mainHeading2,
+    .homePage .trendingNftsSection .headArea .mainHeading2,
+    .detailsPage .detailsPageSectionOne .detailsRightPart h3.smallHeading,
+    .eventDetailsPage .upcomingEventSectionOne h3.smallHeading,
+    .eventDetailsPage .upcomingEventSectionTwo h3.smallHeading,
+    .eventDetailsPage .upcomingEventSectionThree h3.smallHeading {
+        font-size: 36px;
+    }
+
+    .aboutPage h4.mainHeading {
+        font-size: 24px;
+    }
+
+    .aboutPage p.content {
+        font-size: 36px;
+    }
+
+    .aboutPage .personalCornerSection p.content,
+    .aboutPage .aboutNFTSection p.content,
+    .nftListPage .nftListSection .headArea .content,
+    .pageMainCommon .aboutSection .rightContent .content,
+    .nftDetailPage .utilitySection .headArea .content,
+    .nftDetailPage .utilitySection .contentLisitngArea .listingArea .nftCard .card-body .card-title,
+    .nftDetailPage .playerItmSection .listingArea .nftCard .card-body .card-title {
+        font-size: 24px;
+    }
+
+    .eventPage .upcomingEventSection h3.smallHeading,
+    .nftDetailPage .tiersSection .leftContent .content2,
+    .nftDetailPage .tiersSection .leftContent .content3,
+    .adminPageMainCommon .contentManagementSection .tab-content .optionPart .heading h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .homePage .bannerSection .leftContent {
+        width: 50%;
+    }
+
+    .homePage .bannerSection .leftContent .content {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .bgWhite {
+        background-color: $white;
+    }
+
+    .customHeader .navMain .navbar-collapse .navbar-nav {
+        gap: 20px;
+    }
+
+    .listingArea .nftCard .card-body .card-title {
+        font-size: 18px;
+    }
+
+    .adminPageMainCommon .stripedTable .table {
+        min-width: 1200px;
+    }
+
+    .offcanvas {
+        width: 100% !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    .ddLink {
+        font-size: 18px !important;
+    }
+    .customHeader .navMain .navbar-collapse {
+        padding-left: 20px;
+        background-color: #A1DCFE
+    }
+
+    .customHeader .navMain .navbar-collapse .navbar-nav .nav-link {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        color: #001146;
+    }
+
+    .customHeader .navMain .basicConnectBtns .same {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        // background-color: #F6E136;
+        // border: 4px solid #FEFD9B;
+    }
+    .customHeader .navMain .basicConnectBtns {
+        padding-left: 0;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .homePage .ourMissionSection .leftContent .content {
+        font-size: 18px;
+    }
+
+    .aboutPage .bannerSection .bannerImgRight {
+        position: relative;
+        padding: 0 30px;
+    }
+
+    .homePage .featuredNftsSection .cardArea .nftCard .card-img {
+        height: 210px;
+        width: 200px;
+    }
+
+    .homePage .featuredNftsSection .cardArea .nftCard .card-body .card-title {
+        font-size: 18px;
+    }
+
+    .nftDetailPage .playerItmSection .listingArea .nftCard .imgBody {
+        max-width: 370px;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -320px;
+        transition: all 200ms;
+        top: 82px;
+    }
+
+    .sidebar .pro-sidebar {
+        height: calc(100vh - 162px);
+    }
+
+    .adminContent {
+        padding-left: unset;
+        transition: all 200ms;
+    }
+
+    .adminContentMobile {
+        // padding-left: 320px;
+        transition: all 200ms;
+    }
+
+    .mobileSidebar {
+        left: 0px;
+        transition: all 200ms;
+        top: 82px;
+    }
+
+    .adminContent .customHeader {
+        width: 100%;
+    }
+
+    .sidebarButton {
+        display: block;
+    }
+
+    .adminContent .customHeader .navMain {
+        padding: 20px 0;
+    }
+
+    
+
+    .adminContent .customHeader .navMain .navbar-collapse .navbar-nav .headerDropdown .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .col-sm-5cols {
+        width: 50%;
+        float: left;
+        margin-bottom: 15px;
+    }
+    .WeeklyResultTable table tbody tr td {
+        min-width: 250px;
+    }
+    .WeeklyResultTable table tbody tr td:first-child {
+        min-width: 380px;
+    }
+    .modalPurchaseNFT .modal-header .networkLabel .circle {
+        width: 14px;
+        height: 14px;
+    }
+    .modalPurchaseNFT .modal-header .networkLabel {
+        font-size: 16px;
+    }
+    .modalPurchaseNFT .transformPart .fromPurchase,
+    .modalPurchaseNFT .transformPart .toPurchase {
+        width: 20px;
+        height: 20px;
+    }
+    .modalPurchaseNFT .transformPart p,
+    .modalPurchaseNFT .purchasePart p {
+        font-size: 16px;
+    }
+    .modalPurchaseNFT .transformPart .icArrow {
+        width: 30px;
+    }
+    .modalPurchaseNFT .purchasePart .font36Dark {
+        font-size: 26px;
+    }
+    .modalPurchaseNFT .transactionDetailsPart .borderArea .font24Black,
+    .modalPurchaseNFT .transactionDetailsPart .borderArea .font22GrayNormal,
+    .modalPurchaseNFT .transactionDetailsPart .borderArea .font22Green,
+    .modalPurchaseNFT .transactionDetailsPart .borderArea .font22GraySemi {
+        font-size: 16px;
+    }
+    .btnGrayBordered {
+        font-size: 16px;
+        &:hover,
+        &.active {
+            font-size: 16px;
+        }
+    }
+    .modalPurchaseNFT .btnGray,
+    .modalPurchaseNFT .btnBlue {
+        padding: 10px 50px;
+    }
+
+
+    .modalCart .modal-content .modal-header .modal-title {
+        flex-wrap: wrap;
+    }
+
+    .modalCart .modal-content .modal-body .userPic {
+        width: 65px;
+        height: 65px;
+
+        img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .modalCart .modal-content .modal-body .title {
+        font-size: 18px;
+    }
+
+    .modalCart .modal-content .modal-body .price {
+        font-size: 16px;
+    }
+
+    .btnDelete {
+        width: 56px;
+        height: 56px;
+
+        svg {
+            width: 20px;
+        }
+    }
+
+    .modalCart .modal-content .modal-footer .font20Blue {
+        font-size: 16px;
+    }
+
+    .modalCart .modal-content .modal-footer .font24Blue,
+    .modalCart .modal-content .modal-footer .font24BlueBold {
+        font-size: 18px;
+    }
+
+    .homePage .bannerSection .leftContent {
+        width: 80%;
+    }
+
+    .homePage .marketplaceSection .contentArea .left .btnConnectWallet {
+        height: 60px;
+        width: 60px;
+    }
+
+    .homePage .marketplaceSection .contentArea .left .walletTitle {
+        font-size: 20px;
+    }
+
+    .homePage .marketplaceSection .contentArea .right p {
+        font-size: 18px;
+    }
+
+    .homePage .ourMissionSection .rightImg img {
+        height: auto;
+        width: 100%;
+    }
+
+    footer .gap-5 {
+        gap: 1rem !important;
+    }
+
+    .aboutPage .bannerSection .bannerImgRight {
+        min-width: 90%;
+        padding: 30px;
+    }
+
+    .aboutPage .bannerSection {
+        height: auto;
+        padding: 30px;
+    }
+
+    .accordion .accordion-item .accordion-header .accordion-button {
+        font-size: 20px;
+    }
+
+    .eventPage .upcomingEventSection .eventListPart .leftLight {
+        border: 0;
+        margin-top: 20px;
+    }
+
+    .eventPage .upcomingEventSection .eventListPart .date {
+        font-size: 18px;
+    }
+
+    .eventPage .upcomingEventSection .eventListPart .eventTitle {
+        font-size: 20px;
+    }
+
+    .eventPage .bannerSection,
+    .eventDetailsPage .bannerSection {
+        // height: 100px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .eventDetailsPage .upcomingEventSectionTwo .eventDetailsBox .Heading {
+        font-size: 20px;
+    }
+
+    .eventDetailsPage .upcomingEventSectionThree .packageTable table th {
+        font-size: 20px;
+    }
+
+    .eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(2),
+    .eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(3) {
+        font-size: 30px;
+    }
+
+    .eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(2) span,
+    .eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(3) span {
+        font-size: 14px;
+    }
+
+    .eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(2) p,
+    .eventDetailsPage .upcomingEventSectionThree .packageTable table th:nth-child(3) p {
+        font-size: 16px;
+    }
+
+    .filterArea .search,
+    .filterArea .sortBy {
+        width: 40%;
+    }
+
+    .sidebarFilter {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        z-index: 99;
+        background-color: #202020;
+        padding: 15px;
+    }
+
+    .searchMain {
+        display: none !important;
+    }
+
+    .adminContent .customHeader .navMain .navbar-collapse .navbar-nav {
+        flex-direction: row !important;
+        float: right;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    .adminContent .customHeader .navMain .navbar-collapse .navbar-nav .nav-link {
+        padding: 0 5px;
+    }
+
+    .adminContent .customHeader .navMain .navbar-collapse .navbar-nav .divider {
+        border: 0;
+    }
+
+    .mobileSearch {
+        .searchField {
+            border: solid 1px #E7E7E7;
+            border-radius: 30px;
+            background-color: #fff;
+            height: 61px;
+        }
+    }
+
+    .adminPageMainCommon .contentManagementSection .nav-pills .nav-item .nav-link {
+        min-width: 200px;
+        font-size: 20px;
+    }
+
+    .adminPageMainCommon .contentManagementSection .tab-content .cmsLabel2 {
+        width: 100%;
+    }
+
+    .btnBlue,
+    .btnWhite {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .adminPageMainCommon .profileSection .mainDetails .uploadImg,
+    .adminPageMainCommon .profileSection .mainDetails .uploadImg input {
+        width: 100%;
+    }
+
+    .adminPageMainCommon .profileSection .mainDetails .uploadImg span {
+        top: 40px;
+    }
+
+    .adminPageMainCommon .usersScreenSection .filterPart .leftPart {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .adminPageMainCommon .usersScreenSection .filterPart .leftPart .form-label {
+        width: 100%;
+        text-align: left;
+    }
+
+    .adminPageMainCommon .userDataMain {
+        width: 100%;
+    }
+
+    .adminPageMainCommon .menuManagementSection .headerPart .details .dragAndDropMenuMain {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .mtSmall {
+        padding-top: 100px;
+    }
+    .marketPlaceImage {
+        display: none;
+    }
+}
+
+
+
+
+
+// Athlete css start
+@media (min-width: 1400px) {
+    .athleteHeader .navMain .navbar-nav .nav-link {
+        font-size: calc(0.875rem + ((1vw - 14.4px) * 2.9167));
+        min-height: 0vw;
+    }
+
+    .athleteSection .font32light,
+    .athleteSection .font32teal,
+    .athleteSection .font32white {
+        font-size: calc(1.25rem + ((1vw - 14.4px) * 1.6667));
+        min-height: 0vw;
+    }
+
+    .athleteSection .font54White {
+        font-size: calc(2.125rem + ((1vw - 14.4px) * 4.1667));
+        min-height: 0vw;
+    }
+
+    .athleteSection .yellowBtn,
+    .athleteSection .skyLightBtn {
+        font-size: calc(1.625rem + ((1vw - 14.4px) * 2.0833));
+        min-height: 0vw;
+    }
+}
+
+@media (min-width: 1920px) {
+    .athleteHeader .navMain .navbar-nav .nav-link {
+        font-size: 28px;
+    }
+
+    .athleteSection .font32light,
+    .athleteSection .font32teal,
+    .athleteSection .font32white {
+        font-size: 28px;
+    }
+
+    .athleteSection .font54White {
+        font-size: 54px;
+    }
+
+    .athleteSection .yellowBtn,
+    .athleteSection .skyLightBtn {
+        font-size: 36px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+    .athleteHeader .navMain {
+        background-color: transparent !important;
+    }
+
+    .menuMobile {
+        background-color: #A1DCFE;
+        border-radius: 0px;
+        padding: 15px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+    }
+
+    .bgLightBlue {
+        background-color: #A1DCFE;
+        border-radius: 6px;
+        width: 42px;
+        height: 45px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .crossIcon {
+        // background-color: #A1DCFE;
+        border-radius: 6px;
+        width: 42px;
+        height: 45px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lineupGround {
+        height: auto;
+    }
+
+    .athleteHeader .PCCBalanceButton .font24,
+    .athleteHeader .EthBalanceButton .font24 {
+        font-size: 18px;
+    }
+
+    .lineupGround .offencePart,
+    .lineupGround .deffencePart {
+        width: 50px;
+        font-size: 20px;
+    }
+
+    .lineUpPage .playerDetails .heading,
+    .lineUpPage .playerDetails .details,
+    .lineUpPage .playerDetails .playerItems {
+        padding: 15px;
+    }
+
+    .lineUpPage .playerDetails .heading {
+        font-size: 14px;
+    }
+
+    .lineUpPage .playerDetails .details h2 {
+        font-size: 16px;
+    }
+
+    .lineUpPage .playerDetails .details p {
+        font-size: 14px;
+    }
+
+    .lineUpPage .playerDetails .details .playerLabel {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        border-width: 3px;
+    }
+
+    .lineUpPage .playerDetails .playerItems .font34White {
+        font-size: 16px;
+    }
+
+    .lineUpPage .playerDetails .playerItems svg {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .bigNFT {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .LayoutBG {
+        padding: 10px;
+        width: auto;
+    }
+
+    .athleteSection .font32white,
+    .athleteSection .font32Yellow,
+    .athleteSection .font32teal {
+        font-size: 20px !important;
+    }
+
+    .athleteSection .font32light {
+        font-size: 20px !important;
+        flex-direction: column;
+    }
+
+    .athleteSection .seriesDetails {
+        margin: 0
+    }
+
+    .athleteSection .font54White {
+        margin-bottom: 10px;
+        font-size: 24px !important;
+        line-height: 22px;
+    }
+
+    .athleteSection .yellowBtn,
+    .athleteSection .skyLightBtn,
+    .skyLightBorderedBtn {
+        padding: 5px;
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 2px;
+    }
+
+    .athleteSection .yellowBtn svg,
+    .athleteSection .skyLightBtn svg {
+        width: 30px;
+    }
+
+    .athleteSection .tierMain .heading {
+        font-size: 18px;
+    }
+
+    .athleteSection .tierMain .heading svg {
+        width: 20px;
+    }
+
+    .athleteSection .seasonStatsName {
+        font-size: 16px;
+    }
+
+    .athleteSection .seasonProgress {
+        font-size: 16px;
+    }
+
+    .athleteSection .statMain .heading {
+        font-size: 18px;
+    }
+
+    .athleteSection .progress {
+        height: 1rem;
+    }
+
+    .athleteSection .statsImage {
+        height: 4rem !important;
+    }
+
+    .athleteSection .tableArea {
+        thead {
+            th {
+                font-size: 16px;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-size: 20px;
+
+                    .hero-image {
+                        border-radius: 2rem;
+                        width: 2rem;
+                    }
+
+                    img {
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .listingAreaMobile {
+        display: flex;
+        // flex-wrap: nowrap;
+        // max-width: 414px;
+        // width: 100%;
+        // overflow-x: scroll;
+        padding: 10px;
+    }
+
+    .gameImage img {
+        width: 56px;
+    }
+
+    .marketplacePage .start-game p {
+        font-size: 12px;
+    }
+
+    .marketplacePage .start-game h3 {
+        font-size: 20px;
+    }
+
+    .playnow-btn {
+        margin-top: 20px;
+    }
+
+    .marketplacePage .marketplaceBanner {
+        padding-top: 0;
+    }
+
+    .customAccordion .accordion .accordion-item .accordion-header .accordion-button {
+        font-size: 18px;
+    }
+
+    .customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails {
+        padding: 15px;
+    }
+
+    .customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .icComman {
+        width: 44px;
+        height: 44px;
+    }
+
+    .customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .icComman svg {
+        width: 20px;
+    }
+
+    .customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .font20Yellow {
+        font-size: 14px;
+    }
+
+    .customAccordion .accordion .accordion-item .accordion-collapse .accordion-body .accordionDetails .detailsRow .font24White {
+        font-size: 18px;
+    }
+
+    .lineUpPage .playerStatsDetails .playerDetails .heading {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+    .lineUpPage .playerStatsDetails .playerDetails .details {
+        flex-wrap: wrap;
+    }
+
+    .lineUpPage .playerStatsDetails .playerDetails .details h2 {
+        font-size: 18px;
+    }
+    .lineUpPage .playerDetails .details .font22LightBlue,
+    .lineUpPage .playerDetails .details .font22LightYellow {
+        font-size: 14px;
+    }
+
+    .lineUpPage .playerStatsDetails .playerDetails .details p {
+        font-size: 16px;
+    }
+
+    .lineUpPage .playerStatsDetails .playerDetails .details .playerPic,
+    .lineUpPage .playerStatsDetails .playerDetails .details .playerPic img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .lineUpPage .playerStatsDetails .playerDetails .details .playerLabel {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        border: solid 2px #C099FF;
+    }
+
+    .lineUpPage .playerStatsDetails .playerDetails .details,
+    .lineUpPage .playerStatsDetails .playerDetails .playerItems {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .lineUpPage h3 {
+        font-size: 18px;
+    }
+
+    .pageMainTitle {
+        svg {
+            width: 30px;
+        }
+    }
+
+    .titleTextMini {
+        font-size: 14px;
+    }
+
+    .gameRuleParts .heading {
+        font-size: 18px;
+    }
+
+    .gameRuleParts .details ul li {
+        font-size: 16px;
+    }
+
+    .lineupGround,
+    .lineupGround .middlePart {
+        border-width: 2px;
+    }
+
+    .playerDetailsPosition {
+        width: 100%;
+        left: 0;
+    }
+
+    .lineUpPage .playerDetails .details .playerPic,
+    .lineUpPage .playerDetails .details .playerPic img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .lineUpPage .playerDetails .playerItems svg {
+        width: 20px;
+    }
+
+    .lineupGround .offencePart,
+    .lineupGround .deffencePart {
+        width: 100%;
+        height: 50px;
+    }
+
+    .lineupGround .offencePart .textRotate,
+    .lineupGround .deffencePart .textRotate {
+        -webkit-transform: rotate(-0deg);
+        -moz-transform: rotate(-0deg);
+        -ms-transform: rotate(-0deg);
+        -o-transform: rotate(-0deg);
+    }
+
+    .lineupGround .middlePart {
+        border: 6px solid rgba(255, 255, 255, 0.83);
+        border-width: 2px 0;
+    }
+
+    .athleteSection .info-card-title,
+    .athleteSection .inner-text-info {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .athleteSection .gearRightSideMain .gearHelmet {
+        height: 32rem;
+    }
+
+    .athleteSection .gearRightSideMain .geartextName,
+    .athleteSection .gearRightSideMain .gearTextDetails {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .athleteSection .gearRightSideMain .textDetails,
+    .athleteSection .gearRightSideMain .priceDetails {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .mtSmall {
+        padding-top: 100px;
+    }
+
+    .athleteHeader .btnSize {
+        width: 45px;
+        height: 45px;
+        border-width: 2px;
+    }
+
+    .navButton svg {
+        width: 25px;
+        margin-top: -2px;
+        margin-left: -3px;
+    }
+
+    .cartButton svg {
+        width: 25px;
+        margin-top: -11px;
+        margin-left: -3px;
+    }
+
+    .notifyButton svg {
+        width: 25px;
+        margin-top: -11px;
+        margin-left: -3px;
+    }
+
+    .athleteHeader .btnBadge {
+        width: 18px;
+        height: 18px;
+        right: 0px;
+        top: 0;
+        font-size: 10px;
+    }
+
+    .offcanvas {
+        width: 100% !important;
+        padding: 15px;
+    }
+
+    .offcanvas a {
+        font-size: 20px;
+    }
+
+    .offcanvas a svg {
+        width: 25px;
+    }
+
+    .offcanvas-header {
+        right: 5px;
+        top: 25px;
+    }
+
+    .offcanvas-header .btn-close {
+        width: 40px;
+        height: 40px;
+    }
+
+    .athleteSection .font32lightNew,
+    .athleteSection .font32tealNew,
+    .athleteSection .font32whiteNew {
+        font-size: 20px !important;
+    }
+
+    .athleteHeader .PCCBalanceButton .font24,
+    .athleteHeader .EthBalanceButton .font24 {
+        font-size: 12px;
+    }
+
+    .navCustom .nav-item .nav-link {
+        font-size: 16px;
+        padding: 0px 12px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .athleteSection .gearRightSideMain .gearHelmet {
+        height: 20rem;
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .athleteSection .gearRightSideMain,
+    .athleteSection .utilitiedRightSide {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .athleteSection .gear-card-title {
+        font-size: 16px;
+    }
+
+    .athleteSection .seasonName {
+        width: 58%;
+    }
+
+    .athleteSection .statsImage {
+        width: 120%;
+    }
+
+    .athleteSection .utilitiedRightSide .gearHelmet {
+        background-image: none;
+    }
+
+    .athleteSection .utilitiedRightSide .utilitiesTextName {
+        padding: 0;
+        margin-left: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .athleteSection .utilitiedRightSide .utilitiesTextDetails {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .athleteSection .gear-card-img {
+        height: 150px;
+    }
+
+    .athleteSection .utilities-card-img {
+        height: 180px;
+    }
+
+    .gearImage {
+        width: 151px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .athleteSection .image-utility {
+        width: 3rem;
+    }
+
+    .athleteSection .nftUtilityMain {
+        padding-right: 25px;
+        padding-left: 27px;
+    }
+}
+
+@media only screen and (min-width: 635px) {
+    .athleteSection .image-utility {
+        width: 6rem;
+    }
+}
+
+// @media only screen and (max-width: 982px) {
+//     .homePage .marketplaceSection .tierBox .tierImg img {
+//         height: 292px;
+//     }
+// }
+
+// @media only screen and (max-width: 1000px) {
+//     .homePage .marketplaceSection .tierBox .tierImg img {
+//         height: 279px;
+//     }
+// }
+
+@media only screen and (max-width: 767px) {
+    .homePage .bannerSection {
+        height: 810px !important;
+    }
+
+    .homePage .bannerSection .bannerSectionArea .image {
+        margin-top: -1.4rem !important;
+    }
+
+    .homePage .bannerSection .bannerSectionArea .hero-image {
+        width: 97% !important
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .homePage .ytVideoSection .sectionContent .helmet {
+        display: none;
+    }
+
+    .homePage .ytVideoSection .sectionContent .ball {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .homePage .ytVideoSection .sectionContent .helmet {
+        display: none;
+    }
+
+    .homePage .ytVideoSection .sectionContent .ball {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .homePage .ytVideoSection {
+        // height: 39vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .lineUpPage .popover-body {
+        width: 100%;
+    }
+    .lineUpPage .popover {
+        max-width: 100%;
+        width: 100%;
+    }
+    .navCustom {
+        margin: 0 -22px;
+    }
+    .lineUpPage .playerDetails {
+        // margin: 0 -22px;
+    }
+    .homePage .bannerSection .bannerSectionArea .headArea .holder {
+        width: 90%;
+    }
+    .headArea {
+        padding-bottom: 50px;
+    }
+    .homePage .bannerSection {
+        height: unset !important;
+    }
+
+    .modalPurchaseNFT .transactionDetailsPart .borderArea {
+        padding: 10px;
+    }
+    .modalPurchaseNFT .transactionDetailsPart .borderArea .font24Black, .modalPurchaseNFT .transactionDetailsPart .borderArea .font22GrayNormal, .modalPurchaseNFT .transactionDetailsPart .borderArea .font22Green, .modalPurchaseNFT .transactionDetailsPart .borderArea .font22GraySemi {
+        font-size: 14px;
+    }
+    .modalPurchaseNFT .btnGray, .modalPurchaseNFT .btnBlue {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .weeklyResultRight .partOne,
+    .weeklyResultRight .partTwo,
+    .weeklyResultRight .partThree {
+        padding: 15px;
+    }
+
+    .weeklyResultRight .partOne .font56Dark svg,
+    .weeklyResultRight .partTwo .font56Dark svg,
+    .weeklyResultRight .partThree .font56Dark svg {
+        width: 30px;
+    }
+
+    .walletModal .row>* {
+        width: auto;
+    }
+
+    .walletModal .btn img {
+        width: 80px;
+    }
+
+    .homePage .bannerSection .leftContent .content {
+        display: none;
+    }
+
+    .homePage .featuredNftsSection .cardArea .nftCard {
+        flex-direction: column !important;
+    }
+
+    .homePage .featuredNftsSection .cardArea .nftCard .card-img {
+        width: auto;
+        height: auto;
+    }
+
+    .homePage .bannerSection .leftContent {
+        top: 10%;
+    }
+
+    .homePage .bannerSection .leftContent .mainHeading {
+        margin-bottom: 0 !important;
+    }
+
+    .btnBlue {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .homePage .marketplaceSection .mainHeading {
+        padding: 0;
+    }
+
+    .pageMainCommon .aboutSection .rightContent .content {
+        font-size: 18px;
+    }
+
+    .eventListPart img {
+        margin-bottom: 20px;
+    }
+
+    .eventDetailsPage .upcomingEventSectionThree .packageTable .table {
+        min-width: 700px;
+    }
+
+    .authPage .menuBottomAuth {
+        justify-content: center;
+    }
+
+    .filterArea .search {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0 !important;
+    }
+
+    .filterArea .sortBy {
+        width: 70%;
+    }
+
+    .filterArea .search input,
+    .filterArea .search select,
+    .filterArea .sortBy input,
+    .filterArea .sortBy select {
+        min-width: 100%;
+    }
+
+    .authPage .authFormSection {
+        padding: 0 !important;
+    }
+
+    .nftDetailPage .playerItmSection .listingArea .nftCard {
+        width: 100%;
+    }
+
+    .nftDetailPage .playerItmSection .listingArea .nftCard .imgBody .card-img {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .adminContent .customHeader .navMain .navbar-collapse .navbar-nav .notificationDropdown .dropdown-menu {
+        width: 300px;
+    }
+
+    .adminPageMainCommon {
+        padding: 15px;
+    }
+
+    .adminPageMainCommon h2 {
+        margin-bottom: 10px !important;
+    }
+
+    .adminPageMainCommon .contentManagementSection .nav-pills .nav-item .nav-link {
+        min-width: auto;
+        min-height: 48px;
+        font-size: 18px;
+    }
+
+    .adminPageMainCommon .contentManagementSection .tab-content {
+        padding: 15px;
+    }
+
+    .adminPageMainCommon .contentManagementSection .tab-content .cmsLabel2 {
+        font-size: 16px;
+    }
+
+    .adminPageMainCommon .contentManagementSection .tab-content .optionPart .heading::after {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .adminPageMainCommon .stripedTable .table {
+        min-width: 1200px;
+    }
+
+    .adminAuthForm .whiteBG {
+        padding: 20px;
+    }
+
+    .adminAuthForm h1 {
+        font-size: 22px;
+        margin: 15px !important;
+    }
+
+    .adminPageMainCommon .profileSection {
+        padding: 15px;
+    }
+
+    .adminPageMainCommon .profileSection .mainDetails .uploadImg {
+        height: 120px;
+    }
+
+    .adminPageMainCommon .pagesSection .nav-pills .nav-item .nav-link {
+        padding: 10px;
+        min-width: 105px;
+        font-size: 12px;
+    }
+
+    .adminPageMainCommon .userDataMain {
+        margin-bottom: 15px;
+    }
+
+    .adminPageMainCommon .userDataMain ul {
+        flex-wrap: wrap;
+    }
+
+    .adminPageMainCommon .userDataMain ul li {
+        height: 50px;
+        border-right: 0;
+        border-bottom: solid 1px #707070;
+    }
+
+    .adminPageMainCommon .paginationMain {
+        flex-wrap: wrap;
+    }
+
+    .adminPageMainCommon .paginationMain .pageEntries {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .adminPageMainCommon .menuManagementSection .headerPart .details .dragAndDropMenuMain {
+        margin-top: 30px;
+    }
+
+    .adminPageMainCommon .menuManagementSection .headerPart .title h3 span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .authPage .authFormSection .headArea .title,
+    .modalCustom .modal-content .modal-header .modal-title h1.title {
+        font-size: 16px;
+    }
+
+    .authPage .authFormSection .headArea .content,
+    .modalCustom .modal-content .modal-header .content {
+        font-size: 12px;
+    }
+
+    .authPage .authFormSection .authForm .form-label,
+    .modalCustom .modal-content .form-label {
+        font-size: 16px;
+    }
+
+    .authPage .authFormSection .partition .line {
+        display: none;
+    }
+
+    .authPage .authFormSection .authForm .form-control,
+    .authPage .authFormSection .authForm .form-control::placeholder,
+    .authPage .authFormSection .authForm .customPswdOuter .form-control,
+    .authPage .authFormSection .authForm .customPswdOuter .form-control::placeholder {
+        font-size: 18px;
+    }
+
+    .authPage .authFormSection .authForm .form-check .form-check-label {
+        font-size: 18px;
+    }
+
+    .linkBlue {
+        font-size: 18px;
+    }
+
+    .btnYellow {
+        font-size: 18px;
+    }
+
+    .modalCustom .modal-content .modal-header .btn-close {
+        width: 40px;
+        height: 40px;
+        background-size: 50%;
+    }
+
+    .modalCustom .modal-content .fieldTransparent,
+    .modalCustom .modal-content .fieldTransparent::placeholder {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .modalCustom .modal-content .form-control,
+    .modalCustom .modal-content .form-control::placeholder {
+        font-size: 18px;
+    }
+
+    .modalCustom .modal-content .coinIcon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .modalCustom .modal-content .coinIcon svg {
+        width: 12px;
+    }
+
+    .modalCustom .modal-content .font32Blue {
+        font-size: 22px;
+    }
+
+    .formRadio input.radio:empty~label {
+        width: 90px;
+        height: 45px;
+    }
+
+    .formRadio label {
+        font-size: 14px;
+    }
+
+    .txnSummary .font24Blue,
+    .txnSummary .font24BlueBold {
+        font-size: 16px;
+    }
+
+    .yellowBtn {
+        padding: 5px;
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 2px;
+    }
+
+    .lineupGround .middlePart .middlePartLeft {
+        background-image: url(../images/lineLeftRptMob.png);
+        background-repeat: repeat;
+    }
+
+    .lineupGround .middlePart .middlePartRight {
+        background-image: url(../images/lineRightRptMob.png);
+        height: 100%;
+    }
+
+    .lineupGround .middlePart .line {
+        background-image: url(../images/LinesMob.png);
+        background-position: left top;
+        background-size: 90%;
+    }
+
+    .myProfilePage .profileDetails .heading h3,
+    .myProfilePage .profileDetails .profileBody .profileAbout .font24White,
+    .myProfilePage .profileDetails .profileBody .profileAbout p,
+    .LinkButton {
+        font-size: 18px;
+    }
+
+    .myProfilePage .profileDetails .profileBody .iconBlue,
+    .myProfilePage .profileDetails .profileBody .iconTeal {
+        width: 34px;
+        height: 34px;
+        border-width: 2px;
+    }
+
+    .myProfilePage .profileDetails .profileBody .iconBlue svg,
+    .myProfilePage .profileDetails .profileBody .iconTeal svg {
+        width: 20px;
+    }
+
+    .myProfilePage .profileDetails .profileBody .font20Head,
+    .myProfilePage .profileDetails .profileBody .font20Details,
+    .myProfilePage .profileDetails .profileBody .font20Head2,
+    .myProfilePage .profileDetails .profileBody .passwordPart .customPswdOuter .form-control {
+        font-size: 14px;
+    }
+
+    .headerParent .titleTextMini {
+        font-size: 14px !important;
+    }
+
+    .modalNotify .modal-content .modal-header .modal-title h1.title {
+        font-size: 20px;
+    }
+
+    .modalNotify .modal-content .modal-header .modal-title h1.title div {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .modalNotify .modal-content .modal-body .userPic,
+    .modalNotify .modal-content .modal-body .userPic img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .modalNotify .modal-content .modal-body .title {
+        font-size: 16px;
+    }
+
+    .modalNotify .modal-content .modal-body .date,
+    .modalNotify .modal-content .modal-body .msgDetails,
+    .modalNotify .modal-content .modal-body .nav-link {
+        font-size: 14px;
+    }
+
+    .btnAccept,
+    .btnDecline {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    .btnLinkBlue {
+        font-size: 16px;
+    }
+
+    .btnDarkBlue {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .inboxPage .list,
+    .inboxPage .inboxDetails .heading,
+    .inboxPage .inboxDetails .details {
+        padding: 15px;
+    }
+
+    .inboxPage .list .symbol,
+    .inboxPage .inboxDetails .heading .senderDetails .symbol {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .inboxPage .list .details .title,
+    .inboxPage .inboxDetails .heading .title,
+    .inboxPage .inboxDetails .heading .senderDetails .companyName {
+        font-size: 18px;
+    }
+
+    .inboxPage .list .details .date,
+    .inboxPage .list .details p,
+    .inboxPage .inboxDetails .heading .date,
+    .inboxPage .inboxDetails .heading .senderDetails .personName {
+        font-size: 14px;
+    }
+
+    .inboxPage .inboxDetails .details p {
+        font-size: 16px;
+    }
+
+    .bannerSection .mobAlign {
+        display: flex;
+        flex-direction: column;
+    }
+    // .homePage .ytVideoSection {
+    //     height: 50vh;
+    // }
+    .homePage .ytVideoSection .sectionContent {
+        padding: 0 15px;
+    }
+    .pageMainCommon .aboutSection .holder2 {
+        width: 90%;
+    }
+}

@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/Personal-Corner/temp-client
+permissions:
+  - object: /var/www/Personal-Corner
+    pattern: '**'
+    owner: ubuntu
+    group: ubuntu
+    mode: 777
+    type:
+      - file
+      - directory
+hooks:
+  AfterInstall:
+    - location: deployment/install-deps.sh
+      runas: ubuntu
